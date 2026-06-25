@@ -1,10 +1,12 @@
 """
-PixivyWalls Engine v47 — 60% Soft Outward Vignette Edition
-==========================================================
+PixivyWalls Engine v49 — Symmetrical Widescreen Guard Edition
+=============================================================
 - Constrains artwork container to exactly 60% widescreen scale (1152x648).
 - Implements hardware-smooth linear gradient masking to remove all rectangular borders.
-- Enlarges official movie title logo scaling bounds significantly (up to 550px).
-- Maintains a clean, solid 40% text void on the left and a 40% dock shelf on the bottom.
+- Enlarges official movie title logo footprints to 550px for premium presentation.
+- Restructured to ONLY fetch Trending, Popular, and Top Rated categories.
+- Enforces strict 'original_language' matching to eliminate cross-language leaks.
+- Dynamically falls back to TMDB Discover API for regional rows to prevent empty JSON generation.
 """
 
 import os
@@ -49,6 +51,7 @@ LANGUAGES = [
     {"code": "ml", "label": "Malayalam"},
 ]
 
+# Track exclusively Trending, Popular, and Top Rated tracks
 CATEGORIES = [
     {"type": "movie", "label": "Movie", "endpoint": "trending/movie/week", "tag": "Trending"},
     {"type": "movie", "label": "Movie", "endpoint": "movie/popular",       "tag": "Popular"},
@@ -70,17 +73,39 @@ def fetch_items(category: dict, lang: dict) -> list:
     if category["tag"] == "All-Time Top Rated" and lang["code"] == "ml":
         return []
     
-    endpoint = category.get("endpoint") or category.get("github-actions")
+    endpoint = category.get("endpoint")
     if not endpoint:
         return []
         
     params = {"language": "en-US", "page": 1, "include_adult": "false"}
+    
+    # SYSTEM SHIFT: If processing regional content, route through the Discover API to force real assets
     if lang["code"] != "en":
-        params["with_original_language"] = lang["code"]
+        if "trending" in endpoint:
+            # Trending doesn't support language filters, so we swap to discover for regional rows
+            item_type = "movie" if "movie" in endpoint else "tv"
+            endpoint = f"discover/{item_type}"
+            params["sort_by"] = "popularity.desc"
+            params["with_original_language"] = lang["code"]
+        else:
+            params["with_original_language"] = lang["code"]
+            
     try:
         res = tmdb_get(endpoint, params)
-        return res.get("results", [])[:MAX_PER_BUCKET]
-    except:
+        raw_results = res.get("results", [])
+        
+        # STRICT LANGUAGE GUARD FILTER: Validates actual raw asset source language metadata
+        filtered_results = []
+        for item in raw_results:
+            orig_lang = item.get("original_language")
+            if lang["code"] == "en" and orig_lang == "en":
+                filtered_results.append(item)
+            elif lang["code"] != "en" and orig_lang == lang["code"]:
+                filtered_results.append(item)
+                
+        return filtered_results[:MAX_PER_BUCKET]
+    except Exception as e:
+        print(f"    ↳ Fetch warning for {category['label']}-{lang['label']}: {e}")
         return []
 
 def fetch_details(item_type: str, item_id: int) -> dict:
@@ -146,9 +171,9 @@ def create_composite_card(details, category, lang, item_type, file_name):
         
         # Bottom Outward Fade: Vertical linear gradient layer
         gradient_v = Image.linear_gradient("L").rotate(90).resize((target_w, 200), Image.Resampling.BICUBIC)
-        gradient_v_flipped = ImageOps.invert(gradient_v) # Soften into black drop-off
+        gradient_v_flipped = ImageOps.invert(gradient_v)
         
-        # Merge horizontal and vertical gradient tracks natively to guarantee zero visible edge lines
+        # Merge horizontal and vertical gradient tracks natively
         v_mask = Image.new("L", (target_w, target_h), 255)
         v_mask.paste(gradient_v_flipped, (0, target_h - 200))
         alpha_mask = Image.darker(alpha_mask, v_mask)
@@ -189,7 +214,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         meta_line = "    •    ".join(meta_elements)
 
-        # Official Studio Logo Compositor (Safe Left Column Alignment with Bigger Scaling Bounds)
+        # Official Studio Logo Compositor (Bigger 550px Bounds)
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
@@ -205,7 +230,6 @@ def create_composite_card(details, category, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    # Enlarged logo footprint bounds for high branding visibility
                     max_w, max_h = 550, 150
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
