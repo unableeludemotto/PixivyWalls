@@ -1,10 +1,10 @@
 """
-PixivyWalls Engine v54 — Scripted-Only Master Edition
-=====================================================
-- Adds a robust genre blocklist to completely exclude reality shows, talk shows, and soap operas.
-- Utilizes rotated native linear gradients for a smooth, seamless vignette fade.
-- Scales down fallback title typography to a clean, balanced 48pt.
-- Keeps JSON logging completely decoupled from asset write checks to guarantee data population.
+PixivyWalls Engine v56 — Refined Layout Master Edition
+======================================================
+- Reduces fallback text title size down to a compact 32pt.
+- Expands logo scale constraints to (650, 240) so studio branding prints much larger.
+- Retains the flawless full-canvas native gradient vignette (no vertical/horizontal lines).
+- Retains reality show exclusions, regional circuit breakers, and decoupled JSON generation.
 """
 
 import os
@@ -56,7 +56,7 @@ METRICS = [
     {"type": "tv",    "tag": "Popular Releases",   "endpoint": "discover/tv"}
 ]
 
-# EXCLUSION BLOCKLIST: Reality (10764), Talk (10767), Soap (10766), News (10763), Documentary (99)
+# EXCLUSION GENRES: Reality (10764), Talk (10767), Soap (10766), News (10763), Documentary (99)
 EXCLUDED_GENRE_IDS = {99, 10763, 10764, 10766, 10767}
 
 # ─── HELPERS ─────────────────────────────────────────────────────────────────
@@ -103,7 +103,7 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
             res = tmdb_get(endpoint, params)
             results = res.get("results", [])
             
-            if not ... and page == 1:
+            if not results and page == 1:
                 params.pop("primary_release_year", None)
                 params.pop("first_air_date_year", None)
                 params.pop("vote_count.gte", None)
@@ -121,7 +121,6 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
                 
             for item in results:
                 if item.get("original_language") == lang["code"]:
-                    # CRITICAL: Verify and drop reality/talk/soap show genre IDs directly from the initial pool
                     item_genres = set(item.get("genre_ids", []))
                     if item_genres.intersection(EXCLUDED_GENRE_IDS):
                         continue
@@ -174,14 +173,14 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
     try:
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 48)  # Clean, balanced 48pt fallback font
+            font_title = ImageFont.truetype(font_path, 32)  # FIXED: Reduced to a clean, elegant 32pt size
             font_meta  = ImageFont.truetype(font_path, 26)
             font_label = ImageFont.truetype(font_path, 15)
             font_body  = ImageFont.truetype(font_path, 22)
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
-        # 1. Base Canvas Layer: Solid Master TV Dark Background (1920x1080)
+        # 1. Base Layer: Solid Master TV Dark Background (1920x1080)
         canvas = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
         
         # 2. Download and scale backdrop to exactly 60% widescreen (1152x648)
@@ -191,32 +190,33 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
         target_w, target_h = 1152, 648
         scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
         
-        # Position scaled backdrop layer onto full 1920x1080 transparent plane
+        # Create a full 1920x1080 positioning plane layer
         poster_plane = Image.new("RGBA", (1920, 1080), (0, 0, 0, 0))
         poster_plane.paste(scaled_poster, (768, 0))
         
-        # 3. High-Precision Native Gradient Masking (Rotated to fix vertical line box issues)
-        # Horizontal Blend Layer: Rotated 270 degrees to force left-to-right fade out
+        # 3. Full-Canvas Wide-Span Gradient Masking System
+        # Horizontal Blend Layer: Rotated 270 degrees for a clean left-to-right fade out
         grad_h_raw = Image.linear_gradient("L").rotate(270)
-        gradient_h = grad_h_raw.resize((400, 1080), Image.Resampling.BICUBIC)
+        gradient_h = grad_h_raw.resize((600, 1080), Image.Resampling.BICUBIC)
         
         mask_master = Image.new("L", (1920, 1080), 255)
-        mask_master.paste(gradient_h, (768, 0))  # Vignette fade starts exactly at X=768
+        mask_master.paste(gradient_h, (550, 0))  # Fade starts smoothly inside the text void columns
         
-        # Fill everything to the left of the image container with absolute black void
+        # Fill everything to the left of the transition with solid black void
         draw_mm = ImageDraw.Draw(mask_master)
-        draw_mm.rectangle([(0, 0), (768, 1080)], fill=0)
+        draw_mm.rectangle([(0, 0), (550, 1080)], fill=0)
         
         # Vertical Blend Layer: Rotated 90 degrees and inverted to fade cleanly into app shortcuts shelf
         grad_v_raw = Image.linear_gradient("L").rotate(90)
-        gradient_v = ImageOps.invert(grad_v_raw.resize((1920, 200), Image.Resampling.BICUBIC))
+        gradient_v = ImageOps.invert(grad_v_raw.resize((1920, 300), Image.Resampling.BICUBIC))
         
         mask_v = Image.new("L", (1920, 1080), 255)
-        mask_v.paste(gradient_v, (0, 448))  # Smooth bottom vignette starts exactly at Y=448
-        draw_mv = ImageDraw.Draw(mask_v)
-        draw_mv.rectangle([(0, 648), (1920, 1080)], fill=0)  # Fill lower shelf space with solid black
+        mask_v.paste(gradient_v, (0, 348))  # Fade starts smoothly at Y=348 down to Y=648
         
-        # Combine masks natively to ensure zero border lines
+        draw_mv = ImageDraw.Draw(mask_v)
+        draw_mv.rectangle([(0, 648), (1920, 1080)], fill=0)  # Solid black fill for lower shelf space
+        
+        # Mathematically combine the alpha masks
         full_mask = ImageChops.darker(mask_master, mask_v)
                 
         # Composite layers natively over full screen
@@ -260,7 +260,11 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
                     target_logos.sort(key=lambda x: x.get("vote_average", 0), reverse=True)
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{target_logos[0]['file_path']}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
-                    logo_img.thumbnail((550, 150), Image.Resampling.LANCZOS)
+                    
+                    # FIXED: Bounds expanded significantly so horizontal movie branding scales up much larger
+                    max_w, max_h = 650, 240
+                    logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
+                    
                     canvas.alpha_composite(logo_img, dest=(80, 80))
                     logo_drawn = True
                 except:
@@ -350,7 +354,6 @@ def run():
         if not details:
             continue
 
-        # Secondary Checklist: Make sure reality show genre IDs aren't hiding in final detailed objects
         detailed_genres = {g["id"] for g in details.get("genres", [])}
         if detailed_genres.intersection(EXCLUDED_GENRE_IDS):
             continue
