@@ -1,12 +1,3 @@
-"""
-PixivyWalls Engine v59 — Symmetrical Outward Vignette Master
-============================================================
-- Expands backdrop texture sizing to 1365x768 to completely eliminate box-cut boundaries.
-- Uses native horizontal and vertical gradient blends to bleed edges smoothly into black space.
-- Retains compact typography structures across titles (32pt), metadata (20pt), and body text (18pt).
-- Retains watch provider constraints, unscripted reality filters, and automatic folder wipes.
-"""
-
 import os
 import json
 import time
@@ -14,11 +5,10 @@ import random
 import shutil
 import requests
 from io import BytesIO
-from datetime import datetime, timezone
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageChops
 
-# ─── CONFIG ──────────────────────────────────────────────────────────────────
+# ─── CONFIGURATION ───────────────────────────────────────────────────────────
 TMDB_API_KEY  = os.environ["TMDB_API_KEY"]
 TMDB_BASE     = "https://api.themoviedb.org/3"
 TMDB_IMG_BASE = "https://image.tmdb.org/t/p/original"
@@ -29,17 +19,16 @@ OUTPUT_FILE   = OUTPUT_DIR / "wallpapers.json"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-def cleanup_old_assets():
-    print("🧹 [SYSTEM] Cleaning up legacy image directories...")
+def reset_directories():
+    print("🧹 Wiping legacy assets for a completely fresh generation...")
     if WALLPAPER_DIR.exists():
         try:
             shutil.rmtree(WALLPAPER_DIR)
-            print("   ↳ Cleaned images directory successfully.")
         except Exception as e:
-            print(f"   ↳ Cleanup warning: {e}")
+            print(f"⚠️ Cleanup warning: {e}")
     WALLPAPER_DIR.mkdir(exist_ok=True)
 
-cleanup_old_assets()
+reset_directories()
 
 LANGUAGES = [
     {"code": "en", "label": "English"},
@@ -56,10 +45,11 @@ METRICS = [
     {"type": "tv",    "tag": "Popular Releases",   "endpoint": "discover/tv"}
 ]
 
+# Strict filters: Scripted Content and Mainstream Streaming Networks Only
 EXCLUDED_GENRE_IDS = {99, 10763, 10764, 10766, 10767}
-PREMIUM_PROVIDERS = "8|119|122|220|237"
+PREMIUM_PROVIDERS  = "8|119|122|220|237"  # Netflix, Prime, Hotstar, Jio, SonyLIV
 
-# ─── HELPERS ─────────────────────────────────────────────────────────────────
+# ─── METADATA HARVESTING ─────────────────────────────────────────────────────
 def tmdb_get(endpoint: str, params: dict = {}) -> dict:
     url = f"{TMDB_BASE}/{endpoint}"
     p = {"api_key": TMDB_API_KEY, **params}
@@ -92,10 +82,7 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
                 params["watch_region"] = "IN"
             
         if metric["tag"] == "Current Year":
-            if metric["type"] == "movie":
-                params["primary_release_year"] = "2026"
-            else:
-                params["first_air_date_year"] = "2026"
+            params["primary_release_year" if metric["type"] == "movie" else "first_air_date_year"] = "2026"
         elif metric["tag"] == "All-Time Top Rated" and "discover" in endpoint:
             params["sort_by"] = "vote_average.desc"
             params["vote_count.gte"] = "5"
@@ -114,11 +101,7 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
                 params["sort_by"] = "popularity.desc"
                 params["with_watch_providers"] = PREMIUM_PROVIDERS
                 params["watch_region"] = "IN"
-                
-                if "discover" not in endpoint:
-                    res = tmdb_get(f"discover/{metric['type']}", params)
-                else:
-                    res = tmdb_get(endpoint, params)
+                res = tmdb_get(endpoint if "discover" in endpoint else f"discover/{metric['type']}", params)
                 results = res.get("results", [])
                 
             if not results:
@@ -126,26 +109,21 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
                 
             for item in results:
                 if item.get("original_language") == lang["code"]:
-                    item_genres = set(item.get("genre_ids", []))
-                    if item_genres.intersection(EXCLUDED_GENRE_IDS):
-                        continue
-                        
-                    if item not in collected_items:
-                        collected_items.append(item)
-                        if len(collected_items) >= target_count:
-                            break
+                    if not set(item.get("genre_ids", [])).intersection(EXCLUDED_GENRE_IDS):
+                        if item not in collected_items:
+                            collected_items.append(item)
+                            if len(collected_items) >= target_count:
+                                break
             page += 1
-            time.sleep(0.05)
-        except Exception as e:
-            print(f"    ↳ Harvest exception tracking pipeline: {e}")
+            time.sleep(0.04)
+        except:
             break
             
     return collected_items[:target_count]
 
 def fetch_details(item_type: str, item_id: int) -> dict:
     try:
-        endpoint = "movie" if item_type == "movie" else "tv"
-        return tmdb_get(f"{endpoint}/{item_id}", {
+        return tmdb_get(f"{'movie' if item_type == 'movie' else 'tv'}/{item_id}", {
             "language": "en-US", 
             "append_to_response": "credits,images",
             "include_image_language": "en"
@@ -169,79 +147,68 @@ def text_wrap(text, font, max_width, draw):
         lines.append(' '.join(current_line))
     return lines
 
-# ─── COMPOSITOR ENGINE ───────────────────────────────────────────────────────
-def create_composite_card(details, category_tag, lang, item_type, file_name):
+# ─── GRAPHICS COMPOSITOR ENGINE ──────────────────────────────────────────────
+def create_composite_card(details, item_type, file_name):
     backdrop_path = details.get("backdrop_path")
     if not backdrop_path or details.get("adult", False):
         return False
 
     try:
+        # Strict Typography Sizing Hierarchy
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 32)  
-            font_meta  = ImageFont.truetype(font_path, 20)  
-            font_label = ImageFont.truetype(font_path, 14)  
-            font_body  = ImageFont.truetype(font_path, 18)  
+            font_title = ImageFont.truetype(font_path, 32)  # Compact title size
+            font_meta  = ImageFont.truetype(font_path, 20)  # Clean row metrics
+            font_label = ImageFont.truetype(font_path, 14)  # Small block tags
+            font_body  = ImageFont.truetype(font_path, 18)  # Reduced description line scale
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
-        # 1. Base Layer: Solid Dark Canvas Core (1920x1080)
+        # 1. Base Layer: Pristine solid black canvas (1920x1080)
         canvas = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
         
-        # 2. Process Backdrop scaled to clean proportional height parameters (1365x768)
+        # 2. Backdrop Scale Layer: Perfect 60% widescreen aspect footprint (1152x648)
         img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
-        raw_poster = Image.open(BytesIO(img_res.content)).convert("RGBA")
+        scaled_poster = Image.open(BytesIO(img_res.content)).convert("RGBA").resize((1152, 648), Image.Resampling.LANCZOS)
         
-        target_w, target_h = 1365, 768
-        scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
+        # 3. Direct fitting mask container layer (1152x648)
+        direct_mask = Image.new("L", (1152, 648), 255)
         
-        # 3. Create a matching 1365x768 local alpha layer to remove cutting lines completely
-        local_mask = Image.new("L", (target_w, target_h), 255)
+        # Left edge horizontal fade out
+        grad_h = Image.linear_gradient("L").rotate(270).resize((400, 648), Image.Resampling.BICUBIC)
+        direct_mask.paste(grad_h, (0, 0))
         
-        # Horizontal Fade: Blends smoothly across a wide 400-pixel window
-        grad_h = Image.linear_gradient("L").rotate(270).resize((400, target_h), Image.Resampling.BICUBIC)
-        local_mask.paste(grad_h, (0, 0))
+        # Bottom edge vertical fade out
+        grad_v = Image.linear_gradient("L").rotate(90).resize((1152, 200), Image.Resampling.BICUBIC)
+        direct_mask_v = Image.new("L", (1152, 648), 255)
+        direct_mask_v.paste(ImageOps.invert(grad_v), (0, 448))
         
-        # Vertical Fade: Blends smoothly down into the app icon shelf across 220 pixels
-        grad_v = Image.linear_gradient("L").rotate(90).resize((target_w, 220), Image.Resampling.BICUBIC)
-        grad_v_inverted = ImageOps.invert(grad_v)
+        # Combine alpha operations natively
+        final_fitted_mask = ImageChops.darker(direct_mask, direct_mask_v)
         
-        local_mask_v = Image.new("L", (target_w, target_h), 255)
-        local_mask_v.paste(grad_v_inverted, (0, target_h - 220))
-        
-        # Combine the horizontal and vertical masks natively
-        final_local_mask = ImageChops.darker(local_mask, local_mask_v)
-        
-        # 4. Paste backdrop layer onto the dark base canvas at coordinates (555, 0)
-        canvas.paste(scaled_poster, (555, 0), final_local_mask)
+        # 4. Paste the cleanly masked backdrop box directly onto coordinates (768, 0)
+        canvas.paste(scaled_poster, (768, 0), final_fitted_mask)
         draw = ImageDraw.Draw(canvas)
         
-        # ─── TYPOGRAPHY GRAPHICS ENGINE ───────────────────────────────────────
-        title = details.get("title") if item_type == "movie" else details.get("name")
-        if not title: title = "Unknown"
-            
-        release_field = "release_date" if item_type == "movie" else "first_air_date"
-        year = (details.get(release_field) or "N/A")[:4]
+        # ─── INTERFACE TEXT RENDERING ────────────────────────────────────────
+        title = details.get("title") if item_type == "movie" else details.get("name") or "Unknown"
+        year  = (details.get("release_date") or details.get("first_air_date") or "N/A")[:4]
         genres = "/".join([g["name"] for g in details.get("genres", [])[:2]]) or "General"
         
         meta_elements = []
         if item_type == "tv":
-            seasons_count = details.get("number_of_seasons", 0)
-            if seasons_count > 0:
-                meta_elements.append(f"{seasons_count} Seasons" if seasons_count > 1 else "1 Season")
+            sc = details.get("number_of_seasons", 0)
+            if sc > 0: meta_elements.append(f"{sc} Seasons" if sc > 1 else "1 Season")
         else:
-            runtime = details.get("runtime", 0)
-            if runtime > 0:
-                meta_elements.append(f"{runtime} min")
+            rt = details.get("runtime", 0)
+            if rt > 0: meta_elements.append(f"{rt} min")
                 
         if year and year != "N/A": meta_elements.append(year)
         if genres: meta_elements.append(genres)
-            
-        rating = details.get("vote_average", 0.0)
-        if rating > 0.0: meta_elements.append(f"IMDB: {rating:.1f}")
-            
+        if details.get("vote_average", 0.0) > 0.0: meta_elements.append(f"IMDB: {details['vote_average']:.1f}")
         meta_line = "    •    ".join(meta_elements)
 
+        # Large Logo Processing Layer
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         if logos:
@@ -254,9 +221,8 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{target_logos[0]['file_path']}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    max_w, max_h = 450, 180
-                    logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
-                    
+                    # Large branding parameters
+                    logo_img.thumbnail((650, 240), Image.Resampling.LANCZOS)
                     canvas.alpha_composite(logo_img, dest=(80, 80))
                     logo_drawn = True
                 except:
@@ -267,12 +233,11 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
         
         draw.text((80, 240), meta_line, fill=(245, 245, 250), font=font_meta)
         
+        # Safe 640px wide text columns
         credits = details.get("credits", {})
-        directors_list = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"]
-        directors = ", ".join(directors_list[:1])
+        directors = ", ".join([c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"][:1])
         if item_type == "tv" and details.get("created_by"):
             directors = ", ".join([c["name"] for c in details["created_by"]][:1])
-            
         cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
         
         draw.text((80, 310), "DIRECTORS", fill=(160, 163, 168), font=font_label)
@@ -282,92 +247,84 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
         draw.text((80, 417), cast, fill=(245, 245, 250), font=font_body)
         
         draw.text((80, 480), "SUMMARY", fill=(160, 163, 168), font=font_label)
-        overview = details.get("overview") or "No background summary description details currently available."
-        lines = text_wrap(overview, font_body, 450, draw)
+        overview = details.get("overview") or "No description summary available."
+        lines = text_wrap(overview, font_body, 640, draw)
         
         y_summary = 502
-        max_lines = 4  
-        for idx, line in enumerate(lines):
-            if idx >= max_lines or y_summary > 720:
-                draw.text((80, y_summary - 30), lines[max_lines-1] + "...", fill=(220, 222, 225), font=font_body)
-                break
-            if idx == max_lines - 1 and len(lines) > max_lines:
+        for idx, line in enumerate(lines[:4]):
+            if idx == 3 and len(lines) > 4:
                 draw.text((80, y_summary), line + "...", fill=(220, 222, 225), font=font_body)
             else:
                 draw.text((80, y_summary), line, fill=(220, 222, 225), font=font_body)
-            y_summary += 30
+            y_summary += 28
             
-        final_rgb = canvas.convert("RGB")
-        final_rgb.save(WALLPAPER_DIR / file_name, "JPEG", quality=100, subsampling=0)
+        canvas.convert("RGB").save(WALLPAPER_DIR / file_name, "JPEG", quality=100, subsampling=0)
         return True
     except Exception as e:
-        print(f"      ↳ Composition Failure: {e}")
+        print(f"      ↳ Composition failure occurred: {e}")
         return False
 
-# ─── RUN ENGINE ──────────────────────────────────────────────────────────────
+# ─── CORE PIPELINE RUNNER ────────────────────────────────────────────────────
 def run():
-    print(f"\n PixivyWalls High-Capacity Randomizer Engine Initiating...")
+    print("\n🎬 PixivyWalls Core Master Rewrite Running...")
     raw_execution_pool = []
     seen_ids = set()
 
     for lang in LANGUAGES:
-        print(f" 📂 Harvesting tracks for language: {lang['label']}")
+        print(f" 📂 Crawling metrics for channel track: {lang['label']}")
         for metric in METRICS:
             pool = gather_target_pool(metric, lang, target_count=15)
             added_count = 0
-            
             for item in pool:
                 item_id = item.get("id")
                 unique_key = f"{metric['type']}_{item_id}"
-                
-                if unique_key in seen_ids:
-                    continue
-                    
-                seen_ids.add(unique_key)
-                raw_execution_pool.append({
-                    "item_id": item_id,
-                    "item_type": metric["type"],
-                    "tag": metric["tag"],
-                    "lang": lang
-                })
-                added_count += 1
-            print(f"    └─ [{metric['tag']}]: Sourced {added_count} unique vectors")
+                if unique_key not in seen_ids:
+                    seen_ids.add(unique_key)
+                    raw_execution_pool.append({
+                        "item_id": item_id,
+                        "item_type": metric["type"],
+                        "tag": metric["tag"],
+                        "lang": lang
+                    })
+                    added_count += 1
+            print(f"    └─ [{metric['tag']}]: Extracted {added_count} unique items")
 
-    print(f"\n 🔀 Flattening matrices. Pool size: {len(raw_execution_pool)} elements. Running shuffle shift...")
+    print("\n🔀 Flattening matrices and executing random queue layout shuffle...")
     random.shuffle(raw_execution_pool)
 
     entries = []
     processed_count = 0
     
-    print(f"\n 🎬 Processing composition rendering queue...")
+    print(f"\n🎬 Processing rendering canvas loops for {len(raw_execution_pool)} elements...")
     for task in raw_execution_pool:
         details = fetch_details(task["item_type"], task["item_id"])
         time.sleep(0.1)
-        if not details:
-            continue
+        if not details: continue
 
-        detailed_genres = {g["id"] for g in details.get("genres", [])}
-        if detailed_genres.intersection(EXCLUDED_GENRE_IDS):
+        # Secondary filter guard for detailed items
+        if set([g["id"] for g in details.get("genres", [])]).intersection(EXCLUDED_GENRE_IDS):
             continue
 
         t_str = details.get("title") or details.get("name") or "media"
         safe_title = "".join([c for c in t_str if c.isalnum()]).lower()[:20]
         file_name = f"wall_{task['item_type']}_{task['item_id']}_{safe_title}.jpg"
         
-        create_composite_card(details, task["tag"], task["lang"], task["item_type"], file_name)
+        # Composite generation run
+        create_composite_card(details, task["item_type"], file_name)
         
+        # Unconditional decoupled JSON log write
         lbl_type = "Movie" if task["item_type"] == "movie" else "Series"
         entries.append({
             "location": f"{lbl_type} · {task['lang']['label']} · {task['tag']}",
             "title": f"{t_str}",
-            "author": task["lang"]["label"],
+            "author": task['lang']['label'],
             "url_img": f"https://unableeludemotto.github.io/PixivyWalls/images/{file_name}"
         })
         processed_count += 1
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(entries, f, ensure_ascii=False, indent=2)
-    print(f"🎉 Compilation complete! Composed {processed_count} scripted layout vectors into wallpapers.json successfully.")
+    print(f"\n🎉 Generation success! Compiled {processed_count} cards cleanly into endpoints.")
 
 if __name__ == "__main__":
     run()
