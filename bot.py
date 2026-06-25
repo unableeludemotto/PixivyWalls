@@ -165,18 +165,24 @@ def create_composite_card(details, category, lang, item_type, file_name):
         elif item_type == "tv" and details.get("episode_run_time"):
             runtime = f"{details['episode_run_time'][0]} min"
 
-        # LOGO PROCESSING
+        # ─── ADVANCED GRAPHICAL TITLE LOGO SELECTION ENGINE ──────────────────
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
         if logos:
-            en_logos = [l for l in logos if l.get("iso_639_1") == "en" and l.get("file_path", "").endswith(".png")]
-            if not en_logos:
-                en_logos = [l for l in logos if l.get("file_path", "").endswith(".png")]
+            # 1. Gather English logos first
+            target_logos = [l for l in logos if l.get("iso_639_1") == "en" and l.get("file_path", "").endswith(".png")]
+            
+            # 2. Fall back to any original localized graphic logo if English isn't uploaded
+            if not target_logos:
+                target_logos = [l for l in logos if l.get("file_path", "").endswith(".png")]
                 
-            if en_logos:
+            if target_logos:
                 try:
-                    logo_path = en_logos[0]["file_path"]
+                    # Sort array by TMDB community vote average to fetch the best-looking style
+                    target_logos.sort(key=lambda x: x.get("vote_average", 0), reverse=True)
+                    
+                    logo_path = target_logos[0]["file_path"]
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
@@ -188,6 +194,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
                 except:
                     pass
 
+        # Text Fallback if absolutely no logo image exists on record
         if not logo_drawn:
             draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
         
