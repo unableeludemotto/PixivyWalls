@@ -1,6 +1,6 @@
 """
 PixivyWalls Engine
-===================================================
+========================================
 Generates 1920x1080 standalone backdrop cards using transparent official logos, vibrant pill badges, and perfectly aligned text blocks. 
 Features native os-level file cleanup before executing main image logic passes.
 """
@@ -211,18 +211,18 @@ def create_composite_card(details, category, lang, item_type, file_name):
         y_cursor = 255
         genres = [g["name"] for g in details.get("genres", [])[:3]]
         if genres:
-            y_cursor += draw_stremio_row(combined, font_label, font_body, 90, y_cursor, "genres", genres)
+            y_cursor += draw_stremio_row(draw, font_label, font_body, 90, y_cursor, "genres", genres)
             
         credits = details.get("credits", {})
         directors = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"][:1]
         if item_type == "tv" and details.get("created_by"):
             directors = [c["name"] for c in details["created_by"]][:1]
         if directors:
-            y_cursor += draw_stremio_row(combined, font_label, font_body, 90, y_cursor, "directors", directors)
+            y_cursor += draw_stremio_row(draw, font_label, font_body, 90, y_cursor, "directors", directors)
             
         cast = [c["name"] for c in credits.get("cast", [])[:3]]
         if cast:
-            y_cursor += draw_stremio_row(combined, font_label, font_body, 90, y_cursor, "cast", cast)
+            y_cursor += draw_stremio_row(draw, font_label, font_body, 90, y_cursor, "cast", cast)
             
         y_cursor += 10
         draw.text((90, y_cursor), "SUMMARY", fill=(110, 110, 115), font=font_label)
