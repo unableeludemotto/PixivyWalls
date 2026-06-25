@@ -1,10 +1,10 @@
 """
-PixivyWalls Engine v40 — Symmetrical 35% Layout Profile
-========================================================
-- Allocates exactly 35% width (672px) for the solid left text column.
-- Allocates exactly 35% height (378px) for the solid bottom app icon shelf.
-- Automatically fits 16:9 artwork into a proportional 1248x702 box container.
-- Uses high-radius Gaussian Blur masks to ensure a flawless vignette bleed.
+PixivyWalls Engine v41 — Ultimate 35% Seamless Blend
+======================================================
+- Hardwires 35% width left text channel and 35% height bottom dock zone.
+- Implements hardware-smooth alpha blending arrays to permanently kill vertical bars.
+- Downscales typography sizes (Body 24px, Labels 16px) for an elegant studio look.
+- Handles proportional 16:9 scaling and smart ellipsis truncation perfectly.
 """
 
 import os
@@ -15,7 +15,7 @@ import requests
 from io import BytesIO
 from datetime import datetime, timezone
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFont
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 TMDB_API_KEY  = os.environ["TMDB_API_KEY"]
@@ -119,14 +119,14 @@ def create_composite_card(details, category, lang, item_type, file_name):
     try:
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 80)
-            font_meta  = ImageFont.truetype(font_path, 32)
-            font_label = ImageFont.truetype(font_path, 20)
-            font_body  = ImageFont.truetype(font_path, 28)
+            font_title = ImageFont.truetype(font_path, 76)
+            font_meta  = ImageFont.truetype(font_path, 30)
+            font_label = ImageFont.truetype(font_path, 16)  # Sleek, compact labels
+            font_body  = ImageFont.truetype(font_path, 24)  # High-readability compact body text
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
-        # 1. Base Layer: Solid Master TV Dark Background (1920x1080)
+        # 1. Base Canvas Layer: Solid Master TV Dark Background (1920x1080)
         canvas = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
         
         # 2. Download and process the backdrop asset
@@ -138,22 +138,41 @@ def create_composite_card(details, category, lang, item_type, file_name):
         target_h = 702
         scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
         
-        # Paste scaled backdrop into the top right quadrant area (X=672, Y=0)
-        canvas.alpha_composite(scaled_poster, dest=(672, 0))
+        # Create a matching alpha transparency surface for the scaled window block
+        poster_layer = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
+        poster_layer.paste(scaled_poster, (672, 0)) # Pinned right (X=672, Y=0)
         
-        # 3. Precision Edge Bleed Overlay Layer
-        shield = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
-        draw_s = ImageDraw.Draw(shield)
+        # 3. High-Precision Linear Alpha Mask (Fades the artwork edge natively into dark canvas)
+        alpha_mask = Image.new(mode="L", size=(1920, 1080), color=255)
+        draw_am = ImageDraw.Draw(alpha_mask)
         
-        # Draw the solid layout masks slightly expanded over the lines to allow blur bleeding
-        draw_s.rectangle([(0, 0), (740, 1080)], fill=(5, 6, 8, 255))   # Side dark text space bleed
-        draw_s.rectangle([(0, 640), (1920, 1080)], fill=(5, 6, 8, 255))  # Base app icons shelf bleed
+        # Solid Void Fills
+        draw_am.rectangle([(0, 0), (672, 1080)], fill=0)    # Mask out left 35% entirely
+        draw_am.rectangle([(0, 702), (1920, 1080)], fill=0) # Mask out bottom 35% entirely
         
-        # Soften edges into a seamless vignette blend using high-radius smoothing
-        blurred_shield = shield.filter(ImageFilter.GaussianBlur(radius=50))
+        # Flawless Horizontal Transition Channel (Bleeds smoothly from pixel 672 out to 920)
+        for x in range(672, 920):
+            factor = (x - 672) / (920 - 672)
+            alpha_val = int(255 * factor)
+            draw_am.line([(x, 0), (x, 702)], fill=alpha_val)
+            
+        # Flawless Vertical Transition Channel (Bleeds smoothly from pixel 550 down to 702)
+        for y in range(550, 702):
+            factor = 1.0 - ((y - 550) / (702 - 550))
+            alpha_val = int(255 * factor)
+            # Merge seamlessly into the active horizontal alpha state mapping
+            for x in range(672, 1920):
+                current_pixel_alpha = alpha_mask.getpixel((x, y))
+                final_alpha = min(current_pixel_alpha, alpha_val)
+                alpha_mask.putpixel((x, y), final_alpha)
+                
+        # Composite layers seamlessly using our advanced multi-direction mask channels
+        canvas = Image.composite(scaled_poster, canvas, alpha_mask.crop((672, 0, 1920, 702)))
         
-        canvas = Image.alpha_composite(canvas, blurred_shield)
-        draw = ImageDraw.Draw(canvas)
+        # Create a base drawable container handle layout map
+        final_img = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
+        final_img.paste(canvas, (672, 0))
+        draw = ImageDraw.Draw(final_img)
         
         # ─── TYPOGRAPHY GRAPHICS ENGINE ───────────────────────────────────────
         title = details.get("title") if item_type == "movie" else details.get("name")
@@ -183,7 +202,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         meta_line = "    •    ".join(meta_elements)
 
-        # Official Studio Logo Compositor (Safe Left Margin Column Alignment)
+        # Official Studio Logo Compositor (Centered inside left padding bounds)
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
@@ -199,20 +218,20 @@ def create_composite_card(details, category, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    max_w, max_h = 520, 150
+                    max_w, max_h = 500, 140
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
-                    canvas.alpha_composite(logo_img, dest=(70, 70))
+                    final_img.alpha_composite(logo_img, dest=(80, 80))
                     logo_drawn = True
                 except:
                     pass
 
         if not logo_drawn:
-            draw.text((70, 70), title, fill=(255, 255, 255), font=font_title)
+            draw.text((80, 80), title, fill=(255, 255, 255), font=font_title)
         
-        draw.text((70, 240), meta_line, fill=(245, 245, 250), font=font_meta)
+        draw.text((80, 240), meta_line, fill=(245, 245, 250), font=font_meta)
         
-        # Absolute Grid Spacing Layout (Text row width channel constrained inside the 35% width boundary)
+        # Absolute Grid Spacing Layout (Wider, highly legible text budget lanes)
         genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
         credits = details.get("credits", {})
         
@@ -224,39 +243,39 @@ def create_composite_card(details, category, lang, item_type, file_name):
         cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
         
         # Genres
-        draw.text((70, 310), "GENRES", fill=(160, 163, 168), font=font_label)
-        draw.text((70, 338), genres, fill=(245, 245, 250), font=font_body)
+        draw.text((80, 310), "GENRES", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 334), genres, fill=(245, 245, 250), font=font_body)
         
         # Directors
-        draw.text((70, 405), "DIRECTORS", fill=(160, 163, 168), font=font_label)
-        draw.text((70, 433), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
+        draw.text((80, 400), "DIRECTORS", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 424), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
         
         # Cast
-        draw.text((70, 500), "CAST", fill=(160, 163, 168), font=font_label)
-        draw.text((70, 528), cast, fill=(245, 245, 250), font=font_body)
+        draw.text((80, 490), "CAST", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 514), cast, fill=(245, 245, 250), font=font_body)
         
         # Summary
-        draw.text((70, 600), "SUMMARY", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 580), "SUMMARY", fill=(160, 163, 168), font=font_label)
         
         overview = details.get("overview") or "No background summary description details currently available."
-        lines = text_wrap(overview, font_body, 540, draw)
+        lines = text_wrap(overview, font_body, 530, draw)
         
-        y_summary = 628
-        max_lines = 2  # Clean text budget to stay balanced inside the remaining vertical quadrant bounds
+        y_summary = 604
+        max_lines = 2
         
         for idx, line in enumerate(lines):
-            if idx >= max_lines or y_summary > 680:
-                draw.text((70, y_summary - 36), lines[max_lines-1] + "...", fill=(220, 222, 225), font=font_body)
+            if idx >= max_lines or y_summary > 660:
+                draw.text((80, y_summary - 32), lines[max_lines-1] + "...", fill=(220, 222, 225), font=font_body)
                 break
                 
             if idx == max_lines - 1 and len(lines) > max_lines:
-                draw.text((70, y_summary), line + "...", fill=(220, 222, 225), font=font_body)
+                draw.text((80, y_summary), line + "...", fill=(220, 222, 225), font=font_body)
             else:
-                draw.text((70, y_summary), line, fill=(220, 222, 225), font=font_body)
+                draw.text((80, y_summary), line, fill=(220, 222, 225), font=font_body)
                 
-            y_summary += 36
+            y_summary += 32
             
-        final_rgb = canvas.convert("RGB")
+        final_rgb = final_img.convert("RGB")
         final_rgb.save(
             WALLPAPER_DIR / file_name, 
             "JPEG", 
