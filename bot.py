@@ -1,8 +1,8 @@
 """
 PixivyWalls Engine
 ======================================================
-Eliminates blocky pills, replaces broken emojis, automatically filters out N/A data,
-and forces 100% uncompressed text rendering for crystal-clear TV couch legibility.
+Restores the spacious, vertical row structure with large, high-readability fonts.
+Metadata elements are rendered as pure comma-separated text strings.
 """
 
 import os
@@ -27,7 +27,7 @@ OUTPUT_FILE   = OUTPUT_DIR / "wallpapers.json"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 def cleanup_old_assets():
-    print("清理 🧹 Cleaning up legacy movie wallpaper asset directories...")
+    print("🧹 Cleaning up legacy movie wallpaper asset directories...")
     if WALLPAPER_DIR.exists():
         try:
             shutil.rmtree(WALLPAPER_DIR)
@@ -53,7 +53,7 @@ CATEGORIES = [
     {"type": "movie", "label": "Movie", "endpoint": "movie/top_rated",     "tag": "All-Time Top Rated"},
     {"type": "tv",    "label": "Series", "endpoint": "trending/tv/week",    "tag": "Trending"},
     {"type": "tv",    "label": "Series", "endpoint": "tv/popular",          "tag": "Popular"},
-    {"type": "tv",    "label": "Series", "github-actions": "tv/top_rated",  "tag": "All-Time Top Rated"},
+    {"type": "tv",    "label": "Series", "endpoint": "tv/top_rated",        "tag": "All-Time Top Rated"},
 ]
 
 # ─── HELPERS ─────────────────────────────────────────────────────────────────
@@ -108,6 +108,19 @@ def text_wrap(text, font, max_width, draw):
         lines.append(' '.join(current_line))
     return lines
 
+def draw_clean_text_row(draw, label_font, body_font, start_x, y, label, items):
+    if not items:
+        return 0
+        
+    # Section Header Label (Slate Gray)
+    draw.text((start_x, y), label.upper(), fill=(160, 163, 168), font=label_font)
+    
+    # Comma-Separated Core Text (High-contrast Off-White)
+    text_string = ", ".join(items)
+    draw.text((start_x, y + 28), text_string, fill=(245, 245, 250), font=body_font)
+    
+    return 74
+
 # ─── COMPOSITOR ENGINE ───────────────────────────────────────────────────────
 def create_composite_card(details, category, lang, item_type, file_name):
     backdrop_path = details.get("backdrop_path")
@@ -117,10 +130,10 @@ def create_composite_card(details, category, lang, item_type, file_name):
     try:
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 76)
-            font_meta  = ImageFont.truetype(font_path, 28)
-            font_label = ImageFont.truetype(font_path, 20)
-            font_body  = ImageFont.truetype(font_path, 24)
+            font_title = ImageFont.truetype(font_path, 82)
+            font_meta  = ImageFont.truetype(font_path, 32)
+            font_label = ImageFont.truetype(font_path, 22)
+            font_body  = ImageFont.truetype(font_path, 28)
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
@@ -129,163 +142,4 @@ def create_composite_card(details, category, lang, item_type, file_name):
         base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
         
         overlay = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
-        draw_ov = ImageDraw.Draw(overlay)
-        
-        for y_pos in range(1080):
-            for x_pos in range(1920):
-                x_factor = (1.0 - (x_pos / 1100)**1.3) if x_pos <= 1100 else 0
-                y_factor = (y_pos / 1080)**2.5
-                
-                alpha = int(240 * max(x_factor, y_factor))
-                if alpha > 240: alpha = 240
-                if alpha < 0: alpha = 0
-                
-                if alpha > 0:
-                    draw_ov.point((x_pos, y_pos), fill=(6, 6, 8, alpha))
-            
-        combined = Image.alpha_composite(base_img, overlay).convert("RGBA")
-        draw = ImageDraw.Draw(combined)
-        
-        title = details.get("title") if item_type == "movie" else details.get("name")
-        if not title:
-            title = "Unknown"
-            
-        release_field = "release_date" if item_type == "movie" else "first_air_date"
-        year = (details.get(release_field) or "N/A")[:4]
-        
-        meta_elements = []
-        if item_type == "tv":
-            seasons_count = details.get("number_of_seasons", 0)
-            if seasons_count > 0:
-                lbl = f"{seasons_count} Season" if seasons_count == 1 else f"{seasons_count} Seasons"
-                meta_elements.append(lbl)
-        else:
-            runtime = details.get("runtime", 0)
-            if runtime > 0:
-                meta_elements.append(f"{runtime} min")
-                
-        if year and year != "N/A":
-            meta_elements.append(year)
-            
-        rating = details.get("vote_average", 0.0)
-        if rating > 0.0:
-            meta_elements.append(f"★ {rating:.1f} IMDB")
-            
-        meta_line = "    •    ".join(meta_elements)
-
-        # 1. LOGO GENERATION
-        logo_drawn = False
-        logos = details.get("images", {}).get("logos", [])
-        
-        if logos:
-            target_logos = [l for l in logos if l.get("iso_639_1") == "en" and l.get("file_path", "").endswith(".png")]
-            if not target_logos:
-                target_logos = [l for l in logos if l.get("file_path", "").endswith(".png")]
-                
-            if target_logos:
-                try:
-                    target_logos.sort(key=lambda x: x.get("vote_average", 0), reverse=True)
-                    logo_path = target_logos[0]["file_path"]
-                    logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
-                    logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
-                    
-                    max_w, max_h = 650, 160
-                    logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
-                    
-                    combined.alpha_composite(logo_img, dest=(90, 80))
-                    logo_drawn = True
-                except:
-                    pass
-
-        if not logo_drawn:
-            draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
-        
-        draw.text((90, 260), meta_line, fill=(240, 240, 245), font=font_meta)
-        
-        # 2. METADATA ROWS
-        genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
-        credits = details.get("credits", {})
-        
-        directors_list = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"]
-        directors = ", ".join(directors_list[:1])
-        if item_type == "tv" and details.get("created_by"):
-            directors = ", ".join([c["name"] for c in details["created_by"]][:1])
-            
-        cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
-        
-        y_cursor = 315
-        if genres:
-            draw.text((90, y_cursor), f"GENRES:  {genres}", fill=(212, 175, 55), font=font_label)
-            y_cursor += 35
-        if directors:
-            draw.text((90, y_cursor), f"DIRECTOR:  {directors}", fill=(212, 175, 55), font=font_label)
-            y_cursor += 35
-        if cast:
-            draw.text((90, y_cursor), f"CAST:  {cast}", fill=(212, 175, 55), font=font_label)
-            y_cursor += 45
-            
-        # 3. PLOT SUMMARY
-        draw.text((90, y_cursor), "SUMMARY", fill=(212, 175, 55), font=font_label)
-        
-        overview = details.get("overview") or "No background summary description details currently available."
-        y_cursor += 30
-        lines = text_wrap(overview, font_body, 860, draw)
-        
-        for line in lines[:3]:
-            if y_cursor > 650:
-                break
-            draw.text((90, y_cursor), line, fill=(245, 245, 250), font=font_body)
-            y_cursor += 34
-            
-        final_rgb = combined.convert("RGB")
-        final_rgb.save(WALLPAPER_DIR / file_name, "JPEG", quality=100, subsampling=0)
-        return f"images/{file_name}"
-    except Exception as e:
-        print(f"      ↳ Exception: {e}")
-        return None
-
-def run():
-    print(f"\n PixivyWalls Stremio-Pro Engine Initiating...")
-    seen_ids = set()
-    entries  = []
-
-    for lang in LANGUAGES:
-        print(f"  Language: {lang['label']}")
-        for category in CATEGORIES:
-            items = fetch_items(category, lang)
-            time.sleep(0.1)
-
-            added = 0
-            for item in items:
-                item_id   = item.get("id")
-                item_type = category["type"]
-                if item_id in seen_ids: continue
-
-                details = fetch_details(item_type, item_id)
-                time.sleep(0.1)
-                if not details: continue
-
-                t_str = details.get("title") or details.get("name") or "media"
-                safe_title = "".join([c for c in t_str if c.isalnum()]).lower()[:20]
-                file_name = f"wall_{item_type}_{item_id}_{safe_title}.jpg"
-                
-                img_relative_path = create_composite_card(details, category, lang, item_type, file_name)
-                
-                if img_relative_path:
-                    entries.append({
-                        "location": f"{category['label']} · {lang['label']} · {category['tag']}",
-                        "title": f"{details.get('title') if item_type == 'movie' else details.get('name')}",
-                        "author": lang["label"],
-                        "url_img": f"https://unableeludemotto.github.io/PixivyWalls/{img_relative_path}"
-                    })
-                    seen_ids.add(item_id)
-                    added += 1
-
-            if added > 0:
-                print(f"    └─ [{category['label']} - {category['tag']}]: Built +{added} vectors")
-
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(entries, f, ensure_ascii=False, indent=2)
-
-if __name__ == "__main__":
-    run()
+        draw_ov = ImageDraw
