@@ -1,9 +1,9 @@
 """
-PixivyWalls Engine
-==========================================================
-- Implements strict absolute vertical separation zones to eliminate text overlapping.
-- Fixes framed TV container bounding profiles (Left & Bottom Anchors).
-- Drops all icon/star glyph configurations to cleanly format "IMDB: 6.1".
+PixivyWalls Engine v35 — The Perfect Hybrid Studio Layout
+=========================================================
+- Keeps our absolute text & logo grid system for perfect line spacing.
+- Uses the organic Subreddit-style curved oval mask for the artwork.
+- Guarantees a solid black bottom 25% zone for clean TV app icons.
 """
 
 import os
@@ -11,6 +11,7 @@ import json
 import time
 import shutil
 import requests
+import math
 from io import BytesIO
 from datetime import datetime, timezone
 from pathlib import Path
@@ -118,44 +119,55 @@ def create_composite_card(details, category, lang, item_type, file_name):
     try:
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 82)
+            font_title = ImageFont.truetype(font_path, 80)
             font_meta  = ImageFont.truetype(font_path, 32)
-            font_label = ImageFont.truetype(font_path, 20)  # Smaller, clean subheaders
-            font_body  = ImageFont.truetype(font_path, 28)  # Sharp, easy-to-read content text
+            font_label = ImageFont.truetype(font_path, 20)
+            font_body  = ImageFont.truetype(font_path, 28)
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
+        # 1. Download original full-frame poster asset
         img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
         base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
         base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
         
-        # Dual Vignette Pass (Left-hand Text Shield + Bottom Dock Anchor Mask)
+        # 2. Re-engineer the blend mask with absolute left & bottom solid voids
         overlay = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
         draw_ov = ImageDraw.Draw(overlay)
         
+        # Curved spotlight window dimensions
+        center_x = 1350
+        center_y = 405  # Center point within the upper 75% quadrant
+        max_radius = 650
+        
         for y_pos in range(1080):
             for x_pos in range(1920):
-                # Left Shadow Profile
-                if x_pos <= 280:
-                    alpha_x = 245
-                elif x_pos <= 750:
-                    alpha_x = int(245 * (1.0 - ((x_pos - 280) / 470)))
-                else:
-                    alpha_x = 0
+                # Safe Left 40% Block: Permanent flat dark void for our custom layout text
+                if x_pos <= 768:
+                    draw_ov.point((x_pos, y_pos), fill=(5, 6, 8, 255))
+                    continue
+                # Safe Bottom 25% Block: Permanent flat dark void for your TV app icons row
+                if y_pos >= 810:
+                    draw_ov.point((x_pos, y_pos), fill=(5, 6, 8, 255))
+                    continue
+                    
+                # Curved radial distance calculation for organic feather boundaries
+                distance = math.sqrt((x_pos - center_x)**2 + (y_pos - center_y)**2)
                 
-                # Bottom Shadow Profile
-                if y_pos >= 800:
-                    alpha_y = int(210 * ((y_pos - 800) / 280))
+                if distance < 200:
+                    alpha = 0  # Unaltered clear image pocket zone
+                elif distance < max_radius:
+                    alpha = int(255 * ((distance - 200) / (max_radius - 200)))
                 else:
-                    alpha_y = 0
-                
-                final_alpha = max(alpha_x, alpha_y)
-                if final_alpha > 0:
-                    draw_ov.point((x_pos, y_pos), fill=(6, 7, 10, final_alpha))
+                    alpha = 255
+                    
+                if alpha > 0:
+                    draw_ov.point((x_pos, y_pos), fill=(5, 6, 8, alpha))
             
         combined = Image.alpha_composite(base_img, overlay).convert("RGBA")
         draw = ImageDraw.Draw(combined)
         
+        # ─── TYPOGRAPHY GRAPHICS ENGINE ───────────────────────────────────────
         title = details.get("title") if item_type == "movie" else details.get("name")
         if not title:
             title = "Unknown"
@@ -179,12 +191,11 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         rating = details.get("vote_average", 0.0)
         if rating > 0.0:
-            # Replaced all star/bullet emojis with clear, flat text formatting
             meta_elements.append(f"IMDB: {rating:.1f}")
             
         meta_line = "    •    ".join(meta_elements)
 
-        # 1. LOGO COMPOSITOR
+        # Custom Logo / Title Compositor (Pinned within the flat 40% margin area)
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
@@ -200,20 +211,20 @@ def create_composite_card(details, category, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    max_w, max_h = 620, 170
+                    max_w, max_h = 580, 160
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
-                    combined.alpha_composite(logo_img, dest=(90, 80))
+                    combined.alpha_composite(logo_img, dest=(80, 80))
                     logo_drawn = True
                 except:
                     pass
 
         if not logo_drawn:
-            draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
+            draw.text((80, 80), title, fill=(255, 255, 255), font=font_title)
         
-        draw.text((90, 270), meta_line, fill=(245, 245, 250), font=font_meta)
+        draw.text((80, 260), meta_line, fill=(245, 245, 250), font=font_meta)
         
-        # 2. FIXED ABSOLUTE GRID SYSTEM (Stops overlaps completely)
+        # Absolute Separation Layout (Restricted to a high-readability text boundary of 640px)
         genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
         credits = details.get("credits", {})
         
@@ -224,30 +235,30 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
         
-        # Genres Segment
-        draw.text((90, 340), "GENRES", fill=(160, 163, 168), font=font_label)
-        draw.text((90, 368), genres, fill=(245, 245, 250), font=font_body)
+        # Genres
+        draw.text((80, 330), "GENRES", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 358), genres, fill=(245, 245, 250), font=font_body)
         
-        # Directors Segment
-        draw.text((90, 440), "DIRECTORS", fill=(160, 163, 168), font=font_label)
-        draw.text((90, 468), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
+        # Directors
+        draw.text((80, 425), "DIRECTORS", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 453), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
         
-        # Cast Segment
-        draw.text((90, 540), "CAST", fill=(160, 163, 168), font=font_label)
-        draw.text((90, 568), cast, fill=(245, 245, 250), font=font_body)
+        # Cast
+        draw.text((80, 520), "CAST", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 548), cast, fill=(245, 245, 250), font=font_body)
         
-        # Summary Segment
-        draw.text((90, 650), "SUMMARY", fill=(160, 163, 168), font=font_label)
+        # Summary
+        draw.text((80, 625), "SUMMARY", fill=(160, 163, 168), font=font_label)
         
         overview = details.get("overview") or "No background summary description details currently available."
-        lines = text_wrap(overview, font_body, 820, draw)
+        lines = text_wrap(overview, font_body, 640, draw)
         
-        y_summary = 678
-        for line in lines[:3]:
-            if y_summary > 790:
+        y_summary = 653
+        for line in lines:
+            if y_summary > 785:  # Safe breaking cutoff point right before hitting the app icon shelf
                 break
-            draw.text((90, y_summary), line, fill=(220, 222, 225), font=font_body)
-            y_summary += 38
+            draw.text((80, y_summary), line, fill=(220, 222, 225), font=font_body)
+            y_summary += 36
             
         final_rgb = combined.convert("RGB")
         final_rgb.save(
