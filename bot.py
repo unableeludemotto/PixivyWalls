@@ -142,4 +142,166 @@ def create_composite_card(details, category, lang, item_type, file_name):
         base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
         
         overlay = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
-        draw_ov = ImageDraw
+        draw_ov = ImageDraw.Draw(overlay)
+        
+        for y_pos in range(1080):
+            for x_pos in range(1920):
+                x_factor = (1.0 - (x_pos / 1150)**1.3) if x_pos <= 1150 else 0
+                y_factor = (y_pos / 1080)**2.5
+                
+                alpha = int(245 * max(x_factor, y_factor))
+                if alpha > 245: alpha = 245
+                if alpha < 0: alpha = 0
+                
+                if alpha > 0:
+                    draw_ov.point((x_pos, y_pos), fill=(6, 6, 8, alpha))
+            
+        combined = Image.alpha_composite(base_img, overlay).convert("RGBA")
+        draw = ImageDraw.Draw(combined)
+        
+        title = details.get("title") if item_type == "movie" else details.get("name")
+        if not title:
+            title = "Unknown"
+            
+        release_field = "release_date" if item_type == "movie" else "first_air_date"
+        year = (details.get(release_field) or "N/A")[:4]
+        
+        meta_elements = []
+        if item_type == "tv":
+            seasons_count = details.get("number_of_seasons", 0)
+            if seasons_count > 0:
+                lbl = f"{seasons_count} Season" if seasons_count == 1 else f"{seasons_count} Seasons"
+                meta_elements.append(lbl)
+        else:
+            runtime = details.get("runtime", 0)
+            if runtime > 0:
+                meta_elements.append(f"{runtime} min")
+                
+        if year and year != "N/A":
+            meta_elements.append(year)
+            
+        rating = details.get("vote_average", 0.0)
+        if rating > 0.0:
+            meta_elements.append(f"★ {rating:.1f} IMDB")
+            
+        meta_line = "    •    ".join(meta_elements)
+
+        # 1. LOGO COMPOSITOR
+        logo_drawn = False
+        logos = details.get("images", {}).get("logos", [])
+        
+        if logos:
+            target_logos = [l for l in logos if l.get("iso_639_1") == "en" and l.get("file_path", "").endswith(".png")]
+            if not target_logos:
+                target_logos = [l for l in logos if l.get("file_path", "").endswith(".png")]
+                
+            if target_logos:
+                try:
+                    target_logos.sort(key=lambda x: x.get("vote_average", 0), reverse=True)
+                    logo_path = target_logos[0]["file_path"]
+                    logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
+                    logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
+                    
+                    max_w, max_h = 650, 170
+                    logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
+                    
+                    combined.alpha_composite(logo_img, dest=(90, 80))
+                    logo_drawn = True
+                except:
+                    pass
+
+        if not logo_drawn:
+            draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
+        
+        draw.text((90, 270), meta_line, fill=(245, 245, 250), font=font_meta)
+        
+        # 2. SEPARATE ROWS FOR METADATA
+        genres = [g["name"] for g in details.get("genres", [])[:3]]
+        credits = details.get("credits", {})
+        
+        directors_list = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"]
+        directors = directors_list[:1]
+        if item_type == "tv" and details.get("created_by"):
+            directors = [c["name"] for c in details["created_by"]][:1]
+            
+        cast = [c["name"] for c in credits.get("cast", [])[:3]]
+        
+        y_cursor = 335
+        if genres:
+            y_cursor += draw_clean_text_row(draw, font_label, font_body, 90, y_cursor, "genres", genres)
+        if directors:
+            y_cursor += draw_clean_text_row(draw, font_label, font_body, 90, y_cursor, "directors", directors)
+        if cast:
+            y_cursor += draw_clean_text_row(draw, font_label, font_body, 90, y_cursor, "cast", cast)
+            
+        # 3. SUMMARY
+        y_cursor += 15
+        draw.text((90, y_cursor), "SUMMARY", fill=(160, 163, 168), font=font_label)
+        
+        overview = details.get("overview") or "No background summary description details currently available."
+        y_cursor += 32
+        lines = text_wrap(overview, font_body, 880, draw)
+        
+        for line in lines[:3]:
+            if y_cursor > 670:
+                break
+            draw.text((90, y_cursor), line, fill=(245, 245, 250), font=font_body)
+            y_cursor += 38
+            
+        final_rgb = combined.convert("RGB")
+        final_rgb.save(
+            WALLPAPER_DIR / file_name, 
+            "JPEG", 
+            quality=100, 
+            subsampling=0
+        )
+        return f"images/{file_name}"
+    except Exception as e:
+        print(f"      ↳ Exception: {e}")
+        return None
+
+def run():
+    print(f"\n PixivyWalls Stremio-Pro Engine Initiating...")
+    seen_ids = set()
+    entries  = []
+
+    for lang in LANGUAGES:
+        print(f"  Language: {lang['label']}")
+        for category in CATEGORIES:
+            items = fetch_items(category, lang)
+            time.sleep(0.1)
+
+            added = 0
+            for item in items:
+                item_id   = item.get("id")
+                item_type = category["type"]
+                if item_id in seen_ids: continue
+
+                details = fetch_details(item_type, item_id)
+                time.sleep(0.1)
+                if not details: continue
+
+                t_str = details.get("title") or details.get("name") or "media"
+                safe_title = "".join([c for c in t_str if c.isalnum()]).lower()[:20]
+                file_name = f"wall_{item_type}_{item_id}_{safe_title}.jpg"
+                
+                img_relative_path = create_composite_card(details, category, lang, item_type, file_name)
+                
+                if img_relative_path:
+                    entries.append({
+                        "location": f"{category['label']} · {lang['label']} · {category['tag']}",
+                        "title": f"{details.get('title') if item_type == 'movie' else details.get('name')}",
+                        "author": lang["label"],
+                        "url_img": f"https://unableeludemotto.github.io/PixivyWalls/{img_relative_path}"
+                    })
+                    seen_ids.add(item_id)
+                    added += 1
+
+            if added > 0:
+                print(f"    └─ [{category['label']} - {category['tag']}]: Built +{added} vectors")
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(entries, f, ensure_ascii=False, indent=2)
+
+if __name__ == "__main__":
+    run()
