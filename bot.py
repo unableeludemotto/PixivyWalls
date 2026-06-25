@@ -1,10 +1,10 @@
 """
-PixivyWalls Engine v56 — Refined Layout Master Edition
-======================================================
-- Reduces fallback text title size down to a compact 32pt.
-- Expands logo scale constraints to (650, 240) so studio branding prints much larger.
-- Retains the flawless full-canvas native gradient vignette (no vertical/horizontal lines).
-- Retains reality show exclusions, regional circuit breakers, and decoupled JSON generation.
+PixivyWalls Engine v58 — Symmetrical Proportional Vignette
+==========================================================
+- Implements the exact target plan: 60% image container (1152x648) pasted at (768,0).
+- Applies a matching 1152x648 alpha mask layer to ensure flawless edge drop-offs.
+- Reduces font typography layouts across titles (32pt), metadata (20pt), and body text (18pt).
+- Retains premium streaming watch provider guards, genre blocks, and decoupled JSON generation.
 """
 
 import os
@@ -59,6 +59,9 @@ METRICS = [
 # EXCLUSION GENRES: Reality (10764), Talk (10767), Soap (10766), News (10763), Documentary (99)
 EXCLUDED_GENRE_IDS = {99, 10763, 10764, 10766, 10767}
 
+# PREMIUM WATCH PROVIDERS: Netflix (8), Prime Video (119), Hotstar (122), JioCinema (220), SonyLIV (237)
+PREMIUM_PROVIDERS = "8|119|122|220|237"
+
 # ─── HELPERS ─────────────────────────────────────────────────────────────────
 def tmdb_get(endpoint: str, params: dict = {}) -> dict:
     url = f"{TMDB_BASE}/{endpoint}"
@@ -87,6 +90,9 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
         if lang["code"] != "en" or "discover" in endpoint:
             params["with_original_language"] = lang["code"]
             params["sort_by"] = "popularity.desc"
+            if "discover" in endpoint:
+                params["with_watch_providers"] = PREMIUM_PROVIDERS
+                params["watch_region"] = "IN"
             
         if metric["tag"] == "Current Year":
             if metric["type"] == "movie":
@@ -109,6 +115,8 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
                 params.pop("vote_count.gte", None)
                 params.pop("air_date.gte", None)
                 params["sort_by"] = "popularity.desc"
+                params["with_watch_providers"] = PREMIUM_PROVIDERS
+                params["watch_region"] = "IN"
                 
                 if "discover" not in endpoint:
                     res = tmdb_get(f"discover/{metric['type']}", params)
@@ -173,54 +181,43 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
     try:
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 32)  # FIXED: Reduced to a clean, elegant 32pt size
-            font_meta  = ImageFont.truetype(font_path, 26)
-            font_label = ImageFont.truetype(font_path, 15)
-            font_body  = ImageFont.truetype(font_path, 22)
+            font_title = ImageFont.truetype(font_path, 32)  # Compact 32pt Fallback Title
+            font_meta  = ImageFont.truetype(font_path, 20)  # Reduced to 20pt
+            font_label = ImageFont.truetype(font_path, 14)  
+            font_body  = ImageFont.truetype(font_path, 18)  # Reduced to 18pt for sleek layout paragraphs
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
-        # 1. Base Layer: Solid Master TV Dark Background (1920x1080)
+        # 1. Base Layer: Solid Master TV Canvas (1920x1080)
         canvas = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
         
-        # 2. Download and scale backdrop to exactly 60% widescreen (1152x648)
+        # 2. Download and scale backdrop to exactly 60% widescreen dimensions (1152x648)
         img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
         raw_poster = Image.open(BytesIO(img_res.content)).convert("RGBA")
         
         target_w, target_h = 1152, 648
         scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
         
-        # Create a full 1920x1080 positioning plane layer
-        poster_plane = Image.new("RGBA", (1920, 1080), (0, 0, 0, 0))
-        poster_plane.paste(scaled_poster, (768, 0))
+        # 3. Create a Local 1152x648 Mask Layer mapped perfectly to the image dimensions
+        local_mask = Image.new("L", (target_w, target_h), 255)
         
-        # 3. Full-Canvas Wide-Span Gradient Masking System
-        # Horizontal Blend Layer: Rotated 270 degrees for a clean left-to-right fade out
-        grad_h_raw = Image.linear_gradient("L").rotate(270)
-        gradient_h = grad_h_raw.resize((600, 1080), Image.Resampling.BICUBIC)
+        # Left Edge Fade: Smoothly transition from black to white across 450 pixels horizontally
+        grad_h = Image.linear_gradient("L").rotate(270).resize((450, target_h), Image.Resampling.BICUBIC)
+        local_mask.paste(grad_h, (0, 0))
+        draw_lm = ImageDraw.Draw(local_mask)
         
-        mask_master = Image.new("L", (1920, 1080), 255)
-        mask_master.paste(gradient_h, (550, 0))  # Fade starts smoothly inside the text void columns
+        # Bottom Edge Fade: Smoothly transition from white to black across 200 pixels vertically
+        grad_v = Image.linear_gradient("L").rotate(90).resize((target_w, 200), Image.Resampling.BICUBIC)
+        grad_v_inverted = ImageOps.invert(grad_v)
         
-        # Fill everything to the left of the transition with solid black void
-        draw_mm = ImageDraw.Draw(mask_master)
-        draw_mm.rectangle([(0, 0), (550, 1080)], fill=0)
+        local_mask_v = Image.new("L", (target_w, target_h), 255)
+        local_mask_v.paste(grad_v_inverted, (0, target_h - 200))
         
-        # Vertical Blend Layer: Rotated 90 degrees and inverted to fade cleanly into app shortcuts shelf
-        grad_v_raw = Image.linear_gradient("L").rotate(90)
-        gradient_v = ImageOps.invert(grad_v_raw.resize((1920, 300), Image.Resampling.BICUBIC))
+        # Combine the local horizontal and vertical fades cleanly
+        final_local_mask = ImageChops.darker(local_mask, local_mask_v)
         
-        mask_v = Image.new("L", (1920, 1080), 255)
-        mask_v.paste(gradient_v, (0, 348))  # Fade starts smoothly at Y=348 down to Y=648
-        
-        draw_mv = ImageDraw.Draw(mask_v)
-        draw_mv.rectangle([(0, 648), (1920, 1080)], fill=0)  # Solid black fill for lower shelf space
-        
-        # Mathematically combine the alpha masks
-        full_mask = ImageChops.darker(mask_master, mask_v)
-                
-        # Composite layers natively over full screen
-        canvas = Image.composite(poster_plane, canvas, full_mask)
+        # 4. Paste the 60% artwork using the direct image mask at coordinates (768, 0)
+        canvas.paste(scaled_poster, (768, 0), final_local_mask)
         draw = ImageDraw.Draw(canvas)
         
         # ─── TYPOGRAPHY GRAPHICS ENGINE ───────────────────────────────────────
@@ -261,7 +258,7 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{target_logos[0]['file_path']}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    # FIXED: Bounds expanded significantly so horizontal movie branding scales up much larger
+                    # Expanded bounding limits to maximize wide horizontal branding visibility
                     max_w, max_h = 650, 240
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
