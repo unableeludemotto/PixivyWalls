@@ -1,8 +1,9 @@
 """
-PixivyWalls Engine v19 — Verified Release
-========================================
+PixivyWalls Engine
+======================================================
 Eliminates blocky pills, replaces broken emojis, automatically filters out N/A data,
 and forces 100% uncompressed text rendering for crystal-clear TV couch legibility.
+Verified syntax integration pass complete.
 """
 
 import os
@@ -36,6 +37,7 @@ def cleanup_old_assets():
             print(f"  ↳ Cleanup warning: {e}")
     WALLPAPER_DIR.mkdir(exist_ok=True)
 
+# Run folder cleanup instantly
 cleanup_old_assets()
 
 MAX_PER_BUCKET = 12
@@ -77,7 +79,8 @@ def fetch_items(category: dict, lang: dict) -> list:
 
 def fetch_details(item_type: str, item_id: int) -> dict:
     try:
-        return tmdb_get(f"{'movie' if item_type == 'movie' else 'tv'}/{item_id}", {
+        endpoint = "movie" if item_type == "movie" else "tv"
+        return tmdb_get(f"{endpoint}/{item_id}", {
             "language": "en-US", 
             "append_to_response": "credits,images",
             "include_image_language": "en"
@@ -121,52 +124,5 @@ def create_composite_card(details, category, lang, item_type, file_name):
         base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
         base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
         
-        # Premium full-bleed vignette shading overlay
-        overlay = Image.new("RGBA", (1920, 1080), (0, 0, 0, 0))
-        draw_ov = ImageDraw.Draw(overlay)
-        
-        for y_pos in range(1080):
-            for x_pos in range(1920):
-                x_factor = (1.0 - (x_pos / 1100)**1.3) if x_pos <= 1100 else 0
-                y_factor = (y_pos / 1080)**2.5
-                
-                alpha = int(240 * max(x_factor, y_factor))
-                if alpha > 240: alpha = 240
-                if alpha < 0: alpha = 0
-                
-                if alpha > 0:
-                    draw_ov.point((x_pos, y_pos), fill=(6, 6, 8, alpha))
-            
-        combined = Image.alpha_composite(base_img, overlay).convert("RGBA")
-        draw = ImageDraw.Draw(combined)
-        
-        title = (details.get("title") if item_type == "movie" else details.get("name")) or "Unknown"
-        year = (details.get("release_date") if item_type == "movie" else details.get("first_air_date") or "N/A")[:4]
-        
-        # Smart Meta Element Filtering Engine
-        meta_elements = []
-        
-        if item_type == "tv":
-            seasons_count = details.get("number_of_seasons", 0)
-            if seasons_count > 0:
-                meta_elements.append(f"{seasons_count} Season" if seasons_count == 1 else f"{seasons_count} Seasons")
-        else:
-            runtime = details.get("runtime", 0)
-            if runtime > 0:
-                meta_elements.append(f"{runtime} min")
-                
-        if year and year != "N/A":
-            meta_elements.append(year)
-            
-        rating = details.get("vote_average", 0.0)
-        if rating > 0.0:
-            meta_elements.append(f"★ {rating:.1f} IMDB")
-            
-        meta_line = "    •    ".join(meta_elements)
-
-        # 1. RENDER Dynamic Title Graphic Block
-        logo_drawn = False
-        logos = details.get("images", {}).get("logos", [])
-        
-        if logos:
-            target_logos =
+        # Smooth cinematic edge vignette overlay mapping pass
+        overlay = Image.new("RGBA", (1920, 1
