@@ -1,10 +1,10 @@
 """
-PixivyWalls Engine v41 — Ultimate 35% Seamless Blend
+PixivyWalls Engine v45 — 25% Outward Fade Master
 ======================================================
-- Hardwires 35% width left text channel and 35% height bottom dock zone.
-- Implements hardware-smooth alpha blending arrays to permanently kill vertical bars.
-- Downscales typography sizes (Body 24px, Labels 16px) for an elegant studio look.
-- Handles proportional 16:9 scaling and smart ellipsis truncation perfectly.
+- Redefines artwork container bounds to exactly 25% scale (480x270).
+- Pins the proportional image into the top-right quadrant corner.
+- Uses a native alpha mask to bleed the dark spaces smoothly into the poster edges.
+- Integrates consolidated metadata tracks: Genres moved to the top row.
 """
 
 import os
@@ -119,60 +119,43 @@ def create_composite_card(details, category, lang, item_type, file_name):
     try:
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 76)
-            font_meta  = ImageFont.truetype(font_path, 30)
-            font_label = ImageFont.truetype(font_path, 16)  # Sleek, compact labels
-            font_body  = ImageFont.truetype(font_path, 24)  # High-readability compact body text
+            font_title = ImageFont.truetype(font_path, 68)
+            font_meta  = ImageFont.truetype(font_path, 26)
+            font_label = ImageFont.truetype(font_path, 15)
+            font_body  = ImageFont.truetype(font_path, 22)
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
-        # 1. Base Canvas Layer: Solid Master TV Dark Background (1920x1080)
+        # 1. Base Layer: Solid Master TV Dark Background (1920x1080)
         canvas = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
         
-        # 2. Download and process the backdrop asset
+        # 2. Download and scale backdrop to exactly 25% footprint size (480x270)
         img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
         raw_poster = Image.open(BytesIO(img_res.content)).convert("RGBA")
         
-        # Scale to EXACTLY 16:9 proportional container dimensions based on our 35% calculations
-        target_w = 1248
-        target_h = 702
+        target_w = 480
+        target_h = 270
         scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
         
-        # Create a matching alpha transparency surface for the scaled window block
-        poster_layer = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
-        poster_layer.paste(scaled_poster, (672, 0)) # Pinned right (X=672, Y=0)
-        
-        # 3. High-Precision Linear Alpha Mask (Fades the artwork edge natively into dark canvas)
-        alpha_mask = Image.new(mode="L", size=(1920, 1080), color=255)
+        # 3. Create a High-Precision Outward Alpha Mask directly mapping the 25% asset dimensions
+        alpha_mask = Image.new("L", (480, 270), 255)
         draw_am = ImageDraw.Draw(alpha_mask)
         
-        # Solid Void Fills
-        draw_am.rectangle([(0, 0), (672, 1080)], fill=0)    # Mask out left 35% entirely
-        draw_am.rectangle([(0, 702), (1920, 1080)], fill=0) # Mask out bottom 35% entirely
-        
-        # Flawless Horizontal Transition Channel (Bleeds smoothly from pixel 672 out to 920)
-        for x in range(672, 920):
-            factor = (x - 672) / (920 - 672)
-            alpha_val = int(255 * factor)
-            draw_am.line([(x, 0), (x, 702)], fill=alpha_val)
+        # Smooth left outward fade (Fades out seamlessly from pixel 0 to 140)
+        for x in range(140):
+            val = int(255 * (x / 140))
+            draw_am.line([(x, 0), (x, 270)], fill=val)
             
-        # Flawless Vertical Transition Channel (Bleeds smoothly from pixel 550 down to 702)
-        for y in range(550, 702):
-            factor = 1.0 - ((y - 550) / (702 - 550))
-            alpha_val = int(255 * factor)
-            # Merge seamlessly into the active horizontal alpha state mapping
-            for x in range(672, 1920):
-                current_pixel_alpha = alpha_mask.getpixel((x, y))
-                final_alpha = min(current_pixel_alpha, alpha_val)
-                alpha_mask.putpixel((x, y), final_alpha)
+        # Smooth bottom outward fade (Fades out seamlessly from pixel 150 down to 270)
+        for y in range(150, 270):
+            val = int(255 * (1.0 - ((y - 150) / (270 - 150))))
+            for x in range(480):
+                current = alpha_mask.getpixel((x, y))
+                draw_am.putpixel((x, y), min(current, val))
                 
-        # Composite layers seamlessly using our advanced multi-direction mask channels
-        canvas = Image.composite(scaled_poster, canvas, alpha_mask.crop((672, 0, 1920, 702)))
-        
-        # Create a base drawable container handle layout map
-        final_img = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
-        final_img.paste(canvas, (672, 0))
-        draw = ImageDraw.Draw(final_img)
+        # Paste the seamlessly masked 25% artwork into the absolute top-right quadrant corner (X=1440, Y=0)
+        canvas.paste(scaled_poster, (1440, 0), alpha_mask)
+        draw = ImageDraw.Draw(canvas)
         
         # ─── TYPOGRAPHY GRAPHICS ENGINE ───────────────────────────────────────
         title = details.get("title") if item_type == "movie" else details.get("name")
@@ -181,6 +164,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         release_field = "release_date" if item_type == "movie" else "first_air_date"
         year = (details.get(release_field) or "N/A")[:4]
+        genres = "/".join([g["name"] for g in details.get("genres", [])[:2]]) or "General"
         
         meta_elements = []
         if item_type == "tv":
@@ -196,13 +180,16 @@ def create_composite_card(details, category, lang, item_type, file_name):
         if year and year != "N/A":
             meta_elements.append(year)
             
+        if genres:
+            meta_elements.append(genres)
+            
         rating = details.get("vote_average", 0.0)
         if rating > 0.0:
             meta_elements.append(f"IMDB: {rating:.1f}")
             
         meta_line = "    •    ".join(meta_elements)
 
-        # Official Studio Logo Compositor (Centered inside left padding bounds)
+        # Official Studio Logo Compositor
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
@@ -218,10 +205,10 @@ def create_composite_card(details, category, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    max_w, max_h = 500, 140
+                    max_w, max_h = 480, 120
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
-                    final_img.alpha_composite(logo_img, dest=(80, 80))
+                    canvas.alpha_composite(logo_img, dest=(80, 80))
                     logo_drawn = True
                 except:
                     pass
@@ -229,12 +216,10 @@ def create_composite_card(details, category, lang, item_type, file_name):
         if not logo_drawn:
             draw.text((80, 80), title, fill=(255, 255, 255), font=font_title)
         
-        draw.text((80, 240), meta_line, fill=(245, 245, 250), font=font_meta)
+        draw.text((80, 220), meta_line, fill=(245, 245, 250), font=font_meta)
         
-        # Absolute Grid Spacing Layout (Wider, highly legible text budget lanes)
-        genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
+        # Absolute Info Columns (Extends across a massive 1200px width lane over pure black void)
         credits = details.get("credits", {})
-        
         directors_list = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"]
         directors = ", ".join(directors_list[:1])
         if item_type == "tv" and details.get("created_by"):
@@ -242,30 +227,26 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
         
-        # Genres
-        draw.text((80, 310), "GENRES", fill=(160, 163, 168), font=font_label)
-        draw.text((80, 334), genres, fill=(245, 245, 250), font=font_body)
+        # Directors Block
+        draw.text((80, 290), "DIRECTORS", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 312), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
         
-        # Directors
-        draw.text((80, 400), "DIRECTORS", fill=(160, 163, 168), font=font_label)
-        draw.text((80, 424), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
+        # Cast Block
+        draw.text((80, 375), "CAST", fill=(160, 163, 168), font=font_label)
+        draw.text((80, 397), cast, fill=(245, 245, 250), font=font_body)
         
-        # Cast
-        draw.text((80, 490), "CAST", fill=(160, 163, 168), font=font_label)
-        draw.text((80, 514), cast, fill=(245, 245, 250), font=font_body)
-        
-        # Summary
-        draw.text((80, 580), "SUMMARY", fill=(160, 163, 168), font=font_label)
+        # Summary Block with baseline truncation checks
+        draw.text((80, 460), "SUMMARY", fill=(160, 163, 168), font=font_label)
         
         overview = details.get("overview") or "No background summary description details currently available."
-        lines = text_wrap(overview, font_body, 530, draw)
+        lines = text_wrap(overview, font_body, 1200, draw)
         
-        y_summary = 604
-        max_lines = 2
+        y_summary = 482
+        max_lines = 4  # Expanded line capacity inside the roomy 75% height text zone
         
         for idx, line in enumerate(lines):
-            if idx >= max_lines or y_summary > 660:
-                draw.text((80, y_summary - 32), lines[max_lines-1] + "...", fill=(220, 222, 225), font=font_body)
+            if idx >= max_lines or y_summary > 640:
+                draw.text((80, y_summary - 30), lines[max_lines-1] + "...", fill=(220, 222, 225), font=font_body)
                 break
                 
             if idx == max_lines - 1 and len(lines) > max_lines:
@@ -273,9 +254,9 @@ def create_composite_card(details, category, lang, item_type, file_name):
             else:
                 draw.text((80, y_summary), line, fill=(220, 222, 225), font=font_body)
                 
-            y_summary += 32
+            y_summary += 30
             
-        final_rgb = final_img.convert("RGB")
+        final_rgb = canvas.convert("RGB")
         final_rgb.save(
             WALLPAPER_DIR / file_name, 
             "JPEG", 
