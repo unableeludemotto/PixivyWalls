@@ -2,7 +2,7 @@ name: PixivyWalls Bot Execution
 
 on:
   schedule:
-    - cron: "30 0 * * *"   # Run automatically every day at 6:30 AM IST (00:30 UTC)
+    - cron: "30 0 * * *"   # Runs automatically every day at 6:30 AM IST (00:30 UTC)
   workflow_dispatch:         # Manual Trigger Button
 
 permissions:
@@ -26,6 +26,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: 🅰️ Download Clean Font for Canvas Rendering
+        run: |
+          mkdir -p assets
+          curl -sL "https://github.com/googlefonts/roboto/raw/main/src/hinted/Roboto-Regular.ttf" -o assets/Roboto.ttf
+
       - name: 🤖 Execute Card Generation Composite Engine
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
@@ -37,7 +42,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/images/*.jpg docs/wallpapers.json
           
-          # Clean up old images that are no longer in active daily rotation tracking loops
+          # Clean up old images that are no longer in active daily rotation loops
           git clean -fd docs/images/ || true
           
           git diff --cached --quiet || git commit -m "chore: refresh composite info-cards $(date -u +'%Y-%m-%d %H:%M UTC') [skip ci]"
