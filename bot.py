@@ -1,31 +1,33 @@
 """
-PixivyWalls Bot
-=====================================
-Automated TMDB asset fetching for Projectivy Launcher (Overflight).
-Filters: English output formatting, global deduplication, strict landscape validation, 
-and NSFW exclusions. No vertical posters allowed!
+PixivyWalls Engine v5 — Image Compositor Edition
+==============================================
+Generates standalone 1920x1080 cinematic backdrop wallpapers with movie 
+metadata baked directly into the image canvas. Fully compatible with free tiers!
 """
 
 import os
 import json
 import time
 import requests
+from io import BytesIO
 from datetime import datetime, timezone
 from pathlib import Path
+from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 TMDB_API_KEY  = os.environ["TMDB_API_KEY"]
 TMDB_BASE     = "https://api.themoviedb.org/3"
 TMDB_IMG_BASE = "https://image.tmdb.org/t/p/original"
-TMDB_W500     = "https://image.tmdb.org/t/p/w500"
 
 OUTPUT_DIR    = Path("docs")
+WALLPAPER_DIR = OUTPUT_DIR / "images"
 OUTPUT_FILE   = OUTPUT_DIR / "wallpapers.json"
+
 OUTPUT_DIR.mkdir(exist_ok=True)
+WALLPAPER_DIR.mkdir(exist_ok=True)
 
 MAX_PER_BUCKET = 12
 
-# ─── LANGUAGES ───────────────────────────────────────────────────────────────
 LANGUAGES = [
     {"code": "en", "label": "English",   "flag": "🇬🇧"},
     {"code": "hi", "label": "Hindi",     "flag": "🇮🇳"},
@@ -33,7 +35,6 @@ LANGUAGES = [
     {"code": "ml", "label": "Malayalam", "flag": "🏴"},
 ]
 
-# ─── CATEGORIES ──────────────────────────────────────────────────────────────
 CATEGORIES = [
     {"type": "movie", "label": "Movie", "emoji": "🎬", "endpoint": "trending/movie/week", "tag": "Trending"},
     {"type": "movie", "label": "Movie", "emoji": "🎬", "endpoint": "movie/popular",       "tag": "Popular"},
@@ -43,7 +44,7 @@ CATEGORIES = [
     {"type": "tv",    "label": "Series", "emoji": "📺", "endpoint": "tv/top_rated",        "tag": "All-Time Top Rated"},
 ]
 
-# ─── HELPERS ─────────────────────────────────────────────────────────────────
+# ─── TMDB DATA EXTRACTORS ────────────────────────────────────────────────────
 def tmdb_get(endpoint: str, params: dict = {}) -> dict:
     url = f"{TMDB_BASE}/{endpoint}"
     p   = {"api_key": TMDB_API_KEY, **params}
@@ -52,134 +53,159 @@ def tmdb_get(endpoint: str, params: dict = {}) -> dict:
     return r.json()
 
 def fetch_items(category: dict, lang: dict) -> list:
-    # Skip All-Time Top Rated for Malayalam
     if category["tag"] == "All-Time Top Rated" and lang["code"] == "ml":
         return []
-
-    # Enforce English locale responses for text, exclude NSFW
     params = {"language": "en-US", "page": 1, "include_adult": "false"}
-    
     if lang["code"] != "en":
         params["with_original_language"] = lang["code"]
-
     try:
-        data = tmdb_get(category["endpoint"], params)
-        return data.get("results", [])[:MAX_PER_BUCKET]
-    except Exception as e:
-        print(f"  ✗ Fetch error ({category['endpoint']}, {lang['code']}): {e}")
+        return tmdb_get(category["endpoint"], params).get("results", [])[:MAX_PER_BUCKET]
+    except:
         return []
 
 def fetch_details(item_type: str, item_id: int) -> dict:
-    endpoint = f"{'movie' if item_type == 'movie' else 'tv'}/{item_id}"
     try:
-        return tmdb_get(endpoint, {
-            "language": "en-US",
-            "append_to_response": "credits"
-        })
-    except Exception as e:
-        print(f"  ✗ Detail fetch failed ({item_id}): {e}")
+        return tmdb_get(f"{'movie' if item_type == 'movie' else 'tv'}/{item_id}", {"language": "en-US", "append_to_response": "credits"})
+    except:
         return {}
 
-def fmt_runtime(mins) -> str:
-    if not mins: return "N/A"
-    h, m = divmod(int(mins), 60)
-    return f"{h}h {m}m" if h else f"{m}m"
+# ─── PILLOW IMAGE INFRASTRUCTURE COMPOSITOR ──────────────────────────────────
+def text_wrap(text, font, max_width, draw):
+    words = text.split(' ')
+    lines = []
+    current_line = []
+    for word in words:
+        test_line = ' '.join(current_line + [word])
+        bbox = draw.textbbox((0, 0), test_line, font=font)
+        if bbox[2] - bbox[0] <= max_width:
+            current_line.append(word)
+        else:
+            lines.append(' '.join(current_line))
+            current_line = [word]
+    if current_line:
+        lines.append(' '.join(current_line))
+    return lines
 
-def get_cast(credits: dict, n=5) -> str:
-    names = [c["name"] for c in credits.get("cast", [])[:n]]
-    return ", ".join(names) or "N/A"
-
-def get_director(credits: dict) -> str:
-    dirs = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"]
-    return ", ".join(dirs[:2]) or "N/A"
-
-def get_genres(details: dict) -> str:
-    names = [g["name"] for g in details.get("genres", [])[:4]]
-    return ", ".join(names) or "N/A"
-
-# ─── OVERFLIGHT JSON BUILDER ─────────────────────────────────────────────────
-def build_entry(details: dict, category: dict, lang: dict, item_type: str) -> dict | None:
-    if details.get("adult", False):
-        return None
-    
-    # STRICT LANDSCAPE CHECK: Must have backdrop_path. Ignore poster_path completely.
-    backdrop = details.get("backdrop_path")
-    if not backdrop:
+def create_composite_card(details, category, lang, item_type, file_name):
+    backdrop_path = details.get("backdrop_path")
+    if not backdrop_path or details.get("adult", False):
         return None
 
-    title    = details.get("title") if item_type == "movie" else details.get("name")
-    title    = title or "Unknown"
-    year     = (details.get("release_date") if item_type == "movie" else details.get("first_air_date") or "")[:4] or "N/A"
-    rating   = details.get("vote_average", 0)
-    credits  = details.get("credits", {})
-    author   = get_director(credits) if item_type == "movie" else "TMDB"
-    
-    display_title = f"{category['emoji']} {title} ({year}) ⭐ {rating:.1f}"
+    try:
+        # Download Raw Backdrop Widescreen Asset
+        img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
+        base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
+        
+        # Enforce True 16:9 1080p Canvas Target Dimensions
+        base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
+        
+        # Build Overlay Mask Layers (Dark Side-Fade Card Block)
+        overlay = Image.new("RGBA", (1920, 1080), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(overlay)
+        
+        # Draw Left-to-Right Alpha Gradient Overlay Block
+        for x in range(1200):
+            alpha = int(240 * (1.0 - (x / 1100)**1.8)) if x <= 1100 else 0
+            if alpha < 0: alpha = 0
+            draw.line([(x, 0), (x, 1080)], fill=(10, 10, 12, alpha))
+            
+        # Composite Base Assets Together
+        combined = Image.alpha_composite(base_img, overlay).convert("RGB")
+        draw = ImageDraw.Draw(combined)
+        
+        # Typography Metadata Parsing
+        title = (details.get("title") if item_type == "movie" else details.get("name")) or "Unknown Title"
+        year = (details.get("release_date") if item_type == "movie" else details.get("first_air_date") or "N/A")[:4]
+        rating = f"{details.get('vote_average', 0):.1f}"
+        
+        genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
+        cast_list = ", ".join([c["name"] for c in details.get("credits", {}).get("cast", [])[:4]]) or "N/A"
+        
+        director = "TMDB"
+        if item_type == "movie":
+            dirs = [c["name"] for c in details.get("credits", {}).get("crew", []) if c.get("job") == "Director"]
+            if dirs: director = dirs[0]
+            
+        overview = details.get("overview") or "No background synopsis information available."
 
-    return {
-        "location": f"{category['label']} · {lang['label']} · {category['tag']}",
-        "title":    display_title,
-        "author":   author if author != "N/A" else "TMDB",
-        "url_img":  f"{TMDB_IMG_BASE}{backdrop}"
-    }
+        # Typesetting Coordinates Engine (Fallback fonts inside Linux boxes default neatly)
+        try:
+            font_title = ImageFont.load_default(size=56)
+            font_meta  = ImageFont.load_default(size=24)
+            font_body  = ImageFont.load_default(size=22)
+        except:
+            font_title = font_meta = font_body = ImageFont.load_default()
 
-# ─── MAIN ENGINE ─────────────────────────────────────────────────────────────
+        # Render Text Passes
+        draw.text((90, 220), title.upper(), fill=(255, 255, 255), font=font_title)
+        
+        meta_string = f"🎞️ {genres}  •  📅 {year}  •  ⭐ {rating}/10"
+        draw.text((90, 310), meta_string, fill=(229, 9, 20), font=font_meta)
+        
+        crew_string = f"👥 Cast: {cast_list}\n🎬 Director/Source: {director}"
+        draw.text((90, 360), crew_string, fill=(180, 180, 180), font=font_body)
+        
+        # Paragraph Text Wrapping Wrapper
+        y_cursor = 450
+        lines = text_wrap(overview, font_body, 850, draw)
+        for line in lines[:8]:  # Contain block bounds safety clamp
+            draw.text((90, y_cursor), line, fill=(210, 210, 210), font=font_body)
+            y_cursor += 32
+            
+        # Save Flat Composite Asset File Link Output
+        combined.save(WALLPAPER_DIR / file_name, "JPEG", quality=92)
+        return f"images/{file_name}"
+    except Exception as e:
+        print(f"      ↳ Composite creation exception: {e}")
+        return None
+
+# ─── CORE PIPELINE ENGINE ────────────────────────────────────────────────────
 def run():
-    print(f"\n PixivyWalls Pipeline Launching...")
-    seen_ids = set() # Global deduplication tracking map
+    print(f"\n PixivyWalls Composite Studio Initializing...")
+    seen_ids = set()
     entries  = []
 
     for lang in LANGUAGES:
-        print(f"  {lang['flag']} Processing: {lang['label']}")
+        print(f"  {lang['flag']} Processing language: {lang['label']}")
         for category in CATEGORIES:
             items = fetch_items(category, lang)
-            time.sleep(0.2)
+            time.sleep(0.1)
 
             added = 0
             for item in items:
                 item_id   = item.get("id")
                 item_type = category["type"]
                 
-                # Global Duplicate Prevention: If already processed this item ID anywhere, skip it!
                 if item_id in seen_ids:
                     continue
 
                 details = fetch_details(item_type, item_id)
-                time.sleep(0.2)
+                time.sleep(0.1)
+                if not details: continue
 
-                if not details:
-                    continue
-
-                entry = build_entry(details, category, lang, item_type)
-                if entry:
-                    entries.append(entry)
-                    seen_ids.add(item_id) # Mark item ID as universally saved
+                # Generate clean unique safe naming tags
+                safe_title = "".join([c for c in (details.get("title") or details.get("name") or "media") if c.isalnum()]).lower()[:20]
+                file_name = f"wall_{item_type}_{item_id}_{safe_title}.jpg"
+                
+                img_relative_path = create_composite_card(details, category, lang, item_type, file_name)
+                
+                if img_relative_path:
+                    entries.append({
+                        "location": f"{category['label']} · {lang['label']} · {category['tag']}",
+                        "title": f"{category['emoji']} {details.get('title') if item_type == 'movie' else details.get('name')} ({lang['label']})",
+                        "author": lang["label"],
+                        "url_img": f"https://unableeludemotto.github.io/PixivyWalls/{img_relative_path}"
+                    })
+                    seen_ids.add(item_id)
                     added += 1
 
             if added > 0:
-                print(f"    └─ [{category['label']} - {category['tag']}]: Generated +{added} configurations")
+                print(f"    └─ [{category['label']} - {category['tag']}]: Built +{added} composite cards")
 
-    # Generate exact array required by Overflight
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(entries, f, ensure_ascii=False, indent=2)
-
-    # Generate full companion dataset architecture
-    output_full = {
-        "_info": {
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "total_wallpapers": len(entries),
-            "source": "TMDB via PixivyWalls Bot",
-            "languages": [l["label"] for l in LANGUAGES],
-            "github": "https://github.com/unableeludemotto/PixivyWalls"
-        },
-        "wallpapers": entries
-    }
-
-    meta_file = OUTPUT_DIR / "wallpapers_full.json"
-    with open(meta_file, "w", encoding="utf-8") as f:
-        json.dump(output_full, f, ensure_ascii=False, indent=2)
-
-    print(f"\n Pipeline Complete! Managed {len(entries)} unique landscape wallpaper links.\n")
+        
+    print(f"\n Master File Configuration Deployment Complete! Managed {len(entries)} cards.\n")
 
 if __name__ == "__main__":
     run()
