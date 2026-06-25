@@ -1,9 +1,10 @@
 """
-PixivyWalls Engine v35 — The Perfect Hybrid Studio Layout
-=========================================================
-- Keeps our absolute text & logo grid system for perfect line spacing.
-- Uses the organic Subreddit-style curved oval mask for the artwork.
-- Guarantees a solid black bottom 25% zone for clean TV app icons.
+PixivyWalls Engine v38 — Premium Blurred Edge Shield Edition
+============================================================
+- Confines original artwork strictly to Right 55% and Top 75% quadrant.
+- Implements a heavy Gaussian Blur alpha mask layer along the inner boundaries.
+- Completely eliminates color banding, creating a seamless vignette bleed.
+- Left 45% and Bottom 25% are pristine, absolute dark zones.
 """
 
 import os
@@ -11,11 +12,10 @@ import json
 import time
 import shutil
 import requests
-import math
 from io import BytesIO
 from datetime import datetime, timezone
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 TMDB_API_KEY  = os.environ["TMDB_API_KEY"]
@@ -126,46 +126,34 @@ def create_composite_card(details, category, lang, item_type, file_name):
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
-        # 1. Download original full-frame poster asset
+        # 1. Base Layer: Solid Master TV Dark Background (1920x1080)
+        canvas = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
+        
+        # 2. Artwork Layer: Proportional 55% Width / 75% Height Poster Container
         img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
-        base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
-        base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
+        raw_poster = Image.open(BytesIO(img_res.content)).convert("RGBA")
         
-        # 2. Re-engineer the blend mask with absolute left & bottom solid voids
-        overlay = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
-        draw_ov = ImageDraw.Draw(overlay)
+        target_w = 1056
+        target_h = 810
+        scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
         
-        # Curved spotlight window dimensions
-        center_x = 1350
-        center_y = 405  # Center point within the upper 75% quadrant
-        max_radius = 650
+        # Paste scaled backdrop cleanly into the upper right area (X=864, Y=0)
+        canvas.alpha_composite(scaled_poster, dest=(864, 0))
         
-        for y_pos in range(1080):
-            for x_pos in range(1920):
-                # Safe Left 40% Block: Permanent flat dark void for our custom layout text
-                if x_pos <= 768:
-                    draw_ov.point((x_pos, y_pos), fill=(5, 6, 8, 255))
-                    continue
-                # Safe Bottom 25% Block: Permanent flat dark void for your TV app icons row
-                if y_pos >= 810:
-                    draw_ov.point((x_pos, y_pos), fill=(5, 6, 8, 255))
-                    continue
-                    
-                # Curved radial distance calculation for organic feather boundaries
-                distance = math.sqrt((x_pos - center_x)**2 + (y_pos - center_y)**2)
-                
-                if distance < 200:
-                    alpha = 0  # Unaltered clear image pocket zone
-                elif distance < max_radius:
-                    alpha = int(255 * ((distance - 200) / (max_radius - 200)))
-                else:
-                    alpha = 255
-                    
-                if alpha > 0:
-                    draw_ov.point((x_pos, y_pos), fill=(5, 6, 8, alpha))
-            
-        combined = Image.alpha_composite(base_img, overlay).convert("RGBA")
-        draw = ImageDraw.Draw(combined)
+        # 3. Precision Blur Shield Overlay Layer (Creates the seamless bleed effect)
+        shield = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
+        draw_s = ImageDraw.Draw(shield)
+        
+        # Draw a hard layout shield block extending slightly over the boundaries
+        draw_s.rectangle([(0, 0), (940, 1080)], fill=(5, 6, 8, 255))   # Expands past left edge
+        draw_s.rectangle([(0, 750), (1920, 1080)], fill=(5, 6, 8, 255)) # Expands past bottom edge
+        
+        # Apply a heavy Gaussian Blur to turn the hard lines into a soft cinematic vignette bleed
+        blurred_shield = shield.filter(ImageFilter.GaussianBlur(radius=55))
+        
+        # Flatten the blurred bleed back onto the master canvas frame
+        canvas = Image.alpha_composite(canvas, blurred_shield)
+        draw = ImageDraw.Draw(canvas)
         
         # ─── TYPOGRAPHY GRAPHICS ENGINE ───────────────────────────────────────
         title = details.get("title") if item_type == "movie" else details.get("name")
@@ -195,7 +183,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         meta_line = "    •    ".join(meta_elements)
 
-        # Custom Logo / Title Compositor (Pinned within the flat 40% margin area)
+        # Official Studio Logo Compositor (Safe Left 45% Zone Alignment)
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
@@ -211,20 +199,20 @@ def create_composite_card(details, category, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    max_w, max_h = 580, 160
+                    max_w, max_h = 620, 160
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
-                    combined.alpha_composite(logo_img, dest=(80, 80))
+                    canvas.alpha_composite(logo_img, dest=(90, 80))
                     logo_drawn = True
                 except:
                     pass
 
         if not logo_drawn:
-            draw.text((80, 80), title, fill=(255, 255, 255), font=font_title)
+            draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
         
-        draw.text((80, 260), meta_line, fill=(245, 245, 250), font=font_meta)
+        draw.text((90, 260), meta_line, fill=(245, 245, 250), font=font_meta)
         
-        # Absolute Separation Layout (Restricted to a high-readability text boundary of 640px)
+        # Absolute Grid Spacing Layout (Text row path channel path width limited to 700px)
         genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
         credits = details.get("credits", {})
         
@@ -236,31 +224,39 @@ def create_composite_card(details, category, lang, item_type, file_name):
         cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
         
         # Genres
-        draw.text((80, 330), "GENRES", fill=(160, 163, 168), font=font_label)
-        draw.text((80, 358), genres, fill=(245, 245, 250), font=font_body)
+        draw.text((90, 330), "GENRES", fill=(160, 163, 168), font=font_label)
+        draw.text((90, 358), genres, fill=(245, 245, 250), font=font_body)
         
         # Directors
-        draw.text((80, 425), "DIRECTORS", fill=(160, 163, 168), font=font_label)
-        draw.text((80, 453), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
+        draw.text((90, 425), "DIRECTORS", fill=(160, 163, 168), font=font_label)
+        draw.text((90, 453), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
         
         # Cast
-        draw.text((80, 520), "CAST", fill=(160, 163, 168), font=font_label)
-        draw.text((80, 548), cast, fill=(245, 245, 250), font=font_body)
+        draw.text((90, 520), "CAST", fill=(160, 163, 168), font=font_label)
+        draw.text((90, 548), cast, fill=(245, 245, 250), font=font_body)
         
         # Summary
-        draw.text((80, 625), "SUMMARY", fill=(160, 163, 168), font=font_label)
+        draw.text((90, 625), "SUMMARY", fill=(160, 163, 168), font=font_label)
         
         overview = details.get("overview") or "No background summary description details currently available."
-        lines = text_wrap(overview, font_body, 640, draw)
+        lines = text_wrap(overview, font_body, 700, draw)
         
         y_summary = 653
-        for line in lines:
-            if y_summary > 785:  # Safe breaking cutoff point right before hitting the app icon shelf
+        max_lines = 3
+        
+        for idx, line in enumerate(lines):
+            if idx >= max_lines or y_summary > 750:
+                draw.text((90, y_summary - 36), lines[max_lines-1] + "...", fill=(220, 222, 225), font=font_body)
                 break
-            draw.text((80, y_summary), line, fill=(220, 222, 225), font=font_body)
+                
+            if idx == max_lines - 1 and len(lines) > max_lines:
+                draw.text((90, y_summary), line + "...", fill=(220, 222, 225), font=font_body)
+            else:
+                draw.text((90, y_summary), line, fill=(220, 222, 225), font=font_body)
+                
             y_summary += 36
             
-        final_rgb = combined.convert("RGB")
+        final_rgb = canvas.convert("RGB")
         final_rgb.save(
             WALLPAPER_DIR / file_name, 
             "JPEG", 
