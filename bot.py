@@ -1,8 +1,9 @@
 """
 PixivyWalls Engine
-========================================
-Generates 1920x1080 standalone backdrop cards using transparent official logos, vibrant pill badges, and perfectly aligned text blocks. 
-Features native os-level file cleanup before executing main image logic passes.
+============================================================
+Generates 1920x1080 standalone backdrop cards mimicking premium TV launcher interfaces.
+Features dynamically scaled title logos, soft pill badges, high-readability labels,
+and contextual TV series season trackers.
 """
 
 import os
@@ -26,9 +27,7 @@ OUTPUT_FILE   = OUTPUT_DIR / "wallpapers.json"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-# ─── NATIVE OS AUTO-CLEANUP ──────────────────────────────────────────────────
 def cleanup_old_assets():
-    """Safely deletes old wallpaper images directory to prevent repository bloat"""
     print("🧹 Cleaning up legacy movie wallpaper asset directories...")
     if WALLPAPER_DIR.exists():
         try:
@@ -38,16 +37,15 @@ def cleanup_old_assets():
             print(f"  ↳ Cleanup warning: {e}")
     WALLPAPER_DIR.mkdir(exist_ok=True)
 
-# Run cleanup instantly on launch
 cleanup_old_assets()
 
 MAX_PER_BUCKET = 12
 
 LANGUAGES = [
-    {"code": "en", "label": "English",   "flag": "🇬🇧"},
-    {"code": "hi", "label": "Hindi",     "flag": "🇮🇳"},
-    {"code": "kn", "label": "Kannada",   "flag": "🏴"},
-    {"code": "ml", "label": "Malayalam", "flag": "🏴"},
+    {"code": "en", "label": "English"},
+    {"code": "hi", "label": "Hindi"},
+    {"code": "kn", "label": "Kannada"},
+    {"code": "ml", "label": "Malayalam"},
 ]
 
 CATEGORIES = [
@@ -107,28 +105,30 @@ def text_wrap(text, font, max_width, draw):
 def draw_stremio_row(draw, label_font, badge_font, start_x, y, label, items):
     if not items:
         return 0
-    draw.text((start_x, y), label.upper(), fill=(110, 110, 115), font=label_font)
+    # Higher readability header tracking label strings
+    draw.text((start_x, y), label.upper(), fill=(170, 170, 175), font=label_font)
     
     current_x = start_x
-    badge_y = y + 25
+    badge_y = y + 28
     
     for item in items:
         bbox = draw.textbbox((0, 0), item, font=badge_font)
         tw = bbox[2] - bbox[0]
-        badge_w = tw + 28
-        badge_h = 36
+        badge_w = tw + 32
+        badge_h = 42
         
+        # Premium borderless translucent rounded pill graphics container
         draw.rounded_rectangle(
             [current_x, badge_y, current_x + badge_w, badge_y + badge_h],
-            radius=18,
-            fill=(28, 28, 32, 160),
-            outline=(48, 48, 52, 210),
-            width=1
+            radius=10,
+            fill=(255, 255, 255, 30),
+            outline=None
         )
-        draw.text((current_x + 14, badge_y + 7), item, fill=(235, 235, 240), font=badge_font)
-        current_x += badge_w + 10
+        # Bold readable font typography tracking inside the pill
+        draw.text((current_x + 16, badge_y + 8), item, fill=(245, 245, 250), font=badge_font)
+        current_x += badge_w + 12
         
-    return 65
+    return 78
 
 # ─── COMPOSITOR ENGINE ───────────────────────────────────────────────────────
 def create_composite_card(details, category, lang, item_type, file_name):
@@ -139,10 +139,10 @@ def create_composite_card(details, category, lang, item_type, file_name):
     try:
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 60)
-            font_meta  = ImageFont.truetype(font_path, 24)
-            font_label = ImageFont.truetype(font_path, 15)
-            font_body  = ImageFont.truetype(font_path, 22)
+            font_title = ImageFont.truetype(font_path, 68)
+            font_meta  = ImageFont.truetype(font_path, 26)
+            font_label = ImageFont.truetype(font_path, 18)
+            font_body  = ImageFont.truetype(font_path, 23)
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
@@ -150,13 +150,14 @@ def create_composite_card(details, category, lang, item_type, file_name):
         base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
         base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
         
+        # Soft multi-directional vignette overlay mask mapping
         overlay = Image.new("RGBA", (1920, 1080), (0, 0, 0, 0))
         draw_ov = ImageDraw.Draw(overlay)
         
         for y_pos in range(1080):
             for x_pos in range(1920):
-                x_factor = (1.0 - (x_pos / 1300)**1.4) if x_pos <= 1300 else 0
-                y_factor = 1.0 if y_pos >= 680 else ((y_pos - 500) / 180)**1.2 if y_pos >= 500 else 0
+                x_factor = (1.0 - (x_pos / 1350)**1.4) if x_pos <= 1350 else 0
+                y_factor = 1.0 if y_pos >= 680 else ((y_pos - 480) / 200)**1.2 if y_pos >= 480 else 0
                 
                 alpha = int(252 * max(x_factor, y_factor))
                 if alpha > 252: alpha = 252
@@ -172,13 +173,16 @@ def create_composite_card(details, category, lang, item_type, file_name):
         year = (details.get("release_date") if item_type == "movie" else details.get("first_air_date") or "N/A")[:4]
         rating = f"{details.get('vote_average', 0):.1f}"
         
-        runtime = "N/A"
-        if item_type == "movie" and details.get("runtime"):
-            runtime = f"{details['runtime']} min"
-        elif item_type == "tv" and details.get("episode_run_time"):
-            runtime = f"{details['episode_run_time'][0]} min"
+        # Dynamic TV Context Tracker (Seasons vs Runtime Configuration)
+        if item_type == "tv":
+            seasons_count = details.get("number_of_seasons", 1)
+            runtime = f"{seasons_count} Season" if seasons_count == 1 else f"{seasons_count} Seasons"
+        else:
+            runtime = "N/A"
+            if details.get("runtime"):
+                runtime = f"{details['runtime']} min"
 
-        # ADVANCED GRAPHICAL LOGO ENGINE
+        # 1. ENHANCED LARGE SCALE LOGO COMPOSITOR
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
@@ -194,7 +198,8 @@ def create_composite_card(details, category, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    max_w, max_h = 520, 110
+                    # Increased boundary footprint constraints for punchy presentation visuals
+                    max_w, max_h = 600, 150
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
                     combined.alpha_composite(logo_img, dest=(90, 80))
@@ -206,9 +211,10 @@ def create_composite_card(details, category, lang, item_type, file_name):
             draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
         
         meta_line = f"{runtime}        {year}        ★ {rating} IMDB"
-        draw.text((90, 205), meta_line, fill=(215, 215, 220), font=font_meta)
+        draw.text((90, 245), meta_line, fill=(225, 225, 230), font=font_meta)
         
-        y_cursor = 255
+        # 2. Refined High-Readability Pill Rows
+        y_cursor = 295
         genres = [g["name"] for g in details.get("genres", [])[:3]]
         if genres:
             y_cursor += draw_stremio_row(draw, font_label, font_body, 90, y_cursor, "genres", genres)
@@ -224,18 +230,19 @@ def create_composite_card(details, category, lang, item_type, file_name):
         if cast:
             y_cursor += draw_stremio_row(draw, font_label, font_body, 90, y_cursor, "cast", cast)
             
+        # 3. Clean Text Summary Segment
         y_cursor += 10
-        draw.text((90, y_cursor), "SUMMARY", fill=(110, 110, 115), font=font_label)
+        draw.text((90, y_cursor), "SUMMARY", fill=(170, 170, 175), font=font_label)
         
-        overview = details.get("overview") or "No plot summary details available."
-        y_cursor += 25
+        overview = details.get("overview") or "No background summary description parameters indexed."
+        y_cursor += 28
         lines = text_wrap(overview, font_body, 860, draw)
         
-        for line in lines[:4]:
-            if y_cursor > 620:
+        for line in lines[:3]:  # Tightened description footprint pass constraints cleanly
+            if y_cursor > 615:
                 break
-            draw.text((90, y_cursor), line, fill=(225, 225, 230), font=font_body)
-            y_cursor += 32
+            draw.text((90, y_cursor), line, fill=(230, 230, 235), font=font_body)
+            y_cursor += 34
             
         final_rgb = combined.convert("RGB")
         final_rgb.save(WALLPAPER_DIR / file_name, "JPEG", quality=92)
