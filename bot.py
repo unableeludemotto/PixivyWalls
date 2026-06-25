@@ -1,10 +1,8 @@
 """
-PixivyWalls Engine v46 — 75% Outward Fade Edition
+PixivyWalls Engine v46.1 — Outward Fade Bugfix Edition
 ======================================================
-- Constrains artwork container bounds to exactly 75% scale (1440x810).
-- Pins the proportional 16:9 image into the top-right quadrant corner.
-- Uses a native alpha mask to bleed the dark spaces smoothly into the poster edges.
-- Uses compact typography and consolidated metadata tracks.
+- Fixes the AttributeError by calling putpixel directly on the alpha_mask image.
+- Keeps the exact 75% scale proportional container configuration (1440x810).
 """
 
 import os
@@ -151,9 +149,10 @@ def create_composite_card(details, category, lang, item_type, file_name):
             val = int(255 * (1.0 - ((y - 660) / (810 - 660))))
             for x in range(1440):
                 current = alpha_mask.getpixel((x, y))
-                draw_am.putpixel((x, y), min(current, val))
+                # Fixed: putpixel invoked directly on alpha_mask image container
+                alpha_mask.putpixel((x, y), min(current, val))
                 
-        # Paste the seamlessly masked 75% artwork into the top-right quadrant corner (X=480, Y=0)
+        # Paste the seamlessly masked 75% artwork into the absolute top-right quadrant corner (X=480, Y=0)
         canvas.paste(scaled_poster, (480, 0), alpha_mask)
         draw = ImageDraw.Draw(canvas)
         
@@ -242,7 +241,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
         lines = text_wrap(overview, font_body, 580, draw)
         
         y_summary = 482
-        max_lines = 4  # Proportional capacity inside the text zone
+        max_lines = 4  
         
         for idx, line in enumerate(lines):
             if idx >= max_lines or y_summary > 740:
