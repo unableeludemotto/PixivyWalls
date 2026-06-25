@@ -1,6 +1,6 @@
 """
-PixivyWalls Engine v18.1 — Crystal-Clear HD TV Layout (Syntax Fix)
-==================================================================
+PixivyWalls Engine v19 — Verified Release
+========================================
 Eliminates blocky pills, replaces broken emojis, automatically filters out N/A data,
 and forces 100% uncompressed text rendering for crystal-clear TV couch legibility.
 """
@@ -60,7 +60,7 @@ CATEGORIES = [
 def tmdb_get(endpoint: str, params: dict = {}) -> dict:
     url = f"{TMDB_BASE}/{endpoint}"
     p   = {"api_key": TMDB_API_KEY, **params}
-    r = requests.get(url, params=p, timeout=15)
+    r   = requests.get(url, params=p, timeout=15)
     r.raise_for_status()
     return r.json()
 
@@ -146,7 +146,6 @@ def create_composite_card(details, category, lang, item_type, file_name):
         # Smart Meta Element Filtering Engine
         meta_elements = []
         
-        # Handle TV Seasons vs Movie Runtime cleanly
         if item_type == "tv":
             seasons_count = details.get("number_of_seasons", 0)
             if seasons_count > 0:
@@ -170,32 +169,4 @@ def create_composite_card(details, category, lang, item_type, file_name):
         logos = details.get("images", {}).get("logos", [])
         
         if logos:
-            target_logos = [l for l in logos if l.get("iso_639_1") == "en" and l.get("file_path", "").endswith(".png")]
-            if not target_logos:
-                target_logos = [l for l in logos if l.get("file_path", "").endswith(".png")]
-                
-            if target_logos:
-                try:
-                    target_logos.sort(key=lambda x: x.get("vote_average", 0), reverse=True)
-                    logo_path = target_logos[0]["file_path"]
-                    logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
-                    logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
-                    
-                    max_w, max_h = 650, 160
-                    logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
-                    
-                    combined.alpha_composite(logo_img, dest=(90, 80))
-                    logo_drawn = True
-                except:
-                    pass
-
-        if not logo_drawn:
-            draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
-        
-        draw.text((90, 260), meta_line, fill=(240, 240, 245), font=font_meta)
-        
-        # 2. CLEAN HIGH-READABILITY METADATA ROWS (PILLS REMOVED)
-        genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
-        credits = details.get("credits", {})
-        directors = ", ".join([c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"][:1])
-        if item_type == "
+            target_logos =
