@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
+        with:
+          clean: false     # Prevents Git from hanging on image folder verification scans
 
       - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v5
@@ -40,10 +42,12 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add current daily assets to commit indexing stage
           git add docs/images/*.jpg docs/wallpapers.json
           
-          # Clean up old images that are no longer in active daily rotation loops
-          git clean -fd docs/images/ || true
+          # Automatically stages file deletions for old images removed natively by python
+          git add -u docs/images/
           
           git diff --cached --quiet || git commit -m "chore: refresh composite info-cards $(date -u +'%Y-%m-%d %H:%M UTC') [skip ci]"
           git push
