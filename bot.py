@@ -1,10 +1,10 @@
 """
-PixivyWalls Engine v58 — Symmetrical Proportional Vignette
-==========================================================
-- Implements the exact target plan: 60% image container (1152x648) pasted at (768,0).
-- Applies a matching 1152x648 alpha mask layer to ensure flawless edge drop-offs.
-- Reduces font typography layouts across titles (32pt), metadata (20pt), and body text (18pt).
-- Retains premium streaming watch provider guards, genre blocks, and decoupled JSON generation.
+PixivyWalls Engine v59 — Symmetrical Outward Vignette Master
+============================================================
+- Expands backdrop texture sizing to 1365x768 to completely eliminate box-cut boundaries.
+- Uses native horizontal and vertical gradient blends to bleed edges smoothly into black space.
+- Retains compact typography structures across titles (32pt), metadata (20pt), and body text (18pt).
+- Retains watch provider constraints, unscripted reality filters, and automatic folder wipes.
 """
 
 import os
@@ -56,10 +56,7 @@ METRICS = [
     {"type": "tv",    "tag": "Popular Releases",   "endpoint": "discover/tv"}
 ]
 
-# EXCLUSION GENRES: Reality (10764), Talk (10767), Soap (10766), News (10763), Documentary (99)
 EXCLUDED_GENRE_IDS = {99, 10763, 10764, 10766, 10767}
-
-# PREMIUM WATCH PROVIDERS: Netflix (8), Prime Video (119), Hotstar (122), JioCinema (220), SonyLIV (237)
 PREMIUM_PROVIDERS = "8|119|122|220|237"
 
 # ─── HELPERS ─────────────────────────────────────────────────────────────────
@@ -181,43 +178,42 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
     try:
         font_path = "assets/Roboto.ttf"
         if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 32)  # Compact 32pt Fallback Title
-            font_meta  = ImageFont.truetype(font_path, 20)  # Reduced to 20pt
+            font_title = ImageFont.truetype(font_path, 32)  
+            font_meta  = ImageFont.truetype(font_path, 20)  
             font_label = ImageFont.truetype(font_path, 14)  
-            font_body  = ImageFont.truetype(font_path, 18)  # Reduced to 18pt for sleek layout paragraphs
+            font_body  = ImageFont.truetype(font_path, 18)  
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
-        # 1. Base Layer: Solid Master TV Canvas (1920x1080)
+        # 1. Base Layer: Solid Dark Canvas Core (1920x1080)
         canvas = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
         
-        # 2. Download and scale backdrop to exactly 60% widescreen dimensions (1152x648)
+        # 2. Process Backdrop scaled to clean proportional height parameters (1365x768)
         img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
         raw_poster = Image.open(BytesIO(img_res.content)).convert("RGBA")
         
-        target_w, target_h = 1152, 648
+        target_w, target_h = 1365, 768
         scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
         
-        # 3. Create a Local 1152x648 Mask Layer mapped perfectly to the image dimensions
+        # 3. Create a matching 1365x768 local alpha layer to remove cutting lines completely
         local_mask = Image.new("L", (target_w, target_h), 255)
         
-        # Left Edge Fade: Smoothly transition from black to white across 450 pixels horizontally
-        grad_h = Image.linear_gradient("L").rotate(270).resize((450, target_h), Image.Resampling.BICUBIC)
+        # Horizontal Fade: Blends smoothly across a wide 400-pixel window
+        grad_h = Image.linear_gradient("L").rotate(270).resize((400, target_h), Image.Resampling.BICUBIC)
         local_mask.paste(grad_h, (0, 0))
-        draw_lm = ImageDraw.Draw(local_mask)
         
-        # Bottom Edge Fade: Smoothly transition from white to black across 200 pixels vertically
-        grad_v = Image.linear_gradient("L").rotate(90).resize((target_w, 200), Image.Resampling.BICUBIC)
+        # Vertical Fade: Blends smoothly down into the app icon shelf across 220 pixels
+        grad_v = Image.linear_gradient("L").rotate(90).resize((target_w, 220), Image.Resampling.BICUBIC)
         grad_v_inverted = ImageOps.invert(grad_v)
         
         local_mask_v = Image.new("L", (target_w, target_h), 255)
-        local_mask_v.paste(grad_v_inverted, (0, target_h - 200))
+        local_mask_v.paste(grad_v_inverted, (0, target_h - 220))
         
-        # Combine the local horizontal and vertical fades cleanly
+        # Combine the horizontal and vertical masks natively
         final_local_mask = ImageChops.darker(local_mask, local_mask_v)
         
-        # 4. Paste the 60% artwork using the direct image mask at coordinates (768, 0)
-        canvas.paste(scaled_poster, (768, 0), final_local_mask)
+        # 4. Paste backdrop layer onto the dark base canvas at coordinates (555, 0)
+        canvas.paste(scaled_poster, (555, 0), final_local_mask)
         draw = ImageDraw.Draw(canvas)
         
         # ─── TYPOGRAPHY GRAPHICS ENGINE ───────────────────────────────────────
@@ -258,8 +254,7 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{target_logos[0]['file_path']}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    # Expanded bounding limits to maximize wide horizontal branding visibility
-                    max_w, max_h = 650, 240
+                    max_w, max_h = 450, 180
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
                     canvas.alpha_composite(logo_img, dest=(80, 80))
@@ -288,7 +283,7 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
         
         draw.text((80, 480), "SUMMARY", fill=(160, 163, 168), font=font_label)
         overview = details.get("overview") or "No background summary description details currently available."
-        lines = text_wrap(overview, font_body, 640, draw)
+        lines = text_wrap(overview, font_body, 450, draw)
         
         y_summary = 502
         max_lines = 4  
@@ -359,7 +354,6 @@ def run():
         safe_title = "".join([c for c in t_str if c.isalnum()]).lower()[:20]
         file_name = f"wall_{task['item_type']}_{task['item_id']}_{safe_title}.jpg"
         
-        # Run composite generation
         create_composite_card(details, task["tag"], task["lang"], task["item_type"], file_name)
         
         lbl_type = "Movie" if task["item_type"] == "movie" else "Series"
