@@ -1,10 +1,10 @@
 """
-PixivyWalls Engine v38 — Premium Blurred Edge Shield Edition
-============================================================
-- Confines original artwork strictly to Right 55% and Top 75% quadrant.
-- Implements a heavy Gaussian Blur alpha mask layer along the inner boundaries.
-- Completely eliminates color banding, creating a seamless vignette bleed.
-- Left 45% and Bottom 25% are pristine, absolute dark zones.
+PixivyWalls Engine v40 — Symmetrical 35% Layout Profile
+========================================================
+- Allocates exactly 35% width (672px) for the solid left text column.
+- Allocates exactly 35% height (378px) for the solid bottom app icon shelf.
+- Automatically fits 16:9 artwork into a proportional 1248x702 box container.
+- Uses high-radius Gaussian Blur masks to ensure a flawless vignette bleed.
 """
 
 import os
@@ -129,29 +129,29 @@ def create_composite_card(details, category, lang, item_type, file_name):
         # 1. Base Layer: Solid Master TV Dark Background (1920x1080)
         canvas = Image.new(mode="RGBA", size=(1920, 1080), color=(5, 6, 8, 255))
         
-        # 2. Artwork Layer: Proportional 55% Width / 75% Height Poster Container
+        # 2. Download and process the backdrop asset
         img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
         raw_poster = Image.open(BytesIO(img_res.content)).convert("RGBA")
         
-        target_w = 1056
-        target_h = 810
+        # Scale to EXACTLY 16:9 proportional container dimensions based on our 35% calculations
+        target_w = 1248
+        target_h = 702
         scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
         
-        # Paste scaled backdrop cleanly into the upper right area (X=864, Y=0)
-        canvas.alpha_composite(scaled_poster, dest=(864, 0))
+        # Paste scaled backdrop into the top right quadrant area (X=672, Y=0)
+        canvas.alpha_composite(scaled_poster, dest=(672, 0))
         
-        # 3. Precision Blur Shield Overlay Layer (Creates the seamless bleed effect)
+        # 3. Precision Edge Bleed Overlay Layer
         shield = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
         draw_s = ImageDraw.Draw(shield)
         
-        # Draw a hard layout shield block extending slightly over the boundaries
-        draw_s.rectangle([(0, 0), (940, 1080)], fill=(5, 6, 8, 255))   # Expands past left edge
-        draw_s.rectangle([(0, 750), (1920, 1080)], fill=(5, 6, 8, 255)) # Expands past bottom edge
+        # Draw the solid layout masks slightly expanded over the lines to allow blur bleeding
+        draw_s.rectangle([(0, 0), (740, 1080)], fill=(5, 6, 8, 255))   # Side dark text space bleed
+        draw_s.rectangle([(0, 640), (1920, 1080)], fill=(5, 6, 8, 255))  # Base app icons shelf bleed
         
-        # Apply a heavy Gaussian Blur to turn the hard lines into a soft cinematic vignette bleed
-        blurred_shield = shield.filter(ImageFilter.GaussianBlur(radius=55))
+        # Soften edges into a seamless vignette blend using high-radius smoothing
+        blurred_shield = shield.filter(ImageFilter.GaussianBlur(radius=50))
         
-        # Flatten the blurred bleed back onto the master canvas frame
         canvas = Image.alpha_composite(canvas, blurred_shield)
         draw = ImageDraw.Draw(canvas)
         
@@ -183,7 +183,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         meta_line = "    •    ".join(meta_elements)
 
-        # Official Studio Logo Compositor (Safe Left 45% Zone Alignment)
+        # Official Studio Logo Compositor (Safe Left Margin Column Alignment)
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
@@ -199,20 +199,20 @@ def create_composite_card(details, category, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    max_w, max_h = 620, 160
+                    max_w, max_h = 520, 150
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
-                    canvas.alpha_composite(logo_img, dest=(90, 80))
+                    canvas.alpha_composite(logo_img, dest=(70, 70))
                     logo_drawn = True
                 except:
                     pass
 
         if not logo_drawn:
-            draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
+            draw.text((70, 70), title, fill=(255, 255, 255), font=font_title)
         
-        draw.text((90, 260), meta_line, fill=(245, 245, 250), font=font_meta)
+        draw.text((70, 240), meta_line, fill=(245, 245, 250), font=font_meta)
         
-        # Absolute Grid Spacing Layout (Text row path channel path width limited to 700px)
+        # Absolute Grid Spacing Layout (Text row width channel constrained inside the 35% width boundary)
         genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
         credits = details.get("credits", {})
         
@@ -224,35 +224,35 @@ def create_composite_card(details, category, lang, item_type, file_name):
         cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
         
         # Genres
-        draw.text((90, 330), "GENRES", fill=(160, 163, 168), font=font_label)
-        draw.text((90, 358), genres, fill=(245, 245, 250), font=font_body)
+        draw.text((70, 310), "GENRES", fill=(160, 163, 168), font=font_label)
+        draw.text((70, 338), genres, fill=(245, 245, 250), font=font_body)
         
         # Directors
-        draw.text((90, 425), "DIRECTORS", fill=(160, 163, 168), font=font_label)
-        draw.text((90, 453), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
+        draw.text((70, 405), "DIRECTORS", fill=(160, 163, 168), font=font_label)
+        draw.text((70, 433), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
         
         # Cast
-        draw.text((90, 520), "CAST", fill=(160, 163, 168), font=font_label)
-        draw.text((90, 548), cast, fill=(245, 245, 250), font=font_body)
+        draw.text((70, 500), "CAST", fill=(160, 163, 168), font=font_label)
+        draw.text((70, 528), cast, fill=(245, 245, 250), font=font_body)
         
         # Summary
-        draw.text((90, 625), "SUMMARY", fill=(160, 163, 168), font=font_label)
+        draw.text((70, 600), "SUMMARY", fill=(160, 163, 168), font=font_label)
         
         overview = details.get("overview") or "No background summary description details currently available."
-        lines = text_wrap(overview, font_body, 700, draw)
+        lines = text_wrap(overview, font_body, 540, draw)
         
-        y_summary = 653
-        max_lines = 3
+        y_summary = 628
+        max_lines = 2  # Clean text budget to stay balanced inside the remaining vertical quadrant bounds
         
         for idx, line in enumerate(lines):
-            if idx >= max_lines or y_summary > 750:
-                draw.text((90, y_summary - 36), lines[max_lines-1] + "...", fill=(220, 222, 225), font=font_body)
+            if idx >= max_lines or y_summary > 680:
+                draw.text((70, y_summary - 36), lines[max_lines-1] + "...", fill=(220, 222, 225), font=font_body)
                 break
                 
             if idx == max_lines - 1 and len(lines) > max_lines:
-                draw.text((90, y_summary), line + "...", fill=(220, 222, 225), font=font_body)
+                draw.text((70, y_summary), line + "...", fill=(220, 222, 225), font=font_body)
             else:
-                draw.text((90, y_summary), line, fill=(220, 222, 225), font=font_body)
+                draw.text((70, y_summary), line, fill=(220, 222, 225), font=font_body)
                 
             y_summary += 36
             
