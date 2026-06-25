@@ -1,10 +1,10 @@
 """
-PixivyWalls Engine v51.1 — Regional Circuit Breaker Edition
-===========================================================
-- Guarantees 15 movies and 15 series per metric condition for all languages.
-- Implements a strict circuit breaker capping regional language searches at a maximum of 2 pages.
-- Maintains an aggressive deep-page retry harvester for English (non-negotiable anchor).
-- Retains the signature 60% widescreen layout with native alpha vignette blending and 550px logo bounds.
+PixivyWalls Engine v51.3 — Telemetry Debug Edition
+===================================================
+- Injects explicit print logging tracking every API call, URL response, and loop filter.
+- Retains full 15-item target counts across movies and series metrics.
+- Regional language search loops are safely capped at a 2-page ceiling limit.
+- Maintains the signature 60% widescreen layout with native alpha vignette blending.
 """
 
 import os
@@ -30,13 +30,13 @@ OUTPUT_FILE   = OUTPUT_DIR / "wallpapers.json"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 def cleanup_old_assets():
-    print("🧹 Cleaning up legacy movie wallpaper asset directories...")
+    print("🧹 [SYSTEM] Cleaning up legacy image directories...")
     if WALLPAPER_DIR.exists():
         try:
             shutil.rmtree(WALLPAPER_DIR)
-            print("  ↳ Legacy images folder wiped successfully.")
+            print("   ↳ Cleaned images directory successfully.")
         except Exception as e:
-            print(f"  ↳ Cleanup warning: {e}")
+            print(f"   ↳ Cleanup warning: {e}")
     WALLPAPER_DIR.mkdir(exist_ok=True)
 
 cleanup_old_assets()
@@ -48,7 +48,6 @@ LANGUAGES = [
     {"code": "ml", "label": "Malayalam"},
 ]
 
-# Structured target metrics matrix
 METRICS = [
     {"type": "movie", "tag": "Current Year",      "endpoint": "discover/movie"},
     {"type": "movie", "tag": "All-Time Top Rated", "endpoint": "movie/top_rated"},
@@ -61,7 +60,9 @@ METRICS = [
 def tmdb_get(endpoint: str, params: dict = {}) -> dict:
     url = f"{TMDB_BASE}/{endpoint}"
     p = {"api_key": TMDB_API_KEY, **params}
+    print(f"🔍 [API REQUEST] URL: {url} | Params: { {k:v for k,v in p.items() if k != 'api_key'} }")
     r = requests.get(url, params=p, timeout=15)
+    print(f"📡 [API RESPONSE] Status Code: {r.status_code}")
     r.raise_for_status()
     return r.json()
 
@@ -71,9 +72,9 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
     page = 1
     
     if metric["tag"] == "All-Time Top Rated" and lang["code"] == "ml":
+        print(f"⏭️ [SKIP] Malayalam + Top Rated is disabled per criteria bounds.")
         return []
 
-    # ENFORCED FIXED LIMITS: English crawls deep, regional safe-breaks strictly at page 2
     max_pages = 100 if lang["code"] == "en" else 2
 
     while len(collected_items) < target_count and page <= max_pages:
@@ -94,32 +95,34 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
                 params["first_air_date_year"] = "2026"
         elif metric["tag"] == "All-Time Top Rated" and "discover" in endpoint:
             params["sort_by"] = "vote_average.desc"
-            params["vote_count.gte"] = "10"
+            params["vote_count.gte"] = "5"
         elif metric["tag"] == "Currently Running" and metric["type"] == "tv":
             params["air_date.gte"] = "2026-01-01"
             
         try:
             res = tmdb_get(endpoint, params)
             results = res.get("results", [])
+            print(f"📊 [DATA HARVEST] Language: {lang['label']} | Metric: {metric['tag']} | Page: {page} | Sourced: {len(results)} items raw")
             
-            # Reset constraints if a regional discover query page 1 drops dead blank
-            if not results and page == 1 and lang["code"] != "en":
+            # Fallback configuration triggers if the target returns nothing on page 1
+            if not results and page == 1:
+                print(f"⚠️ [FALLBACK ACTIVE] Empty array returned. Dropping date/vote constraints for {lang['label']}...")
                 params.pop("primary_release_year", None)
                 params.pop("first_air_date_year", None)
                 params.pop("vote_count.gte", None)
+                params.pop("air_date.gte", None)
                 params["sort_by"] = "popularity.desc"
-                res = tmdb_get(endpoint, params)
+                
+                if "discover" not in endpoint:
+                    res = tmdb_get(f"discover/{metric['type']}", params)
+                else:
+                    res = tmdb_get(endpoint, params)
                 results = res.get("results", [])
+                print(f"🔄 [FALLBACK RESULTS] Extracted {len(results)} items after dropping constraints.")
                 
             if not results:
-                if lang["code"] == "en":
-                    params.pop("primary_release_year", None)
-                    params.pop("first_air_date_year", None)
-                    res = tmdb_get(endpoint, params)
-                    results = res.get("results", [])
-                    if not results: break
-                else:
-                    break 
+                print(f"🛑 [LOOP BREAK] No further items found on this path thread. Exiting loop.")
+                break
                 
             for item in results:
                 if item.get("original_language") == lang["code"]:
@@ -127,10 +130,11 @@ def gather_target_pool(metric: dict, lang: dict, target_count=15) -> list:
                         collected_items.append(item)
                         if len(collected_items) >= target_count:
                             break
+            print(f"📈 [POOL PROGRESS] Language: {lang['label']} | Metric: {metric['tag']} | Current Pool: {len(collected_items)}/{target_count}")
             page += 1
             time.sleep(0.05)
         except Exception as e:
-            print(f"    ↳ Harvest Warning on language parsing loop: {e}")
+            print(f"❌ [HARVEST ERROR] Exception occurred on pipeline parsing: {e}")
             break
             
     return collected_items[:target_count]
@@ -143,7 +147,8 @@ def fetch_details(item_type: str, item_id: int) -> dict:
             "append_to_response": "credits,images",
             "include_image_language": "en"
         })
-    except:
+    except Exception as e:
+        print(f"❌ [DETAILS ERROR] Failed parsing item ID {item_id}: {e}")
         return {}
 
 def text_wrap(text, font, max_width, draw):
@@ -166,6 +171,7 @@ def text_wrap(text, font, max_width, draw):
 def create_composite_card(details, category_tag, lang, item_type, file_name):
     backdrop_path = details.get("backdrop_path")
     if not backdrop_path or details.get("adult", False):
+        print(f"⏩ [COMPOSITOR SKIP] Media item missing backdrop asset or flagged adult.")
         return None
 
     try:
@@ -187,7 +193,6 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
         scaled_poster = raw_poster.resize((target_w, target_h), Image.Resampling.LANCZOS)
         
         alpha_mask = Image.new("L", (target_w, target_h), 255)
-        
         gradient_h = Image.linear_gradient("L").resize((500, target_h), Image.Resampling.BICUBIC)
         alpha_mask.paste(gradient_h, (0, 0))
         
@@ -202,8 +207,7 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
         draw = ImageDraw.Draw(canvas)
         
         title = details.get("title") if item_type == "movie" else details.get("name")
-        if not title:
-            title = "Unknown"
+        if not title: title = "Unknown"
             
         release_field = "release_date" if item_type == "movie" else "first_air_date"
         year = (details.get(release_field) or "N/A")[:4]
@@ -281,20 +285,25 @@ def create_composite_card(details, category_tag, lang, item_type, file_name):
             
         final_rgb = canvas.convert("RGB")
         final_rgb.save(WALLPAPER_DIR / file_name, "JPEG", quality=100, subsampling=0)
+        print(f"💾 [SAVED] Rendered card layout successful: {file_name}")
         return f"images/{file_name}"
     except Exception as e:
-        print(f"      ↳ Composition Failure: {e}")
+        print(f"❌ [RENDER FAILURE] Error on composite vector generation: {e}")
         return None
 
 # ─── RUN ENGINE ──────────────────────────────────────────────────────────────
 def run():
-    print(f"\n PixivyWalls High-Capacity Randomizer Engine Initiating...")
+    print(f"\n🚀 ========================================================")
+    print(f"🎬 PixivyWalls Pro Telemetry Core Engine v51.3 Online")
+    print(f"🚀 ========================================================\n")
+    
     raw_execution_pool = []
     seen_ids = set()
 
     for lang in LANGUAGES:
-        print(f" 📂 Harvesting tracks for language: {lang['label']}")
+        print(f"\n📂 [LANG TRACK] Starting harvesting matrix for: {lang['label'].upper()}")
         for metric in METRICS:
+            print(f"  └─ 🟢 Harvesting Metric Category: {metric['tag']} ({metric['type']})")
             pool = gather_target_pool(metric, lang, target_count=15)
             added_count = 0
             
@@ -313,19 +322,25 @@ def run():
                     "lang": lang
                 })
                 added_count += 1
-            print(f"    └─ [{metric['tag']}]: Sourced {added_count} unique vectors")
+            print(f"  └─ ✅ Category Complete. Saved {added_count} unique items to global registry pool.")
 
-    print(f"\n 🔀 Flattening matrices. Pool size: {len(raw_execution_pool)} elements. Running shuffle shift...")
+    print(f"\n🔀 [POOL HARVEST COMPLETE] Total combined entries collected: {len(raw_execution_pool)}")
+    if not raw_execution_pool:
+        print("🚨 [CRITICAL ERROR] The global execution pool is completely empty! Aborting engine write run.")
+        return
+
+    print("🔀 Executing random position shuffle shift across pool elements...")
     random.shuffle(raw_execution_pool)
 
     entries = []
     processed_count = 0
     
-    print(f"\n 🎬 Processing composition rendering queue...")
+    print(f"\n🎬 [COMPOSITOR RUN] Starting canvas rendering loop for {len(raw_execution_pool)} cards...")
     for task in raw_execution_pool:
         details = fetch_details(task["item_type"], task["item_id"])
         time.sleep(0.1)
         if not details:
+            print(f"⚠️ [SKIP] Details metadata response returned empty for asset ID {task['item_id']}")
             continue
 
         t_str = details.get("title") or details.get("name") or "media"
@@ -343,12 +358,11 @@ def run():
                 "url_img": f"https://unableeludemotto.github.io/PixivyWalls/{img_relative_path}"
             })
             processed_count += 1
-            if processed_count % 10 == 0:
-                print(f"    ↳ Rendered {processed_count}/{len(raw_execution_pool)} vectors successfully.")
 
+    print(f"\n📝 [FILE WRITE] Committing {len(entries)} items into {OUTPUT_FILE}...")
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(entries, f, ensure_ascii=False, indent=2)
-    print(f"\n 🎉 Compilation complete! Composed {processed_count} unique randomized vectors into endpoints.")
+    print(f"\n🎉 [ENGINE COMPLETE] Vector catalog generation finalized cleanly. Composed {processed_count} cards.")
 
 if __name__ == "__main__":
     run()
