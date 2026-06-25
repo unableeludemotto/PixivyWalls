@@ -1,8 +1,8 @@
 """
 PixivyWalls Engine
-======================================================
-Optimized for couch legibility, fixes alpha-flattening bugs, 
-uses universal character formatting, and applies custom thematic font coloring.
+==================================================
+Replaces heavy bottom blackouts with soft ambient vignette shading.
+Cleans up broken pill artifacts and displays metadata in premium cinematic typography.
 """
 
 import os
@@ -101,34 +101,6 @@ def text_wrap(text, font, max_width, draw):
         lines.append(' '.join(current_line))
     return lines
 
-def draw_stremio_row(draw, label_font, badge_font, start_x, y, label, items):
-    if not items:
-        return 0
-    # Premium Cinematic Slate Amber for headers
-    draw.text((start_x, y), label.upper(), fill=(212, 175, 55), font=label_font)
-    
-    current_x = start_x
-    badge_y = y + 32
-    
-    for item in items:
-        bbox = draw.textbbox((0, 0), item, font=badge_font)
-        tw = bbox[2] - bbox[0]
-        badge_w = tw + 32
-        badge_h = 44
-        
-        # Muted dark obsidian pill containment
-        draw.rounded_rectangle(
-            [current_x, badge_y, current_x + badge_w, badge_y + badge_h],
-            radius=8,
-            fill=(32, 32, 36),
-            outline=None
-        )
-        # Soft metallic silver font inside the pills
-        draw.text((current_x + 16, badge_y + 8), item, fill=(224, 224, 229), font=badge_font)
-        current_x += badge_w + 12
-        
-    return 86
-
 # ─── COMPOSITOR ENGINE ───────────────────────────────────────────────────────
 def create_composite_card(details, category, lang, item_type, file_name):
     backdrop_path = details.get("backdrop_path")
@@ -149,20 +121,23 @@ def create_composite_card(details, category, lang, item_type, file_name):
         base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
         base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
         
+        # Soft side-and-bottom-edge vignette overlay (No solid black blocker)
         overlay = Image.new("RGBA", (1920, 1080), (0, 0, 0, 0))
         draw_ov = ImageDraw.Draw(overlay)
         
         for y_pos in range(1080):
             for x_pos in range(1920):
-                x_factor = (1.0 - (x_pos / 1350)**1.4) if x_pos <= 1350 else 0
-                y_factor = 1.0 if y_pos >= 680 else ((y_pos - 460) / 220)**1.2 if y_pos >= 460 else 0
+                # Smooth left feather gradient fade
+                x_factor = (1.0 - (x_pos / 1100)**1.3) if x_pos <= 1100 else 0
+                # Light ambient baseline shadow fade
+                y_factor = (y_pos / 1080)**2.5
                 
-                alpha = int(252 * max(x_factor, y_factor))
-                if alpha > 252: alpha = 252
+                alpha = int(240 * max(x_factor, y_factor))
+                if alpha > 240: alpha = 240
                 if alpha < 0: alpha = 0
                 
                 if alpha > 0:
-                    draw_ov.point((x_pos, y_pos), fill=(8, 8, 10, alpha))
+                    draw_ov.point((x_pos, y_pos), fill=(6, 6, 8, alpha))
             
         combined = Image.alpha_composite(base_img, overlay).convert("RGBA")
         draw = ImageDraw.Draw(combined)
@@ -206,37 +181,37 @@ def create_composite_card(details, category, lang, item_type, file_name):
         if not logo_drawn:
             draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
         
-        # Swapped broken rectangle emoji for a high-compatibility star text icon
         meta_line = f"{runtime}    •    {year}    •    ★ {rating} IMDB"
         draw.text((90, 260), meta_line, fill=(240, 240, 245), font=font_meta)
         
-        # 2. RENDER THE BADGE ROWS
-        y_cursor = 310
-        genres = [g["name"] for g in details.get("genres", [])[:3]]
-        if genres:
-            y_cursor += draw_stremio_row(draw, font_label, font_body, 90, y_cursor, "genres", genres)
-            
+        # 2. CLEAN HIGH-READABILITY METADATA (No blocky artifacts)
+        genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
         credits = details.get("credits", {})
-        directors = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"][:1]
+        directors = ", ".join([c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"][:1])
         if item_type == "tv" and details.get("created_by"):
-            directors = [c["name"] for c in details["created_by"]][:1]
+            directors = ", ".join([c["name"] for c in details["created_by"]][:1])
+        cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
+        
+        y_cursor = 315
+        if genres:
+            draw.text((90, y_cursor), f"GENRES:  {genres}", fill=(212, 175, 55), font=font_label)
+            y_cursor += 35
         if directors:
-            y_cursor += draw_stremio_row(draw, font_label, font_body, 90, y_cursor, "directors", directors)
-            
-        cast = [c["name"] for c in credits.get("cast", [])[:3]]
+            draw.text((90, y_cursor), f"DIRECTOR:  {directors}", fill=(212, 175, 55), font=font_label)
+            y_cursor += 35
         if cast:
-            y_cursor += draw_stremio_row(draw, font_label, font_body, 90, y_cursor, "cast", cast)
+            draw.text((90, y_cursor), f"CAST:  {cast}", fill=(212, 175, 55), font=font_label)
+            y_cursor += 45
             
         # 3. SUMMARY
-        y_cursor += 10
         draw.text((90, y_cursor), "SUMMARY", fill=(212, 175, 55), font=font_label)
         
         overview = details.get("overview") or "No background summary details available."
-        y_cursor += 32
+        y_cursor += 30
         lines = text_wrap(overview, font_body, 860, draw)
         
         for line in lines[:3]:
-            if y_cursor > 615:
+            if y_cursor > 650:
                 break
             draw.text((90, y_cursor), line, fill=(245, 245, 250), font=font_body)
             y_cursor += 34
