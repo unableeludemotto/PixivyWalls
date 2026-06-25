@@ -1,8 +1,9 @@
 """
 PixivyWalls Engine
-======================================================
-Restores the spacious, vertical row structure with large, high-readability fonts.
-Metadata elements are rendered as pure comma-separated text strings.
+==========================================================
+- Implements strict absolute vertical separation zones to eliminate text overlapping.
+- Fixes framed TV container bounding profiles (Left & Bottom Anchors).
+- Drops all icon/star glyph configurations to cleanly format "IMDB: 6.1".
 """
 
 import os
@@ -108,19 +109,6 @@ def text_wrap(text, font, max_width, draw):
         lines.append(' '.join(current_line))
     return lines
 
-def draw_clean_text_row(draw, label_font, body_font, start_x, y, label, items):
-    if not items:
-        return 0
-        
-    # Section Header Label (Slate Gray)
-    draw.text((start_x, y), label.upper(), fill=(160, 163, 168), font=label_font)
-    
-    # Comma-Separated Core Text (High-contrast Off-White)
-    text_string = ", ".join(items)
-    draw.text((start_x, y + 28), text_string, fill=(245, 245, 250), font=body_font)
-    
-    return 74
-
 # ─── COMPOSITOR ENGINE ───────────────────────────────────────────────────────
 def create_composite_card(details, category, lang, item_type, file_name):
     backdrop_path = details.get("backdrop_path")
@@ -132,8 +120,8 @@ def create_composite_card(details, category, lang, item_type, file_name):
         if os.path.exists(font_path):
             font_title = ImageFont.truetype(font_path, 82)
             font_meta  = ImageFont.truetype(font_path, 32)
-            font_label = ImageFont.truetype(font_path, 22)
-            font_body  = ImageFont.truetype(font_path, 28)
+            font_label = ImageFont.truetype(font_path, 20)  # Smaller, clean subheaders
+            font_body  = ImageFont.truetype(font_path, 28)  # Sharp, easy-to-read content text
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
@@ -141,20 +129,29 @@ def create_composite_card(details, category, lang, item_type, file_name):
         base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
         base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
         
+        # Dual Vignette Pass (Left-hand Text Shield + Bottom Dock Anchor Mask)
         overlay = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
         draw_ov = ImageDraw.Draw(overlay)
         
         for y_pos in range(1080):
             for x_pos in range(1920):
-                x_factor = (1.0 - (x_pos / 1150)**1.3) if x_pos <= 1150 else 0
-                y_factor = (y_pos / 1080)**2.5
+                # Left Shadow Profile
+                if x_pos <= 280:
+                    alpha_x = 245
+                elif x_pos <= 750:
+                    alpha_x = int(245 * (1.0 - ((x_pos - 280) / 470)))
+                else:
+                    alpha_x = 0
                 
-                alpha = int(245 * max(x_factor, y_factor))
-                if alpha > 245: alpha = 245
-                if alpha < 0: alpha = 0
+                # Bottom Shadow Profile
+                if y_pos >= 800:
+                    alpha_y = int(210 * ((y_pos - 800) / 280))
+                else:
+                    alpha_y = 0
                 
-                if alpha > 0:
-                    draw_ov.point((x_pos, y_pos), fill=(6, 6, 8, alpha))
+                final_alpha = max(alpha_x, alpha_y)
+                if final_alpha > 0:
+                    draw_ov.point((x_pos, y_pos), fill=(6, 7, 10, final_alpha))
             
         combined = Image.alpha_composite(base_img, overlay).convert("RGBA")
         draw = ImageDraw.Draw(combined)
@@ -182,7 +179,8 @@ def create_composite_card(details, category, lang, item_type, file_name):
             
         rating = details.get("vote_average", 0.0)
         if rating > 0.0:
-            meta_elements.append(f"★ {rating:.1f} IMDB")
+            # Replaced all star/bullet emojis with clear, flat text formatting
+            meta_elements.append(f"IMDB: {rating:.1f}")
             
         meta_line = "    •    ".join(meta_elements)
 
@@ -202,7 +200,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
                     
-                    max_w, max_h = 650, 170
+                    max_w, max_h = 620, 170
                     logo_img.thumbnail((max_w, max_h), Image.Resampling.LANCZOS)
                     
                     combined.alpha_composite(logo_img, dest=(90, 80))
@@ -215,38 +213,41 @@ def create_composite_card(details, category, lang, item_type, file_name):
         
         draw.text((90, 270), meta_line, fill=(245, 245, 250), font=font_meta)
         
-        # 2. SEPARATE ROWS FOR METADATA
-        genres = [g["name"] for g in details.get("genres", [])[:3]]
+        # 2. FIXED ABSOLUTE GRID SYSTEM (Stops overlaps completely)
+        genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
         credits = details.get("credits", {})
         
         directors_list = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"]
-        directors = directors_list[:1]
+        directors = ", ".join(directors_list[:1])
         if item_type == "tv" and details.get("created_by"):
-            directors = [c["name"] for c in details["created_by"]][:1]
+            directors = ", ".join([c["name"] for c in details["created_by"]][:1])
             
-        cast = [c["name"] for c in credits.get("cast", [])[:3]]
+        cast = ", ".join([c["name"] for c in credits.get("cast", [])[:3]]) or "N/A"
         
-        y_cursor = 335
-        if genres:
-            y_cursor += draw_clean_text_row(draw, font_label, font_body, 90, y_cursor, "genres", genres)
-        if directors:
-            y_cursor += draw_clean_text_row(draw, font_label, font_body, 90, y_cursor, "directors", directors)
-        if cast:
-            y_cursor += draw_clean_text_row(draw, font_label, font_body, 90, y_cursor, "cast", cast)
-            
-        # 3. SUMMARY
-        y_cursor += 15
-        draw.text((90, y_cursor), "SUMMARY", fill=(160, 163, 168), font=font_label)
+        # Genres Segment
+        draw.text((90, 340), "GENRES", fill=(160, 163, 168), font=font_label)
+        draw.text((90, 368), genres, fill=(245, 245, 250), font=font_body)
+        
+        # Directors Segment
+        draw.text((90, 440), "DIRECTORS", fill=(160, 163, 168), font=font_label)
+        draw.text((90, 468), directors if directors else "N/A", fill=(245, 245, 250), font=font_body)
+        
+        # Cast Segment
+        draw.text((90, 540), "CAST", fill=(160, 163, 168), font=font_label)
+        draw.text((90, 568), cast, fill=(245, 245, 250), font=font_body)
+        
+        # Summary Segment
+        draw.text((90, 650), "SUMMARY", fill=(160, 163, 168), font=font_label)
         
         overview = details.get("overview") or "No background summary description details currently available."
-        y_cursor += 32
-        lines = text_wrap(overview, font_body, 880, draw)
+        lines = text_wrap(overview, font_body, 820, draw)
         
+        y_summary = 678
         for line in lines[:3]:
-            if y_cursor > 670:
+            if y_summary > 790:
                 break
-            draw.text((90, y_cursor), line, fill=(245, 245, 250), font=font_body)
-            y_cursor += 38
+            draw.text((90, y_summary), line, fill=(220, 222, 225), font=font_body)
+            y_summary += 38
             
         final_rgb = combined.convert("RGB")
         final_rgb.save(
