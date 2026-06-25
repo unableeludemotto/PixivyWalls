@@ -1,5 +1,5 @@
 """
-PixivyWalls Engine v5 — Image Compositor Edition
+PixivyWalls
 ==============================================
 Generates standalone 1920x1080 cinematic backdrop wallpapers with movie 
 metadata baked directly into the image canvas. Fully compatible with free tiers!
