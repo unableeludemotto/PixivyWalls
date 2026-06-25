@@ -1,14 +1,14 @@
 """
 PixivyWalls Engine
-==========================================================
-Generates 1920x1080 standalone backdrop cards using transparent official logos, 
-vibrant pill badges, and perfectly aligned text blocks. The bottom 35% of 
-the canvas is left dark to seamlessly frame Projectivy's app dock.
+===================================================
+Generates 1920x1080 standalone backdrop cards using transparent official logos, vibrant pill badges, and perfectly aligned text blocks. 
+Features native os-level file cleanup before executing main image logic passes.
 """
 
 import os
 import json
 import time
+import shutil
 import requests
 from io import BytesIO
 from datetime import datetime, timezone
@@ -25,7 +25,21 @@ WALLPAPER_DIR = OUTPUT_DIR / "images"
 OUTPUT_FILE   = OUTPUT_DIR / "wallpapers.json"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
-WALLPAPER_DIR.mkdir(exist_ok=True)
+
+# ─── NATIVE OS AUTO-CLEANUP ──────────────────────────────────────────────────
+def cleanup_old_assets():
+    """Safely deletes old wallpaper images directory to prevent repository bloat"""
+    print("🧹 Cleaning up legacy movie wallpaper asset directories...")
+    if WALLPAPER_DIR.exists():
+        try:
+            shutil.rmtree(WALLPAPER_DIR)
+            print("  ↳ Legacy images folder wiped successfully.")
+        except Exception as e:
+            print(f"  ↳ Cleanup warning: {e}")
+    WALLPAPER_DIR.mkdir(exist_ok=True)
+
+# Run cleanup instantly on launch
+cleanup_old_assets()
 
 MAX_PER_BUCKET = 12
 
@@ -91,7 +105,6 @@ def text_wrap(text, font, max_width, draw):
     return lines
 
 def draw_stremio_row(draw, label_font, badge_font, start_x, y, label, items):
-    """Draws uppercase section tags followed by Stremio translucent pill badges"""
     if not items:
         return 0
     draw.text((start_x, y), label.upper(), fill=(110, 110, 115), font=label_font)
@@ -165,23 +178,18 @@ def create_composite_card(details, category, lang, item_type, file_name):
         elif item_type == "tv" and details.get("episode_run_time"):
             runtime = f"{details['episode_run_time'][0]} min"
 
-        # ─── ADVANCED GRAPHICAL TITLE LOGO SELECTION ENGINE ──────────────────
+        # ADVANCED GRAPHICAL LOGO ENGINE
         logo_drawn = False
         logos = details.get("images", {}).get("logos", [])
         
         if logos:
-            # 1. Gather English logos first
             target_logos = [l for l in logos if l.get("iso_639_1") == "en" and l.get("file_path", "").endswith(".png")]
-            
-            # 2. Fall back to any original localized graphic logo if English isn't uploaded
             if not target_logos:
                 target_logos = [l for l in logos if l.get("file_path", "").endswith(".png")]
                 
             if target_logos:
                 try:
-                    # Sort array by TMDB community vote average to fetch the best-looking style
                     target_logos.sort(key=lambda x: x.get("vote_average", 0), reverse=True)
-                    
                     logo_path = target_logos[0]["file_path"]
                     logo_res = requests.get(f"{TMDB_IMG_BASE}{logo_path}", timeout=10)
                     logo_img = Image.open(BytesIO(logo_res.content)).convert("RGBA")
@@ -194,7 +202,6 @@ def create_composite_card(details, category, lang, item_type, file_name):
                 except:
                     pass
 
-        # Text Fallback if absolutely no logo image exists on record
         if not logo_drawn:
             draw.text((90, 80), title, fill=(255, 255, 255), font=font_title)
         
