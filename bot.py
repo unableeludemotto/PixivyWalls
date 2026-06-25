@@ -3,7 +3,6 @@ PixivyWalls Engine
 ======================================================
 Eliminates blocky pills, replaces broken emojis, automatically filters out N/A data,
 and forces 100% uncompressed text rendering for crystal-clear TV couch legibility.
-Wrapped and safe-blocked against GitHub editor truncation.
 """
 
 import os
@@ -28,7 +27,7 @@ OUTPUT_FILE   = OUTPUT_DIR / "wallpapers.json"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 def cleanup_old_assets():
-    print("🧹 Cleaning up legacy movie wallpaper asset directories...")
+    print("清理 🧹 Cleaning up legacy movie wallpaper asset directories...")
     if WALLPAPER_DIR.exists():
         try:
             shutil.rmtree(WALLPAPER_DIR)
@@ -37,7 +36,6 @@ def cleanup_old_assets():
             print(f"  ↳ Cleanup warning: {e}")
     WALLPAPER_DIR.mkdir(exist_ok=True)
 
-# Run folder cleanup instantly
 cleanup_old_assets()
 
 MAX_PER_BUCKET = 12
@@ -55,25 +53,30 @@ CATEGORIES = [
     {"type": "movie", "label": "Movie", "endpoint": "movie/top_rated",     "tag": "All-Time Top Rated"},
     {"type": "tv",    "label": "Series", "endpoint": "trending/tv/week",    "tag": "Trending"},
     {"type": "tv",    "label": "Series", "endpoint": "tv/popular",          "tag": "Popular"},
-    {"type": "tv",    "label": "Series", "endpoint": "tv/top_rated",        "tag": "All-Time Top Rated"},
+    {"type": "tv",    "label": "Series", "github-actions": "tv/top_rated",  "tag": "All-Time Top Rated"},
 ]
 
 # ─── HELPERS ─────────────────────────────────────────────────────────────────
 def tmdb_get(endpoint: str, params: dict = {}) -> dict:
     url = f"{TMDB_BASE}/{endpoint}"
-    p   = {"api_key": TMDB_API_KEY, **params}
-    r   = requests.get(url, params=p, timeout=15)
+    p = {"api_key": TMDB_API_KEY, **params}
+    r = requests.get(url, params=p, timeout=15)
     r.raise_for_status()
     return r.json()
 
 def fetch_items(category: dict, lang: dict) -> list:
     if category["tag"] == "All-Time Top Rated" and lang["code"] == "ml":
         return []
+    
+    endpoint = category.get("endpoint") or category.get("github-actions")
+    if not endpoint:
+        return []
+        
     params = {"language": "en-US", "page": 1, "include_adult": "false"}
     if lang["code"] != "en":
         params["with_original_language"] = lang["code"]
     try:
-        res = tmdb_get(category["endpoint"], params)
+        res = tmdb_get(endpoint, params)
         return res.get("results", [])[:MAX_PER_BUCKET]
     except:
         return []
@@ -121,20 +124,13 @@ def create_composite_card(details, category, lang, item_type, file_name):
         else:
             font_title = font_meta = font_label = font_body = ImageFont.load_default()
 
-        # Download raw wallpaper stream
         img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
         base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
         base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
         
-        # Safe Multi-Line Variable Configuration Block
-        overlay = Image.new(
-            mode="RGBA", 
-            size=(1920, 1080), 
-            color=(0, 0, 0, 0)
-        )
+        overlay = Image.new(mode="RGBA", size=(1920, 1080), color=(0, 0, 0, 0))
         draw_ov = ImageDraw.Draw(overlay)
         
-        # Calculate vignette overlay mapping layout paths
         for y_pos in range(1080):
             for x_pos in range(1920):
                 x_factor = (1.0 - (x_pos / 1100)**1.3) if x_pos <= 1100 else 0
@@ -157,9 +153,7 @@ def create_composite_card(details, category, lang, item_type, file_name):
         release_field = "release_date" if item_type == "movie" else "first_air_date"
         year = (details.get(release_field) or "N/A")[:4]
         
-        # Meta element layout grouping configuration
         meta_elements = []
-        
         if item_type == "tv":
             seasons_count = details.get("number_of_seasons", 0)
             if seasons_count > 0:
@@ -184,15 +178,9 @@ def create_composite_card(details, category, lang, item_type, file_name):
         logos = details.get("images", {}).get("logos", [])
         
         if logos:
-            target_logos = [
-                l for l in logos 
-                if l.get("iso_639_1") == "en" and l.get("file_path", "").endswith(".png")
-            ]
+            target_logos = [l for l in logos if l.get("iso_639_1") == "en" and l.get("file_path", "").endswith(".png")]
             if not target_logos:
-                target_logos = [
-                    l for l in logos 
-                    if l.get("file_path", "").endswith(".png")
-                ]
+                target_logos = [l for l in logos if l.get("file_path", "").endswith(".png")]
                 
             if target_logos:
                 try:
@@ -214,13 +202,12 @@ def create_composite_card(details, category, lang, item_type, file_name):
         
         draw.text((90, 260), meta_line, fill=(240, 240, 245), font=font_meta)
         
-        # 2. METADATA BLOCK
+        # 2. METADATA ROWS
         genres = ", ".join([g["name"] for g in details.get("genres", [])[:3]]) or "General"
         credits = details.get("credits", {})
         
         directors_list = [c["name"] for c in credits.get("crew", []) if c.get("job") == "Director"]
         directors = ", ".join(directors_list[:1])
-        
         if item_type == "tv" and details.get("created_by"):
             directors = ", ".join([c["name"] for c in details["created_by"]][:1])
             
@@ -250,14 +237,8 @@ def create_composite_card(details, category, lang, item_type, file_name):
             draw.text((90, y_cursor), line, fill=(245, 245, 250), font=font_body)
             y_cursor += 34
             
-        # Clear-output uncompressed matrix saves
         final_rgb = combined.convert("RGB")
-        final_rgb.save(
-            WALLPAPER_DIR / file_name, 
-            "JPEG", 
-            quality=100, 
-            subsampling=0
-        )
+        final_rgb.save(WALLPAPER_DIR / file_name, "JPEG", quality=100, subsampling=0)
         return f"images/{file_name}"
     except Exception as e:
         print(f"      ↳ Exception: {e}")
@@ -290,68 +271,21 @@ def run():
                 
                 img_relative_path = create_composite_card(details, category, lang, item_type, file_name)
                 
-                if img    p   = {"api_key": TMDB_API_KEY, **params}
-    r   = requests.get(url, params=p, timeout=15)
-    r.raise_for_status()
-    return r.json()
+                if img_relative_path:
+                    entries.append({
+                        "location": f"{category['label']} · {lang['label']} · {category['tag']}",
+                        "title": f"{details.get('title') if item_type == 'movie' else details.get('name')}",
+                        "author": lang["label"],
+                        "url_img": f"https://unableeludemotto.github.io/PixivyWalls/{img_relative_path}"
+                    })
+                    seen_ids.add(item_id)
+                    added += 1
 
-def fetch_items(category: dict, lang: dict) -> list:
-    if category["tag"] == "All-Time Top Rated" and lang["code"] == "ml":
-        return []
-    params = {"language": "en-US", "page": 1, "include_adult": "false"}
-    if lang["code"] != "en":
-        params["with_original_language"] = lang["code"]
-    try:
-        return tmdb_get(category["endpoint"], params).get("results", [])[:MAX_PER_BUCKET]
-    except:
-        return []
+            if added > 0:
+                print(f"    └─ [{category['label']} - {category['tag']}]: Built +{added} vectors")
 
-def fetch_details(item_type: str, item_id: int) -> dict:
-    try:
-        endpoint = "movie" if item_type == "movie" else "tv"
-        return tmdb_get(f"{endpoint}/{item_id}", {
-            "language": "en-US", 
-            "append_to_response": "credits,images",
-            "include_image_language": "en"
-        })
-    except:
-        return {}
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(entries, f, ensure_ascii=False, indent=2)
 
-def text_wrap(text, font, max_width, draw):
-    words = text.split(' ')
-    lines = []
-    current_line = []
-    for word in words:
-        test_line = ' '.join(current_line + [word])
-        bbox = draw.textbbox((0, 0), test_line, font=font)
-        if bbox[2] - bbox[0] <= max_width:
-            current_line.append(word)
-        else:
-            lines.append(' '.join(current_line))
-            current_line = [word]
-    if current_line:
-        lines.append(' '.join(current_line))
-    return lines
-
-# ─── COMPOSITOR ENGINE ───────────────────────────────────────────────────────
-def create_composite_card(details, category, lang, item_type, file_name):
-    backdrop_path = details.get("backdrop_path")
-    if not backdrop_path or details.get("adult", False):
-        return None
-
-    try:
-        font_path = "assets/Roboto.ttf"
-        if os.path.exists(font_path):
-            font_title = ImageFont.truetype(font_path, 76)
-            font_meta  = ImageFont.truetype(font_path, 28)
-            font_label = ImageFont.truetype(font_path, 20)
-            font_body  = ImageFont.truetype(font_path, 24)
-        else:
-            font_title = font_meta = font_label = font_body = ImageFont.load_default()
-
-        img_res = requests.get(f"{TMDB_IMG_BASE}{backdrop_path}", timeout=20)
-        base_img = Image.open(BytesIO(img_res.content)).convert("RGBA")
-        base_img = base_img.resize((1920, 1080), Image.Resampling.LANCZOS)
-        
-        # Smooth cinematic edge vignette overlay mapping pass
-        overlay = Image.new("RGBA", (1920, 1
+if __name__ == "__main__":
+    run()
