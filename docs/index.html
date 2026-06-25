@@ -13,16 +13,8 @@
       padding: 2rem;
       overflow-x: hidden;
     }
-    
-    /* Section 1: Landing Page Config Layout */
-    .landing-section {
-      max-width: 1200px;
-      margin: 0 auto 4rem;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 1rem 1.5rem;
-    }
+    .landing-section { max-width: 1200px; margin: 0 auto 4rem; }
+    header { text-align: center; padding: 2rem 1rem 1.5rem; }
     header h1 { font-size: 2.8rem; color: #e50914; letter-spacing: -1px; }
     header p  { margin-top: 0.5rem; color: #aaa; font-size: 1.1rem; }
     .badge-container { margin-top: 1rem; text-align: center; }
@@ -57,10 +49,7 @@
       margin-bottom: 1rem;
       font-family: 'Courier New', Courier, monospace;
     }
-    .steps {
-      max-width: 700px;
-      margin: 0 auto;
-    }
+    .steps { max-width: 700px; margin: 0 auto; }
     .steps h2 { color: #fff; margin-bottom: 1rem; font-size: 1.4rem; border-bottom: 1px solid #222; padding-bottom: 0.5rem; }
     .step {
       background: #111;
@@ -71,132 +60,43 @@
       font-size: 0.95rem;
     }
     .step strong { color: #fff; }
-    .stats {
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
+    .stats { text-align: center; color: #666; font-size: 0.9rem; margin-top: 2rem; }
     #count { color: #e50914; font-weight: bold; }
 
-    /* Section 2: Widescreen Wallpapers Live Carousel Layout */
-    .carousel-section {
-      max-width: 1400px;
-      margin: 2rem auto 4rem;
-      padding: 0 1rem;
-    }
-    .carousel-section h2 {
-      font-size: 1.8rem;
-      color: #fff;
-      margin-bottom: 0.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .carousel-section p {
-      color: #666;
-      font-size: 0.95rem;
-      margin-bottom: 1.5rem;
-    }
-    .carousel-container {
-      position: relative;
-      width: 100%;
-    }
+    .carousel-section { max-width: 1400px; margin: 2rem auto 4rem; padding: 0 1rem; }
+    .carousel-section h2 { font-size: 1.8rem; color: #fff; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    .carousel-section p { color: #666; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .carousel-container { position: relative; width: 100%; }
     .carousel-track {
-      display: flex;
-      gap: 1.5rem;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding: 1rem 0;
-      scrollbar-width: thin;
-      scrollbar-color: #e50914 #111;
+      display: flex; gap: 1.5rem; overflow-x: auto; scroll-behavior: smooth; padding: 1rem 0;
+      scrollbar-width: thin; scrollbar-color: #e50914 #111;
     }
-    .carousel-track::-webkit-scrollbar {
-      height: 8px;
-    }
-    .carousel-track::-webkit-scrollbar-track {
-      background: #111;
-      border-radius: 4px;
-    }
-    .carousel-track::-webkit-scrollbar-thumb {
-      background: #e50914;
-      border-radius: 4px;
-    }
-    .carousel-item {
-      flex: 0 0 calc(33.333% - 1rem);
-      min-width: 300px;
-      background: #111;
-      border-radius: 8px;
-      overflow: hidden;
-      border: 1px solid #222;
-      transition: transform 0.3s ease, border-color 0.3s ease;
-    }
-    .carousel-item:hover {
-      transform: translateY(-4px);
-      border-color: #e50914;
-    }
-    .img-wrapper {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%; /* Force continuous strict 16:9 widescreen layout aspect ratio */
-      background: #000;
-      overflow: hidden;
-    }
-    .img-wrapper img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: opacity 0.3s ease;
-    }
-    .item-info {
-      padding: 1rem;
-    }
-    .item-title {
-      font-size: 1rem;
-      font-weight: bold;
-      color: #fff;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin-bottom: 0.25rem;
-    }
-    .item-meta {
-      font-size: 0.8rem;
-      color: #888;
-      display: flex;
-      justify-content: space-between;
-    }
-    .item-tag {
-      color: #e50914;
-      font-weight: 600;
-    }
+    .carousel-track::-webkit-scrollbar { height: 8px; }
+    .carousel-track::-webkit-scrollbar-track { background: #111; border-radius: 4px; }
+    .carousel-track::-webkit-scrollbar-thumb { background: #e50914; border-radius: 4px; }
+    .carousel-item { flex: 0 0 calc(33.333% - 1rem); min-width: 300px; background: #111; border-radius: 8px; overflow: hidden; border: 1px solid #222; transition: transform 0.3s ease, border-color 0.3s ease; }
+    .carousel-item:hover { transform: translateY(-4px); border-color: #e50914; }
+    .img-wrapper { position: relative; width: 100%; padding-top: 56.25%; background: #000; overflow: hidden; }
+    .img-wrapper img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+    .item-info { padding: 1rem; }
+    .item-title { font-size: 1rem; font-weight: bold; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.25rem; }
+    .item-meta { font-size: 0.8rem; color: #888; display: flex; justify-content: space-between; }
+    .item-tag { color: #e50914; font-weight: 600; }
 
-    @media (max-width: 1024px) {
-      .carousel-item { flex: 0 0 calc(50% - 0.75rem); }
-    }
-    @media (max-width: 640px) {
-      .carousel-item { flex: 0 0 100%; }
-      body { padding: 1rem; }
-    }
+    @media (max-width: 1024px) { .carousel-item { flex: 0 0 calc(50% - 0.75rem); } }
+    @media (max-width: 640px) { .carousel-item { flex: 0 0 100%; body { padding: 1rem; } }
   </style>
 </head>
 <body>
 
-  <!-- SECTION 1: LANDING CONFIGURATION DETAILS -->
   <section class="landing-section">
     <header>
       <h1>🎬 PixivyWalls</h1>
       <p>Automated high-resolution TV backdrops for Projectivy Launcher</p>
       <div class="badge-container">
-        <span class="badge">🇬🇧 English Only Text</span>
-        <span class="badge">🇮🇳 Hindi Catalog</span>
-        <span class="badge">🏴 Kannada Catalog</span>
-        <span class="badge">🏴 Malayalam Catalog</span>
-        <span class="badge">🎬 Movies &amp; Series</span>
-        <span class="badge">🛡️ Strict Widescreen No-Posters</span>
+        <span class="badge">🇬🇧 English Language Only</span>
+        <span class="badge">🍿 Dynamic Cast &amp; Crew Pills</span>
+        <span class="badge">🛡️ Strict Widescreen Safety Filters</span>
       </div>
     </header>
 
@@ -216,75 +116,47 @@
     </div>
 
     <div class="stats">
-      <p>Wallpapers currently active in rotation: <span id="count">...</span> | Updated daily at 6 AM IST</p>
-      <p style="margin-top:0.6rem;">
-        <a href="wallpapers.json" style="color:#e50914; text-decoration: none; font-weight: bold;">wallpapers.json</a> &nbsp;|&nbsp; 
-        <a href="wallpapers_full.json" style="color:#e50914; text-decoration: none; font-weight: bold;">wallpapers_full.json (With Metadata)</a>
-      </p>
+      <p>Wallpapers currently active in rotation: <span id="count">...</span> | Updated daily at 6:30 AM IST</p>
     </div>
   </section>
 
-  <!-- SECTION 2: LIVE BACKDROP CAROUSEL SLIDESHOW -->
   <section class="carousel-section">
     <h2>🍿 Active Wallpaper Feed Carousel</h2>
-    <p>Scroll horizontally to preview the uncompressed widescreen landscapes currently serving your TV launcher profile:</p>
-    
     <div class="carousel-container">
       <div class="carousel-track" id="carouselTrack">
-        <!-- Live elements injected programmatically here via Javascript -->
         <p style="color: #444; padding: 2rem;" id="loadingText">Loading active image slides stream configuration...</p>
       </div>
     </div>
   </section>
 
   <script>
-    // System setup script mapping the JSON output targets dynamically
     const base = window.location.origin + window.location.pathname.replace('index.html','');
     const jsonUrl = base + 'wallpapers.json';
     document.getElementById('jsonUrl').textContent = jsonUrl;
 
-    // Fetch live wallpapers metadata array directly
     fetch('wallpapers.json')
       .then(response => response.json())
       .then(data => {
         if (!Array.isArray(data) || data.length === 0) {
           document.getElementById('count').textContent = '0';
-          document.getElementById('loadingText').textContent = 'No wallpapers found in dataset feed.';
           return;
         }
-
-        // Set global numeric profile updates metric
         document.getElementById('count').textContent = data.length;
-        
         const track = document.getElementById('carouselTrack');
-        track.innerHTML = ''; // Clear loading placeholder state
+        track.innerHTML = '';
 
-        // Dynamic construction loops loading true 16:9 widescreen slider contents
         data.forEach(item => {
           const card = document.createElement('div');
           card.className = 'carousel-item';
-
           card.innerHTML = `
-            <div class="img-wrapper">
-              <img src="${item.url_img}" alt="${item.title}" loading="lazy">
-            </div>
+            <div class="img-wrapper"><img src="${item.url_img}" alt="" loading="lazy"></div>
             <div class="item-info">
-              <div class="item-title" title="${item.title}">${item.title}</div>
-              <div class="item-meta">
-                <span class="item-tag">${item.location.split(' · ')[1] || 'Movie'}</span>
-                <span>${item.author !== 'TMDB' ? item.author : 'Cinematic Asset'}</span>
-              </div>
-            </div>
-          `;
+              <div class="item-title">${item.title}</div>
+              <div class="item-meta"><span class="item-tag">${item.location.split(' · ')[1]}</span></div>
+            </div>`;
           track.appendChild(card);
         });
-      })
-      .catch(err => {
-        console.error('Error parsing live repository stream components:', err);
-        document.getElementById('count').textContent = '—';
-        document.getElementById('loadingText').textContent = 'Failed to load active preview configurations carousel stream.';
-      });
+      }).catch(() => { document.getElementById('count').textContent = '—'; });
   </script>
-
 </body>
 </html>
