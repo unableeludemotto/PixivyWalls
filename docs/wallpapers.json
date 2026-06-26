@@ -84,10 +84,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Euphoria",
+    "location": "Series · English · Currently Running",
+    "title": "Friends",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -138,16 +138,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "How to Make a Killing",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/howtomakeakilling_c4dc7f.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Lee Cronin's The Mummy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -228,6 +228,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Ready or Not: Here I Come",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/readyornothereicome_b792df.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Remarkably Bright Creatures",
     "author": "English",
@@ -252,19 +258,13 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Shelter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shelter_cf7229.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "Spider-Noir",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Trending",
     "title": "Stranger Things",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
