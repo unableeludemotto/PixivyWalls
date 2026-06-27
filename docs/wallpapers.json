@@ -12,12 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/28yearslaterthebonet_cb3c42.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
-    "title": "Anne with an E",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/annewithane_e68b17.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -36,7 +30,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarfireandash_2d89f7.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
     "title": "Avatar: The Last Airbender",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarthelastairbend_71778d.jpg"
@@ -84,10 +78,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Friends",
+    "location": "Series · English · Trending",
+    "title": "Euphoria",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -138,16 +132,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
+    "location": "Movie · English · Top Rated",
+    "title": "Instinto protector",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/instintoprotector_7812dd.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Lee Cronin's The Mummy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -217,12 +211,6 @@
   },
   {
     "location": "Movie · English · Top Rated",
-    "title": "Protector",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/protector_7812dd.jpg"
-  },
-  {
-    "location": "Movie · English · Top Rated",
     "title": "Pulp Fiction",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
@@ -258,6 +246,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Shelter",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shelter_cf7229.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Spider-Noir",
     "author": "English",
@@ -265,9 +259,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Stranger Things",
+    "title": "SpongeBob SquarePants",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -400,12 +394,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
