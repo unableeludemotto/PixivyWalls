@@ -210,12 +210,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Ready or Not: Here I Come",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/readyornothereicome_b792df.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Remarkably Bright Creatures",
     "author": "English",
@@ -258,12 +252,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Superman",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/superman_610e1f.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -276,7 +264,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Top Rated",
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
@@ -310,6 +298,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
