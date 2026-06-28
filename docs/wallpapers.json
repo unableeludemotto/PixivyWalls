@@ -12,12 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/28yearslaterthebonet_cb3c42.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
-    "title": "Anne with an E",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/annewithane_e68b17.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -84,6 +78,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Euphoria",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
@@ -130,12 +130,6 @@
     "title": "House of the Dragon",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "How to Make a Killing",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/howtomakeakilling_c4dc7f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -192,12 +186,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/peakyblinderstheimmo_fea913.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "People We Meet on Vacation",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/peoplewemeetonvacati_834518.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Primal",
     "author": "English",
@@ -220,6 +208,12 @@
     "title": "Pulp Fiction",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Ready or Not: Here I Come",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/readyornothereicome_b792df.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -247,21 +241,27 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "Silo",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Spider-Noir",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
   },
   {
     "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Sugar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Superman",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/superman_610e1f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -310,12 +310,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -426,7 +420,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
   },
   {
-    "location": "Movie · English · Trending",
+    "location": "Movie · English · Current Year",
     "title": "Voicemails for Isabelle",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/voicemailsforisabell_1aa5bf.jpg"
