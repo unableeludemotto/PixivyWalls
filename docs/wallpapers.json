@@ -54,7 +54,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/bettercallsaul_e91ea5.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Currently Running",
     "title": "Breaking Bad",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
@@ -70,6 +70,12 @@
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Daredevil: Born Again",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -106,12 +112,6 @@
     "title": "Hokum",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Hoppers",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hoppers_f1750c.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -174,6 +174,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "ONE PIECE",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onepiece_287e61.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Peaky Blinders: The Immortal Man",
     "author": "English",
@@ -216,28 +222,28 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "S.W.A.T.",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swat_1ca706.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Silo",
+    "location": "Series · English · Currently Running",
+    "title": "Sesame Street",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
   },
   {
     "location": "Series · English · Currently Running",
-    "title": "Smallville",
+    "title": "Shameless",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Shelter",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shelter_cf7229.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -247,15 +253,21 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
+    "title": "Stranger Things",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
     "location": "Series · English · Trending",
     "title": "Sugar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Superman",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/superman_610e1f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -280,12 +292,6 @@
     "title": "The Bear",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thebear_cd2f7a.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Blacklist",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -384,12 +390,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
@@ -430,12 +430,6 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "X-Men '97",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
   },
   {
     "location": "Series · English · Currently Running",
