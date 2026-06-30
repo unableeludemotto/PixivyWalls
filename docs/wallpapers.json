@@ -78,12 +78,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Euphoria",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
@@ -234,28 +228,28 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Shameless",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Shelter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shelter_cf7229.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "Silo",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Smallville",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Spider-Noir",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -276,7 +270,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Top Rated",
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
@@ -436,6 +430,12 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "X-Men '97",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
   },
   {
     "location": "Series · English · Currently Running",
