@@ -73,15 +73,15 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Daredevil: Born Again",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Euphoria",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -109,9 +109,9 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Hokum",
+    "title": "Hoppers",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hoppers_f1750c.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -133,15 +133,15 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Marty Supreme",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/martysupreme_4a7859.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Masters of the Universe",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Mercy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -174,16 +174,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "ONE PIECE",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onepiece_287e61.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Peaky Blinders: The Immortal Man",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/peakyblinderstheimmo_fea913.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Pretty Lethal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/prettylethal_c2a888.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -240,10 +240,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Shelter",
+    "location": "Series · English · Trending",
+    "title": "Silo",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shelter_cf7229.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -253,21 +253,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Stranger Things",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Sugar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Superman",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/superman_610e1f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -430,6 +418,12 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "X-Men '97",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
   },
   {
     "location": "Series · English · Currently Running",
