@@ -73,12 +73,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Criminal Minds",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/criminalminds_9265d6.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
@@ -108,6 +102,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Hokum",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "House",
     "author": "English",
@@ -124,12 +124,6 @@
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Lee Cronin's The Mummy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -382,6 +376,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
