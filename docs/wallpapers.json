@@ -90,12 +90,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Good Luck, Have Fun, Don't Die",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Heated Rivalry",
     "author": "English",
@@ -166,6 +160,12 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Pretty Lethal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/prettylethal_c2a888.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -241,9 +241,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
+    "title": "Stranger Things",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
     "location": "Series · English · Trending",
