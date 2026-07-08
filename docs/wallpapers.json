@@ -24,6 +24,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/arcane_5b10df.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Avatar: Fire and Ash",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarfireandash_2d89f7.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Avatar: The Last Airbender",
     "author": "English",
@@ -64,12 +70,6 @@
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Criminal Minds",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/criminalminds_9265d6.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -121,21 +121,9 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Lee Cronin's The Mummy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Masters of the Universe",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Mercy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -166,6 +154,12 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Pretty Lethal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/prettylethal_c2a888.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -235,9 +229,15 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Stranger Things",
+    "title": "Spider-Noir",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
