@@ -73,12 +73,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Criminal Minds",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/criminalminds_9265d6.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
@@ -88,6 +82,12 @@
     "title": "Enola Holmes 3",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Euphoria",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -120,6 +120,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "INVINCIBLE",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/invincible_eb84ab.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
@@ -127,9 +133,15 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Lee Cronin's The Mummy",
+    "title": "Masters of the Universe",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Mercy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -160,12 +172,6 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Pretty Lethal",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/prettylethal_c2a888.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -235,21 +241,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Spider-Noir",
+    "title": "SpongeBob SquarePants",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Stranger Things",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Sugar",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -376,12 +370,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
