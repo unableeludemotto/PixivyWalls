@@ -102,12 +102,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Good Luck, Have Fun, Don't Die",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Heated Rivalry",
     "author": "English",
@@ -139,15 +133,21 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Michael",
+    "title": "Masters of the Universe",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Mercy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Mortal Kombat II",
+    "title": "Michael",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mortalkombatii_df544d.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -238,6 +238,12 @@
     "title": "Smallville",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Spider-Noir",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
   },
   {
     "location": "Series · English · Trending",
