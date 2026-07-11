@@ -73,12 +73,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Criminal Minds",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/criminalminds_9265d6.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
@@ -114,6 +108,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hoppers_f1750c.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "House",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "House of the Dragon",
     "author": "English",
@@ -136,12 +136,6 @@
     "title": "Masters of the Universe",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Mercy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -168,10 +162,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "ONE PIECE",
+    "location": "Movie · English · Current Year",
+    "title": "Pretty Lethal",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onepiece_287e61.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/prettylethal_c2a888.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -223,9 +217,9 @@
   },
   {
     "location": "Series · English · Currently Running",
-    "title": "Sesame Street",
+    "title": "Shameless",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -241,9 +235,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Spider-Noir",
+    "title": "Stranger Things",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -304,12 +298,6 @@
     "title": "The Drama",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Flash",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
