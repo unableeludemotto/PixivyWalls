@@ -24,12 +24,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/arcane_5b10df.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Avatar: Fire and Ash",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarfireandash_2d89f7.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Avatar: The Last Airbender",
     "author": "English",
@@ -126,6 +120,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "I Will Find You",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/iwillfindyou_4d34f2.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
@@ -154,6 +154,12 @@
     "title": "NCIS",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Normal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -238,6 +244,12 @@
     "title": "Smallville",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -364,12 +376,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
