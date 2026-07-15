@@ -12,12 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/28yearslaterthebonet_cb3c42.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "9-1-1",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/911_f713a7.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -28,12 +22,6 @@
     "title": "Arcane",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/arcane_5b10df.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Avatar: Fire and Ash",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarfireandash_2d89f7.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -79,12 +67,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Daredevil: Born Again",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
-  },
-  {
-    "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
@@ -138,6 +120,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "I Will Find You",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/iwillfindyou_4d34f2.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "Interstellar",
     "author": "English",
@@ -154,6 +142,12 @@
     "title": "Lee Cronin's The Mummy",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Masters of the Universe",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -190,12 +184,6 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "One Tree Hill",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onetreehill_4cceed.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -252,16 +240,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Smallville",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Spider-Noir",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -292,6 +280,12 @@
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Bear",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thebear_cd2f7a.jpg"
   },
   {
     "location": "Series · English · Currently Running",
