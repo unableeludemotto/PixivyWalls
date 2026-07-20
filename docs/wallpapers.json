@@ -84,12 +84,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Euphoria",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
@@ -144,6 +138,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lucifer_da3238.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Masters of the Universe",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Mercy",
     "author": "English",
@@ -160,6 +160,12 @@
     "title": "Mortal Kombat II",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mortalkombatii_df544d.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "My Adventures with Superman",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/myadventureswithsupe_8306ed.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -234,12 +240,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Shelter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shelter_cf7229.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Silo",
     "author": "English",
@@ -280,12 +280,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Agency",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theagency_53f325.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -402,6 +396,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
@@ -436,6 +436,12 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "X-Men '97",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
