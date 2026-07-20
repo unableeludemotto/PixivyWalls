@@ -102,28 +102,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "House",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "House of the Dragon",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "I Will Find You",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/iwillfindyou_4d34f2.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "King of the Hill",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/kingofthehill_b06e4b.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -136,6 +130,12 @@
     "title": "Lee Cronin's The Mummy",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Lucifer",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lucifer_da3238.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -174,7 +174,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/obsession_a7320d.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Top Rated",
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
@@ -235,18 +235,12 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Spider-Noir",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "SpongeBob SquarePants",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
     "title": "Stranger Things",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
@@ -268,6 +262,12 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Agency",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theagency_53f325.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -382,12 +382,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
