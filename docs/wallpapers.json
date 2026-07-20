@@ -84,6 +84,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Euphoria",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
@@ -228,10 +234,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Shelter",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shelter_cf7229.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Silo",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Spider-Noir",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -390,12 +408,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The Super Mario Galaxy Movie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesupermariogalaxym_f07a93.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "The Wrecking Crew",
     "author": "English",
@@ -424,12 +436,6 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "X-Men '97",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
