@@ -24,6 +24,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/arcane_5b10df.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Avatar: The Last Airbender",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarthelastairbend_71778d.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Avatar: The Last Airbender",
     "author": "English",
@@ -60,12 +66,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Criminal Minds",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/criminalminds_9265d6.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Dexter",
     "author": "English",
@@ -96,16 +96,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Futurama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Good Luck, Have Fun, Don't Die",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -126,10 +126,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "I Will Find You",
+    "location": "Movie · English · Trending",
+    "title": "In the Grey",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/iwillfindyou_4d34f2.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -151,15 +151,15 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Lee Cronin's The Mummy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Masters of the Universe",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Mercy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -264,12 +264,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Sugar",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -322,12 +316,6 @@
     "title": "The Devil Wears Prada 2",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -448,6 +436,12 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Widow's Bay",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
   },
   {
     "location": "Series · English · Trending",
