@@ -24,12 +24,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/arcane_5b10df.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Avatar: The Last Airbender",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarthelastairbend_71778d.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Avatar: The Last Airbender",
     "author": "English",
@@ -66,13 +60,25 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Criminal Minds",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/criminalminds_9265d6.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Dexter",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexter_fd7c3d.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Movie · English · Trending",
+    "title": "Disclosure Day",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
@@ -90,16 +96,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Futurama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Good Luck, Have Fun, Don't Die",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -120,10 +126,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "In the Grey",
+    "location": "Series · English · Trending",
+    "title": "I Will Find You",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/iwillfindyou_4d34f2.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -154,12 +160,6 @@
     "title": "Masters of the Universe",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Mercy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -196,18 +196,6 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Passenger",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/passenger_ea47e1.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "PAW Patrol",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pawpatrol_b653f7.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -247,6 +235,12 @@
   },
   {
     "location": "Series · English · Currently Running",
+    "title": "Sesame Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
     "title": "Shameless",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
@@ -270,6 +264,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Sugar",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -280,12 +280,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Ted Lasso",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -330,6 +324,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Godfather",
     "author": "English",
@@ -354,10 +354,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Lord of the Rings: The Rings of Power",
+    "location": "Movie · English · Trending",
+    "title": "The Mandalorian and Grogu",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -472,5 +472,11 @@
     "title": "Dilwale Dulhania Le Jayenge",
     "author": "Hindi",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dilwaledulhanialejay_ae253a.jpg"
+  },
+  {
+    "location": "Series · Hindi · Currently Running",
+    "title": "Sacred Games",
+    "author": "Hindi",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sacredgames_598c3c.jpg"
   }
 ]
