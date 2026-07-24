@@ -72,19 +72,13 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/deepwater_f07b29.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Dexter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexter_fd7c3d.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Disclosure Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Trending",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
@@ -100,12 +94,6 @@
     "title": "FROM",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Futurama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -222,6 +210,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "S.W.A.T.",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swat_1ca706.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
@@ -244,6 +238,12 @@
     "title": "Silo",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Smallville",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -292,12 +292,6 @@
     "title": "The Bear",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thebear_cd2f7a.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Blacklist",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
