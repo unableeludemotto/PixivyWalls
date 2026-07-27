@@ -24,6 +24,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/arcane_5b10df.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "Avatar Aang: The Last Airbender",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avataraangthelastair_4df0e1.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Avatar: The Last Airbender",
     "author": "English",
@@ -61,12 +67,6 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Deep Water",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/deepwater_f07b29.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Disclosure Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
@@ -85,21 +85,9 @@
   },
   {
     "location": "Series · English · Currently Running",
-    "title": "Friends",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Futurama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -130,12 +118,6 @@
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "King of the Hill",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/kingofthehill_b06e4b.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -169,6 +151,12 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Normal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Obsession",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/obsession_a7320d.jpg"
@@ -198,7 +186,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
     "title": "Reacher",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/reacher_b7635e.jpg"
@@ -258,6 +246,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Sugar",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -270,16 +264,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Ted Lasso",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Blacklist",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -324,6 +318,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegodfatherpartii_8dad5e.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "The Good Doctor",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegooddoctor_969746.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Green Mile",
     "author": "English",
@@ -334,12 +334,6 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Lord of the Rings: The Rings of Power",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -418,12 +412,6 @@
     "title": "The Walking Dead: Dead City",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "The Wrecking Crew",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
   },
   {
     "location": "Movie · English · Current Year",
