@@ -84,6 +84,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Euphoria",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Friends",
     "author": "English",
@@ -118,6 +124,12 @@
     "title": "House of the Dragon",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "I Will Find You",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/iwillfindyou_4d34f2.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -157,6 +169,12 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Normal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Obsession",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/obsession_a7320d.jpg"
@@ -178,12 +196,6 @@
     "title": "Project Hail Mary",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/projecthailmary_e602ca.jpg"
-  },
-  {
-    "location": "Movie · English · Top Rated",
-    "title": "Pulp Fiction",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -223,12 +235,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
@@ -238,12 +244,6 @@
     "title": "Stranger Things",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Sugar",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -322,6 +322,12 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Lord of the Rings: The Rings of Power",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -433,12 +439,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Widow's Bay",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "X-Men '97",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
@@ -448,6 +448,12 @@
     "title": "Yellowstone",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/yellowstone_a84334.jpg"
+  },
+  {
+    "location": "Movie · English · Top Rated",
+    "title": "¿Quieres ser mi hijo?",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/quieressermihijo_a5ea9e.jpg"
   },
   {
     "location": "Movie · Hindi · Top Rated",
