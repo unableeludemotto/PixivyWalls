@@ -66,12 +66,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Deep Water",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/deepwater_f07b29.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Dexter",
     "author": "English",
@@ -180,12 +174,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "ONE PIECE",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onepiece_287e61.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
@@ -235,18 +223,12 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
     "title": "Stranger Things",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
@@ -280,6 +262,12 @@
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Bear",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thebear_cd2f7a.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -424,12 +412,6 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Vikings",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/vikings_e28d81.jpg"
   },
   {
     "location": "Movie · English · Current Year",
