@@ -66,6 +66,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Deep Water",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/deepwater_f07b29.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Dexter",
     "author": "English",
@@ -96,6 +102,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Futurama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
@@ -106,12 +118,6 @@
     "title": "Heated Rivalry",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Hokum",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -136,12 +142,6 @@
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Lee Cronin's The Mummy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leecroninsthemummy_6c0a94.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -178,6 +178,12 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "ONE PIECE",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onepiece_287e61.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -223,9 +229,15 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "South Park",
+    "title": "Spider-Noir",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -268,12 +280,6 @@
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Bear",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thebear_cd2f7a.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -394,6 +400,12 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Super Mario Galaxy Movie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesupermariogalaxym_f07a93.jpg"
   },
   {
     "location": "Series · English · Trending",
