@@ -97,6 +97,12 @@
   },
   {
     "location": "Series · English · Currently Running",
+    "title": "Friends",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
@@ -148,6 +154,12 @@
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Lioness",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lioness_b03824.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -241,18 +253,12 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Spider-Noir",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Trending",
     "title": "Stranger Things",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
@@ -289,9 +295,9 @@
   },
   {
     "location": "Series · English · Currently Running",
-    "title": "The Boys",
+    "title": "The Blacklist",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -310,12 +316,6 @@
     "title": "The Devil Wears Prada 2",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -400,6 +400,12 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Super Mario Galaxy Movie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesupermariogalaxym_f07a93.jpg"
   },
   {
     "location": "Series · English · Trending",
