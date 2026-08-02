@@ -73,9 +73,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Daredevil: Born Again",
+    "title": "Dark Matter",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -100,6 +100,12 @@
     "title": "Enola Holmes 3",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Family Guy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -258,7 +264,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
     "title": "Stranger Things",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
@@ -292,12 +298,6 @@
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Blacklist",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -402,6 +402,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The Super Mario Galaxy Movie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesupermariogalaxym_f07a93.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "The Walking Dead: Dead City",
     "author": "English",
@@ -430,12 +436,6 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Widow's Bay",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
   },
   {
     "location": "Series · English · Trending",
