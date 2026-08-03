@@ -72,12 +72,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Dark Matter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Dexter",
     "author": "English",
@@ -102,12 +96,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Family Guy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Friends",
     "author": "English",
@@ -118,6 +106,12 @@
     "title": "FROM",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Futurama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -210,13 +204,19 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/projecthailmary_e602ca.jpg"
   },
   {
+    "location": "Movie · English · Top Rated",
+    "title": "Pulp Fiction",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Reacher",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/reacher_b7635e.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
+    "location": "Movie · English · Top Rated",
     "title": "Remarkably Bright Creatures",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/remarkablybrightcrea_b418aa.jpg"
@@ -396,6 +396,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
@@ -412,6 +418,12 @@
     "title": "The Walking Dead: Dead City",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "The Wrecking Crew",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -442,12 +454,6 @@
     "title": "X-Men '97",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
-  },
-  {
-    "location": "Movie · English · Top Rated",
-    "title": "¿Quieres ser mi hijo?",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/quieressermihijo_a5ea9e.jpg"
   },
   {
     "location": "Movie · Hindi · Top Rated",
