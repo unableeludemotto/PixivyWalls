@@ -90,6 +90,18 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "Enola Holmes 3",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Evil Dead Burn",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
@@ -180,7 +192,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/obsession_a7320d.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Trending",
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
@@ -252,6 +264,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Sugar",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -268,12 +286,6 @@
     "title": "Ted Lasso",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Agency",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theagency_53f325.jpg"
   },
   {
     "location": "Series · English · Top Rated",
