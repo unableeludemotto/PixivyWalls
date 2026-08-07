@@ -138,12 +138,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "In the Grey",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "Interstellar",
     "author": "English",
@@ -174,12 +168,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Mortal Kombat II",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mortalkombatii_df544d.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "My Life with the Walter Boys",
     "author": "English",
@@ -202,6 +190,12 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
+  },
+  {
+    "location": "Series · English · Top Rated",
+    "title": "Primal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/primal_02f95e.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -259,6 +253,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
@@ -294,12 +294,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
-    "title": "The Amazing Digital Circus",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Boys",
     "author": "English",
@@ -322,6 +316,12 @@
     "title": "The Devil Wears Prada 2",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -348,12 +348,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The Mandalorian and Grogu",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Mentalist",
     "author": "English",
@@ -376,6 +370,12 @@
     "title": "The Pitt",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepitt_7210b1.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Punisher: One Last Kill",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepunisheronelastki_a82d6b.jpg"
   },
   {
     "location": "Movie · English · Current Year",
