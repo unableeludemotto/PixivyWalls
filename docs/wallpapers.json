@@ -91,12 +91,6 @@
   },
   {
     "location": "Series · English · Currently Running",
-    "title": "Friends",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
@@ -162,12 +156,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Mercy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Michael",
     "author": "English",
@@ -202,6 +190,12 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Pressure",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pressure_b3e971.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -348,12 +342,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The Mandalorian and Grogu",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Mentalist",
     "author": "English",
@@ -408,10 +396,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
+    "location": "Series · English · Currently Running",
+    "title": "The Walking Dead",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
   },
   {
     "location": "Movie · English · Current Year",
