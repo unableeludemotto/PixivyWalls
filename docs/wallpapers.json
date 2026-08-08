@@ -84,12 +84,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Enola Holmes 3",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Evil Dead Burn",
     "author": "English",
@@ -168,6 +162,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "Mercy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mercy_d50ab3.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Michael",
     "author": "English",
@@ -217,6 +217,12 @@
   },
   {
     "location": "Movie · English · Top Rated",
+    "title": "Protector",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/protector_7812dd.jpg"
+  },
+  {
+    "location": "Movie · English · Top Rated",
     "title": "Pulp Fiction",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
@@ -226,12 +232,6 @@
     "title": "Reacher",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/reacher_b7635e.jpg"
-  },
-  {
-    "location": "Movie · English · Top Rated",
-    "title": "Remarkably Bright Creatures",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/remarkablybrightcrea_b418aa.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -262,12 +262,6 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -304,12 +298,6 @@
     "title": "Ted Lasso",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Bear",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thebear_cd2f7a.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -456,7 +444,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Trending",
     "title": "X-Men '97",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
