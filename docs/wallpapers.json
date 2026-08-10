@@ -13,12 +13,6 @@
   },
   {
     "location": "Movie · English · Current Year",
-    "title": "72 HOURS",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/72hours_b42f10.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
@@ -46,12 +40,6 @@
     "title": "Backrooms",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/backrooms_99b20f.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Batman: Caped Crusader",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/batmancapedcrusader_7da937.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -88,6 +76,12 @@
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Enola Holmes 3",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/enolaholmes3_22cc20.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -132,6 +126,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "In the Grey",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "Interstellar",
     "author": "English",
@@ -160,12 +160,6 @@
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Mortal Kombat II",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mortalkombatii_df544d.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -288,6 +282,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Bear",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thebear_cd2f7a.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "The Boys",
     "author": "English",
@@ -394,12 +394,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
