@@ -72,12 +72,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Daredevil: Born Again",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Disclosure Day",
     "author": "English",
@@ -258,10 +252,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "South Park",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -394,12 +400,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
