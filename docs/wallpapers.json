@@ -72,6 +72,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Daredevil: Born Again",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Disclosure Day",
     "author": "English",
@@ -120,12 +126,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Hokum",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "House",
     "author": "English",
@@ -172,6 +172,12 @@
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Mortal Kombat II",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mortalkombatii_df544d.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -252,22 +258,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "South Park",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -276,7 +270,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Trending",
     "title": "Stranger Things",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
@@ -306,6 +300,18 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Agency",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theagency_53f325.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -322,12 +328,6 @@
     "title": "The Devil Wears Prada 2",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -352,6 +352,12 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Mandalorian and Grogu",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
   },
   {
     "location": "Series · English · Currently Running",
