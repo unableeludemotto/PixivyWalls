@@ -90,6 +90,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Family Guy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Friends",
     "author": "English",
@@ -130,6 +136,12 @@
     "title": "House of the Dragon",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "In the Grey",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -264,7 +276,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
     "title": "Stranger Things",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
@@ -316,12 +328,6 @@
     "title": "The Devil Wears Prada 2",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -402,16 +408,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -430,12 +436,6 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Vikings",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/vikings_e28d81.jpg"
   },
   {
     "location": "Movie · English · Current Year",
