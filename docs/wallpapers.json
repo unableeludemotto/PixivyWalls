@@ -18,6 +18,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/72hours_b42f10.jpg"
   },
   {
+    "location": "Series · English · Top Rated",
+    "title": "Adventure Time: Fionna and Cake",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/adventuretimefionnaa_5f8ec1.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -90,12 +96,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Family Guy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Friends",
     "author": "English",
@@ -138,7 +138,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
-    "location": "Movie · English · Trending",
+    "location": "Movie · English · Current Year",
     "title": "In the Grey",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
@@ -204,12 +204,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
-    "title": "Primal",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/primal_02f95e.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
@@ -265,12 +259,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
@@ -306,12 +294,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "The Boys",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -328,6 +310,12 @@
     "title": "The Devil Wears Prada 2",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -384,12 +372,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepitt_7210b1.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "The Rip",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therip_e75569.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Rookie",
     "author": "English",
@@ -408,16 +390,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Walking Dead: Dead City",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -438,10 +420,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Vikings",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/vikings_e28d81.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Widow's Bay",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
   },
   {
     "location": "Series · English · Trending",
