@@ -78,12 +78,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Daredevil: Born Again",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Dexter",
     "author": "English",
@@ -136,6 +130,12 @@
     "title": "Heated Rivalry",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Hokum",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -216,22 +216,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "ONE PIECE",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onepiece_287e61.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/projecthailmary_e602ca.jpg"
-  },
-  {
-    "location": "Movie · English · Top Rated",
-    "title": "Protector",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/protector_7812dd.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -244,6 +232,12 @@
     "title": "Reacher",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/reacher_b7635e.jpg"
+  },
+  {
+    "location": "Movie · English · Top Rated",
+    "title": "Remarkably Bright Creatures",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/remarkablybrightcrea_b418aa.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -277,15 +271,21 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Star Trek: Strange New Worlds",
+    "title": "Spider-Noir",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
   },
   {
     "location": "Series · English · Trending",
-    "title": "Stranger Things",
+    "title": "SpongeBob SquarePants",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Star Trek: Strange New Worlds",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -412,12 +412,6 @@
     "title": "The Walking Dead",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
