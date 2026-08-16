@@ -18,6 +18,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/72hours_b42f10.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Ahsoka",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ahsoka_f70c54.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -72,12 +78,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Dexter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexter_fd7c3d.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Disclosure Day",
     "author": "English",
@@ -88,6 +88,12 @@
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Euphoria",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -126,12 +132,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Hokum",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "House",
     "author": "English",
@@ -162,6 +162,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Leviticus",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leviticus_e99a4d.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Lioness",
     "author": "English",
@@ -186,10 +192,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "My Life with the Walter Boys",
+    "location": "Movie · English · Trending",
+    "title": "Mortal Kombat II",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mylifewiththewalterb_250efd.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mortalkombatii_df544d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -276,12 +282,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Sugar",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sugar_c96af1.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -300,10 +300,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Agency",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theagency_53f325.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
   },
   {
     "location": "Series · English · Top Rated",
