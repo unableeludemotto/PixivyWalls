@@ -42,12 +42,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avataraangthelastair_4df0e1.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Avatar: Fire and Ash",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarfireandash_2d89f7.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Avatar: The Last Airbender",
     "author": "English",
@@ -90,6 +84,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Dexter",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexter_fd7c3d.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Disclosure Day",
     "author": "English",
@@ -100,12 +100,6 @@
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Euphoria",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -282,6 +276,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Stranger Things",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -300,12 +300,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "The Boys",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -316,12 +310,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Devil Wears Prada 2",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -436,6 +424,12 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Tuner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tuner_9df73a.jpg"
   },
   {
     "location": "Movie · English · Current Year",
