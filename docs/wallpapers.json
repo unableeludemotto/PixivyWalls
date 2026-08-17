@@ -18,10 +18,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/72hours_b42f10.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Ahsoka",
+    "location": "Series · English · Top Rated",
+    "title": "Adventure Time: Fionna and Cake",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ahsoka_f70c54.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/adventuretimefionnaa_5f8ec1.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -40,6 +40,12 @@
     "title": "Avatar Aang: The Last Airbender",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avataraangthelastair_4df0e1.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Avatar: Fire and Ash",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarfireandash_2d89f7.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -76,6 +82,12 @@
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Daredevil: Born Again",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/daredevilbornagain_7faa58.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -162,12 +174,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Leviticus",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leviticus_e99a4d.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Lioness",
     "author": "English",
@@ -190,12 +196,6 @@
     "title": "Minions & Monsters",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Mortal Kombat II",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mortalkombatii_df544d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -300,18 +300,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Agency",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theagency_53f325.jpg"
-  },
-  {
-    "location": "Series · English · Top Rated",
-    "title": "The Amazing Digital Circus",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Boys",
     "author": "English",
@@ -328,6 +316,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Devil Wears Prada 2",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -400,6 +394,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
