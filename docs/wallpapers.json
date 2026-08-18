@@ -25,12 +25,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Ahsoka",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ahsoka_f70c54.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "American Horror Story",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
@@ -114,12 +108,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Family Guy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Friends",
     "author": "English",
@@ -174,6 +162,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "It's Always Sunny in Philadelphia",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/itsalwayssunnyinphil_67ce53.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
@@ -202,6 +196,12 @@
     "title": "Minions & Monsters",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "My Adventures with Superman",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/myadventureswithsupe_8306ed.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -318,6 +318,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Godfather",
     "author": "English",
@@ -352,18 +358,6 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Lord of the Rings: The Rings of Power",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Mandalorian and Grogu",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -442,6 +436,12 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Tuner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tuner_9df73a.jpg"
   },
   {
     "location": "Movie · English · Current Year",
