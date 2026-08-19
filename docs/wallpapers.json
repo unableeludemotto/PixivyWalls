@@ -24,12 +24,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/adventuretimefionnaa_5f8ec1.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "American Horror Story",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -150,6 +144,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "I Will Find You",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/iwillfindyou_4d34f2.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "In the Grey",
     "author": "English",
@@ -198,10 +198,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "My Adventures with Superman",
+    "location": "Movie · English · Trending",
+    "title": "Mortal Kombat II",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/myadventureswithsupe_8306ed.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mortalkombatii_df544d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -306,6 +306,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Agency",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theagency_53f325.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -316,12 +322,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -402,6 +402,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
@@ -436,12 +442,6 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Tuner",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tuner_9df73a.jpg"
   },
   {
     "location": "Movie · English · Current Year",
