@@ -90,22 +90,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Euphoria",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Evil Dead Burn",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Family Guy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -186,7 +174,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Top Rated",
+    "location": "Movie · English · Trending",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -238,12 +226,6 @@
     "title": "Reacher",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/reacher_b7635e.jpg"
-  },
-  {
-    "location": "Movie · English · Top Rated",
-    "title": "Remarkably Bright Creatures",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/remarkablybrightcrea_b418aa.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -312,6 +294,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -322,6 +310,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Devil Wears Prada 2",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -414,6 +408,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Terminal List",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "The Walking Dead",
     "author": "English",
@@ -444,12 +444,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Tuner",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tuner_9df73a.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "War Machine",
     "author": "English",
@@ -460,6 +454,12 @@
     "title": "X-Men '97",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
+  },
+  {
+    "location": "Movie · English · Top Rated",
+    "title": "¿Quieres ser mi hijo?",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/quieressermihijo_a5ea9e.jpg"
   },
   {
     "location": "Movie · Hindi · Top Rated",
