@@ -18,6 +18,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/72hours_b42f10.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Ahsoka",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ahsoka_f70c54.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -70,12 +76,6 @@
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Dexter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexter_fd7c3d.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -204,7 +204,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
     "title": "Outer Banks",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/outerbanks_af5e2f.jpg"
@@ -252,12 +252,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "South Park",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Spider-Man: Brand New Day",
     "author": "English",
@@ -294,12 +288,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Boys",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -310,12 +298,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Devil Wears Prada 2",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -402,16 +384,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Terminal List",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -442,6 +424,12 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Tuner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tuner_9df73a.jpg"
   },
   {
     "location": "Movie · English · Current Year",
