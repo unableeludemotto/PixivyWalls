@@ -66,12 +66,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chernobyl_f9e199.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Crime 101",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Disclosure Day",
     "author": "English",
@@ -82,6 +76,12 @@
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Euphoria",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/euphoria_a7d00d.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -112,6 +112,12 @@
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Grey's Anatomy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/greysanatomy_f65e5d.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -253,9 +259,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Star Trek: Strange New Worlds",
+    "title": "SpongeBob SquarePants",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -298,6 +304,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -402,16 +414,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "The Wrecking Crew",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Tom Clancy's Jack Ryan: Ghost War",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tomclancysjackryangh_696c66.jpg"
   },
   {
     "location": "Movie · English · Trending",
