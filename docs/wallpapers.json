@@ -13,6 +13,12 @@
   },
   {
     "location": "Movie · English · Current Year",
+    "title": "72 HOURS",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/72hours_b42f10.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
@@ -60,12 +66,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chernobyl_f9e199.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Crime 101",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Disclosure Day",
     "author": "English",
@@ -82,12 +82,6 @@
     "title": "Evil Dead Burn",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "FBI",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fbi_02ab5d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -136,6 +130,12 @@
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "It's Always Sunny in Philadelphia",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/itsalwayssunnyinphil_67ce53.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -234,12 +234,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Slow Horses",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Spider-Man: Brand New Day",
     "author": "English",
@@ -280,6 +274,18 @@
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "The Blacklist",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
   },
   {
     "location": "Series · English · Top Rated",
