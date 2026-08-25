@@ -13,12 +13,6 @@
   },
   {
     "location": "Movie · English · Current Year",
-    "title": "72 HOURS",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/72hours_b42f10.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
@@ -34,12 +28,6 @@
     "title": "Avatar Aang: The Last Airbender",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avataraangthelastair_4df0e1.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Avatar: Fire and Ash",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarfireandash_2d89f7.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -70,6 +58,12 @@
     "title": "Chernobyl",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chernobyl_f9e199.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Crime 101",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -142,12 +136,6 @@
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "It's Always Sunny in Philadelphia",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/itsalwayssunnyinphil_67ce53.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -246,6 +234,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Slow Horses",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Spider-Man: Brand New Day",
     "author": "English",
@@ -262,12 +256,6 @@
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Stranger Things",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -304,6 +292,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -396,16 +390,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Super Mario Galaxy Movie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesupermariogalaxym_f07a93.jpg"
   },
   {
     "location": "Series · English · Currently Running",
