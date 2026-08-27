@@ -48,7 +48,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/bettercallsaul_e91ea5.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Top Rated",
     "title": "Breaking Bad",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
@@ -64,6 +64,12 @@
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Dark Matter",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -100,12 +106,6 @@
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Good Luck, Have Fun, Don't Die",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -156,7 +156,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Top Rated",
+    "location": "Movie · English · Trending",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -247,9 +247,21 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Stranger Things",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -274,6 +286,12 @@
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "The Blacklist",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -402,12 +420,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "The Wrecking Crew",
     "author": "English",
@@ -438,7 +450,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Top Rated",
     "title": "X-Men '97",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
@@ -454,5 +466,11 @@
     "title": "Dilwale Dulhania Le Jayenge",
     "author": "Hindi",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dilwaledulhanialejay_ae253a.jpg"
+  },
+  {
+    "location": "Series · Hindi · Currently Running",
+    "title": "Sacred Games",
+    "author": "Hindi",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sacredgames_598c3c.jpg"
   }
 ]
