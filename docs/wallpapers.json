@@ -96,12 +96,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Family Guy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "FROM",
     "author": "English",
@@ -168,7 +162,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Trending",
+    "location": "Movie · English · Top Rated",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -184,12 +178,6 @@
     "title": "NCIS",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Normal",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -259,9 +247,21 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Stranger Things",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -294,6 +294,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -304,6 +310,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -412,12 +424,6 @@
     "title": "The Walking Dead",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
