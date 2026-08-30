@@ -91,12 +91,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "FROM",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Futurama",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
@@ -112,6 +106,12 @@
     "title": "Good Luck, Have Fun, Don't Die",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Grand Theft Auto VI: An Extended Look",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/grandtheftautovianex_110c52.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -162,7 +162,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Top Rated",
+    "location": "Movie · English · Trending",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -208,12 +208,6 @@
     "title": "Project Hail Mary",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/projecthailmary_e602ca.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Protector",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/protector_7812dd.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -270,6 +264,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Stranger Things",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -310,12 +310,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Gentlemen",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegentlemen_b173e1.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -424,6 +418,12 @@
     "title": "The Walking Dead",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Walking Dead: Dead City",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
