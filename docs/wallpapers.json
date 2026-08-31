@@ -168,7 +168,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Top Rated",
+    "location": "Movie · English · Trending",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -184,12 +184,6 @@
     "title": "NCIS",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Normal",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -259,6 +253,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
@@ -288,6 +288,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -300,10 +306,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Gentlemen",
+    "location": "Movie · English · Trending",
+    "title": "The Devil Wears Prada 2",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegentlemen_b173e1.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -408,16 +414,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The Super Mario Galaxy Movie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesupermariogalaxym_f07a93.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "The Walking Dead",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
