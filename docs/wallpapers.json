@@ -216,12 +216,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/projecthailmary_e602ca.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Protector",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/protector_7812dd.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "Pulp Fiction",
     "author": "English",
@@ -394,6 +388,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
