@@ -168,7 +168,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Trending",
+    "location": "Movie · English · Top Rated",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -184,6 +184,12 @@
     "title": "NCIS",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Normal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -208,6 +214,12 @@
     "title": "Project Hail Mary",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/projecthailmary_e602ca.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Protector",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/protector_7812dd.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -288,12 +300,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Boys",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -304,12 +310,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Devil Wears Prada 2",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedevilwearsprada2_dfa298.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -346,12 +346,6 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Mandalorian and Grogu",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -402,28 +396,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The Super Mario Galaxy Movie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesupermariogalaxym_f07a93.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Walking Dead",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Walking Dead: Dead City",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -444,19 +432,13 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Vigil",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/vigil_79c763.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Trending",
     "title": "X-Men '97",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
