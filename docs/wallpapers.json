@@ -91,12 +91,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "FROM",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Futurama",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
@@ -148,6 +142,12 @@
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "It's Always Sunny in Philadelphia",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/itsalwayssunnyinphil_67ce53.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -300,12 +300,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "The Gentlemen",
     "author": "English",
@@ -346,6 +340,12 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Mandalorian and Grogu",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
   },
   {
     "location": "Series · English · Currently Running",
