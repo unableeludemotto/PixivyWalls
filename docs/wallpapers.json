@@ -108,6 +108,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "Good Luck, Have Fun, Don't Die",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Grand Theft Auto VI: An Extended Look",
     "author": "English",
@@ -118,6 +124,12 @@
     "title": "Heated Rivalry",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "House",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -156,7 +168,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Trending",
+    "location": "Movie · English · Top Rated",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -175,12 +187,6 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Normal",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Obsession",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/obsession_a7320d.jpg"
@@ -192,10 +198,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Trending",
     "title": "Outer Banks",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/outerbanks_af5e2f.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Pressure",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pressure_b3e971.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -247,6 +259,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
@@ -262,12 +280,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "ted",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ted_503e6e.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -292,6 +304,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -372,12 +390,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepitt_7210b1.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "The Rip",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therip_e75569.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Rookie",
     "author": "English",
@@ -412,6 +424,12 @@
     "title": "The Walking Dead",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Walking Dead: Dead City",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
