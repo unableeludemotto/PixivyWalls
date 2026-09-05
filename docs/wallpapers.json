@@ -210,10 +210,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Pressure",
+    "location": "Series · English · Trending",
+    "title": "Outer Banks",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pressure_b3e971.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/outerbanks_af5e2f.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -271,12 +271,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
@@ -292,12 +286,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "ted",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ted_503e6e.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -322,12 +310,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -436,6 +418,12 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Walking Dead: Dead City",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
