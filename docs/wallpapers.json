@@ -168,7 +168,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Top Rated",
+    "location": "Movie · English · Trending",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -252,16 +252,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Slow Horses",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Spider-Noir",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -310,12 +310,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Drama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Series · English · Currently Running",
