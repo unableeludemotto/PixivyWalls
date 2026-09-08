@@ -181,12 +181,6 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Normal",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Obsession",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/obsession_a7320d.jpg"
@@ -283,6 +277,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "ted",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ted_503e6e.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Ted Lasso",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
@@ -334,12 +334,6 @@
     "title": "The Green Mile",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Invite",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -442,12 +436,6 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Vigil",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/vigil_79c763.jpg"
   },
   {
     "location": "Movie · English · Current Year",
