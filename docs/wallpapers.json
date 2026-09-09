@@ -102,12 +102,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Fuze",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fuze_304a68.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
@@ -186,6 +180,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "MobLand",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "NCIS",
     "author": "English",
@@ -258,16 +258,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "South Park",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Spider-Noir",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidernoir_607902.jpg"
   },
   {
     "location": "Series · English · Trending",
