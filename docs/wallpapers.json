@@ -6,6 +6,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/12angrymen_46147c.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "American Horror Story",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -34,12 +40,6 @@
     "title": "Backrooms",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/backrooms_99b20f.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Batman: Knightfall Part 1: Knightfall",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/batmanknightfallpart_2408c2.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -76,12 +76,6 @@
     "title": "Dark Matter",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Disclosure Day",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -180,6 +174,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Moana",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "MobLand",
     "author": "English",
@@ -228,7 +228,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/reacher_b7635e.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Top Rated",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -259,9 +259,15 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "South Park",
+    "title": "Slow Horses",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Spartacus",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spartacus_78e99a.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -280,6 +286,12 @@
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Superman",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/superman_610e1f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -310,6 +322,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Drama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedrama_3a8388.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -424,6 +442,12 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "The Whisper Man",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewhisperman_43a998.jpg"
   },
   {
     "location": "Movie · English · Current Year",
