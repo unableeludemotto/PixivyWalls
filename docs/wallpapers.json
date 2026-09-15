@@ -12,12 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/adventuretimefionnaa_5f8ec1.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "American Dad!",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americandad_21f956.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -84,16 +78,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Disclosure Day",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Evil Dead Burn",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -192,12 +186,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "MobLand",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "NCIS",
     "author": "English",
@@ -214,12 +202,6 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Pressure",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pressure_b3e971.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -286,6 +268,12 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Star Trek: Strange New Worlds",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -396,7 +384,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theowlhouse_d2c8aa.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Trending",
     "title": "The Pitt",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepitt_7210b1.jpg"
@@ -418,12 +406,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -451,6 +433,12 @@
   },
   {
     "location": "Movie · English · Current Year",
+    "title": "The Wrecking Crew",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
     "title": "Tom Clancy's Jack Ryan: Ghost War",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tomclancysjackryangh_696c66.jpg"
@@ -466,6 +454,12 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Widow's Bay",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
   },
   {
     "location": "Series · English · Top Rated",
