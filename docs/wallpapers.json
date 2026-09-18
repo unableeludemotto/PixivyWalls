@@ -126,22 +126,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Hokum",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "House of the Dragon",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -190,6 +178,12 @@
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Minions & Monsters",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -264,6 +258,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Shameless",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Silo",
     "author": "English",
@@ -330,7 +330,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Trending",
     "title": "The Gentlemen",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegentlemen_b173e1.jpg"
@@ -424,6 +424,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
