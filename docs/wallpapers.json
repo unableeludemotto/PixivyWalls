@@ -12,18 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/adventuretimefionnaa_5f8ec1.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "American Horror Story",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Apex",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Arcane",
     "author": "English",
@@ -118,6 +106,12 @@
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Hawaii Five-0",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hawaiifive0_5f9dbf.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -222,12 +216,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onetreehill_4cceed.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Pressure",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pressure_b3e971.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
@@ -262,12 +250,6 @@
     "title": "Sesame Street",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Shameless",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -448,6 +430,12 @@
     "title": "The Vampire Diaries",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thevampirediaries_b120da.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Walking Dead: Dead City",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
