@@ -12,12 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/adventuretimefionnaa_5f8ec1.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "American Horror Story",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -48,7 +42,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/backrooms_99b20f.jpg"
   },
   {
-    "location": "Movie · English · Top Rated",
+    "location": "Movie · English · Trending",
     "title": "Batman: Knightfall Part 1: Knightfall",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/batmanknightfallpart_2408c2.jpg"
@@ -120,12 +114,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Hawaii Five-0",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hawaiifive0_5f9dbf.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Heated Rivalry",
     "author": "English",
@@ -136,6 +124,12 @@
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "House of the Dragon",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -222,12 +216,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "One Tree Hill",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/onetreehill_4cceed.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
@@ -246,7 +234,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/reacher_b7635e.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Currently Running",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -262,6 +250,12 @@
     "title": "Sesame Street",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Shameless",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -360,12 +354,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The Invite",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "The Last House",
     "author": "English",
@@ -426,6 +414,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
@@ -438,12 +432,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thevampirediaries_b120da.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "The Whisper Man",
     "author": "English",
@@ -454,12 +442,6 @@
     "title": "The Wrecking Crew",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Tom Clancy's Jack Ryan: Ghost War",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tomclancysjackryangh_696c66.jpg"
   },
   {
     "location": "Movie · English · Trending",
