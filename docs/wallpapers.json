@@ -12,12 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/adventuretimefionnaa_5f8ec1.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "American Horror Story",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Apex",
     "author": "English",
@@ -132,6 +126,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "House of the Dragon",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "In the Grey",
     "author": "English",
@@ -240,7 +240,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/residentevil_b99928.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Top Rated",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -336,6 +336,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "The Flash",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "The Gentlemen",
     "author": "English",
@@ -426,6 +432,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
@@ -472,12 +484,6 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Widow's Bay",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
   },
   {
     "location": "Series · English · Top Rated",
