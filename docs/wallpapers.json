@@ -12,16 +12,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/adventuretimefionnaa_5f8ec1.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Apex",
+    "location": "Series · English · Trending",
+    "title": "American Horror Story",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
   },
   {
     "location": "Series · English · Top Rated",
     "title": "Arcane",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/arcane_5b10df.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Arrow",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/arrow_891993.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -181,12 +187,6 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Minions & Monsters",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Moana",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
@@ -240,7 +240,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/residentevil_b99928.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Currently Running",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -250,12 +250,6 @@
     "title": "Schindler's List",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Sesame Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -384,6 +378,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The Mandalorian and Grogu",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "The Mentalist",
     "author": "English",
@@ -444,12 +444,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "The Vampire Diaries",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thevampirediaries_b120da.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "The Whisper Man",
     "author": "English",
@@ -478,12 +472,6 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Widow's Bay",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
   },
   {
     "location": "Series · English · Top Rated",
