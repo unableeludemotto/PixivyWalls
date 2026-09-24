@@ -54,7 +54,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/backrooms_99b20f.jpg"
   },
   {
-    "location": "Movie · English · Trending",
+    "location": "Movie · English · Top Rated",
     "title": "Batman: Knightfall Part 1: Knightfall",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/batmanknightfallpart_2408c2.jpg"
@@ -184,6 +184,12 @@
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Minions & Monsters",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -438,12 +444,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "The Whisper Man",
     "author": "English",
@@ -472,6 +472,12 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Widow's Bay",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
   },
   {
     "location": "Series · English · Top Rated",
