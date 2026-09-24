@@ -18,6 +18,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "Apex",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Arcane",
     "author": "English",
@@ -48,7 +54,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/backrooms_99b20f.jpg"
   },
   {
-    "location": "Movie · English · Top Rated",
+    "location": "Movie · English · Trending",
     "title": "Batman: Knightfall Part 1: Knightfall",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/batmanknightfallpart_2408c2.jpg"
@@ -130,12 +136,6 @@
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "House of the Dragon",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -378,12 +378,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The Mandalorian and Grogu",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Mentalist",
     "author": "English",
@@ -442,6 +436,12 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Walking Dead: Dead City",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
