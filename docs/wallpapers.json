@@ -66,12 +66,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
-    "title": "Chernobyl",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chernobyl_f9e199.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Coyote vs. Acme",
     "author": "English",
@@ -204,6 +198,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Mutiny",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mutiny_847b83.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "NCIS",
     "author": "English",
@@ -304,6 +304,12 @@
     "title": "Ted Lasso",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
+  },
+  {
+    "location": "Series · English · Top Rated",
+    "title": "The Amazing Digital Circus",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
     "location": "Series · English · Currently Running",
