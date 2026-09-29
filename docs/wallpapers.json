@@ -84,12 +84,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Disclosure Day",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
@@ -132,6 +126,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "House of the Dragon",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "In the Grey",
     "author": "English",
@@ -142,12 +142,6 @@
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "It's Always Sunny in Philadelphia",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/itsalwayssunnyinphil_67ce53.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -252,6 +246,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Sesame Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Silo",
     "author": "English",
@@ -322,12 +322,6 @@
     "title": "The End of Oak Street",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Flash",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
   },
   {
     "location": "Series · English · Trending",
