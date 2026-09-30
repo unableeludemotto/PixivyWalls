@@ -96,12 +96,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Friends",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "Futurama",
     "author": "English",
@@ -130,12 +124,6 @@
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "House of the Dragon",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -178,12 +166,6 @@
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Minions & Monsters",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -246,7 +228,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/residentevil_b99928.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Top Rated",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -258,13 +240,25 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Sesame Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Shameless",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Silo",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Trending",
     "title": "Slow Horses",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
@@ -312,6 +306,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -328,6 +328,18 @@
     "title": "The End of Oak Street",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "The Flash",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Gentlemen",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegentlemen_b173e1.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -460,12 +472,6 @@
     "title": "War Machine",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/warmachine_0420fd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Widow's Bay",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/widowsbay_c1642c.jpg"
   },
   {
     "location": "Series · English · Top Rated",
