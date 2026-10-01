@@ -18,12 +18,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Apex",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Arcane",
     "author": "English",
@@ -90,16 +84,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Disclosure Day",
+    "location": "Series · English · Trending",
+    "title": "Dexter: Resurrection",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
   },
   {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Evil Dead Burn",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -174,7 +174,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Trending",
+    "location": "Movie · English · Top Rated",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
@@ -246,7 +246,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/residentevil_b99928.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Currently Running",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -256,12 +256,6 @@
     "title": "Schindler's List",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Sesame Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -282,10 +276,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "South Park",
+    "location": "Movie · English · Trending",
+    "title": "Soulm8te",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/soulm8te_7d23a5.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -340,6 +334,12 @@
     "title": "The Flash",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Gentlemen",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegentlemen_b173e1.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
