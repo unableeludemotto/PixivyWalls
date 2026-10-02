@@ -18,6 +18,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "Apex",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Arcane",
     "author": "English",
@@ -90,12 +96,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Evil Dead Burn",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "Futurama",
     "author": "English",
@@ -106,12 +106,6 @@
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Hawaii Five-0",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hawaiifive0_5f9dbf.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -228,16 +222,28 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/residentevil_b99928.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Top Rated",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Sesame Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -256,6 +262,12 @@
     "title": "Slow Horses",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Smallville",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -330,6 +342,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Gentlemen",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegentlemen_b173e1.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Godfather",
     "author": "English",
@@ -394,12 +412,6 @@
     "title": "The Pitt",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepitt_7210b1.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "The Rip",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therip_e75569.jpg"
   },
   {
     "location": "Series · English · Currently Running",
