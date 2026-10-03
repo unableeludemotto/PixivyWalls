@@ -60,7 +60,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/bettercallsaul_e91ea5.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Top Rated",
     "title": "Breaking Bad",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
@@ -88,6 +88,12 @@
     "title": "Dark Matter",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Disclosure Day",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -124,6 +130,12 @@
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "House of the Dragon",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -187,6 +199,12 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Normal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Obsession",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/obsession_a7320d.jpg"
@@ -222,7 +240,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/residentevil_b99928.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Currently Running",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -270,12 +288,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Soulm8te",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/soulm8te_7d23a5.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "South Park",
     "author": "English",
@@ -292,12 +304,6 @@
     "title": "Star Trek: Strange New Worlds",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Stranger Things",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -322,6 +328,12 @@
     "title": "The Blacklist",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -376,12 +388,6 @@
     "title": "The Love Hypothesis",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelovehypothesis_be30d1.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Mandalorian and Grogu",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/themandalorianandgro_08f635.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -442,12 +448,6 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Walking Dead: Dead City",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdeaddeadci_650154.jpg"
   },
   {
     "location": "Movie · English · Current Year",
