@@ -163,6 +163,12 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Minions & Monsters",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Moana",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
@@ -178,12 +184,6 @@
     "title": "NCIS",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Normal",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/normal_82b9fb.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -306,16 +306,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Ted Lasso",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Blacklist",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -430,12 +430,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
