@@ -18,12 +18,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Apex",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Arcane",
     "author": "English",
@@ -90,12 +84,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Disclosure Day",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
@@ -130,12 +118,6 @@
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "House of the Dragon",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -288,6 +270,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Soulm8te",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/soulm8te_7d23a5.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "South Park",
     "author": "English",
@@ -301,9 +289,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Star Trek: Strange New Worlds",
+    "title": "SpongeBob SquarePants",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -330,12 +318,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Boys",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -358,6 +340,12 @@
     "title": "The Flash",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Gentlemen",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegentlemen_b173e1.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -424,6 +412,12 @@
     "title": "The Rookie",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therookie_a3902b.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "The Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therunner_fc1ec9.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
