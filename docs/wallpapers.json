@@ -54,7 +54,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/bettercallsaul_e91ea5.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Currently Running",
     "title": "Breaking Bad",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
@@ -88,12 +88,6 @@
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Evil Dead Burn",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -180,10 +174,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Mutiny",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mutiny_847b83.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "NCIS",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Ninjago: Masters of Spinjitzu",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ninjagomastersofspin_2fe889.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -241,12 +247,6 @@
   },
   {
     "location": "Series · English · Currently Running",
-    "title": "Sesame Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
     "title": "Shameless",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
@@ -262,12 +262,6 @@
     "title": "Slow Horses",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Smallville",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -289,9 +283,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
+    "title": "Stranger Things",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -304,6 +298,12 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Ted Lasso",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -366,6 +366,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "The Last House",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelasthouse_0def32.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
@@ -414,12 +420,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therookie_a3902b.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "The Runner",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therunner_fc1ec9.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "The Shawshank Redemption",
     "author": "English",
@@ -430,6 +430,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
