@@ -84,10 +84,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Dexter: Resurrection",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Evil Dead Burn",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -112,6 +124,12 @@
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "House of the Dragon",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -144,6 +162,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lioness_b03824.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Marshals",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Masters of the Universe",
     "author": "English",
@@ -157,12 +181,6 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Minions & Monsters",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Moana",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
@@ -172,12 +190,6 @@
     "title": "MobLand",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Mutiny",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mutiny_847b83.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -282,12 +294,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Stranger Things",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/strangerthings_1d3ce6.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -310,12 +316,6 @@
     "title": "The Blacklist",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Boys",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -342,12 +342,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Gentlemen",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegentlemen_b173e1.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "The Godfather",
     "author": "English",
@@ -364,6 +358,12 @@
     "title": "The Green Mile",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Invite",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
