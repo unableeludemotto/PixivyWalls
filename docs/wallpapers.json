@@ -84,6 +84,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Disclosure Day",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
@@ -175,12 +181,6 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Minions & Monsters",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Moana",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
@@ -196,12 +196,6 @@
     "title": "NCIS",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Ninjago: Masters of Spinjitzu",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ninjagomastersofspin_2fe889.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -258,6 +252,18 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Shameless",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Silo",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Slow Horses",
     "author": "English",
@@ -286,12 +292,6 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Star Trek: Strange New Worlds",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
     "location": "Series · English · Currently Running",
