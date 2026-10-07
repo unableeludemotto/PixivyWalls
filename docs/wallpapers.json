@@ -12,12 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Apex",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Arcane",
     "author": "English",
@@ -66,6 +60,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chernobyl_f9e199.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Chicago P.D.",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Coyote vs. Acme",
     "author": "English",
@@ -103,12 +103,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "FBI",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fbi_02ab5d.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Futurama",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
@@ -130,12 +124,6 @@
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "House of the Dragon",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -193,6 +181,12 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Minions & Monsters",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Moana",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
@@ -202,12 +196,6 @@
     "title": "MobLand",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Mutiny",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mutiny_847b83.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -270,12 +258,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Shameless",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "Silo",
     "author": "English",
@@ -292,12 +274,6 @@
     "title": "Smallville",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Soulm8te",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/soulm8te_7d23a5.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -382,6 +358,12 @@
     "title": "The Green Mile",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Invite",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -478,6 +460,12 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Tracker",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tracker_f08930.jpg"
   },
   {
     "location": "Movie · English · Current Year",

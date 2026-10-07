@@ -13,8 +13,8 @@ Automatically generated Netflix-style Android TV wallpapers.
 
 ## Statistics
 
-- Wallpapers: 84
-- Generated: 2026-10-07 06:21 UTC
+- Wallpapers: 82
+- Generated: 2026-10-07 18:37 UTC
 
 ## Data Source
 
