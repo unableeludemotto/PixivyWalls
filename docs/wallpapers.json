@@ -84,28 +84,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Dark Matter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Family Guy",
+    "location": "Movie · English · Trending",
+    "title": "Evil Dead Burn",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
     "location": "Series · English · Trending",
-    "title": "Futurama",
+    "title": "FROM",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -160,12 +154,6 @@
     "title": "Lioness",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lioness_b03824.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Marshals",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -270,12 +258,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Soulm8te",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/soulm8te_7d23a5.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "South Park",
     "author": "English",
@@ -286,6 +268,12 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Star Trek: Strange New Worlds",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/startrekstrangenewwo_51531e.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -316,6 +304,12 @@
     "title": "The Blacklist",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Boys",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theboys_8efc90.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -454,6 +448,12 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Tracker",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tracker_f08930.jpg"
   },
   {
     "location": "Movie · English · Current Year",
