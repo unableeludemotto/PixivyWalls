@@ -6,10 +6,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/12angrymen_46147c.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "28 Years Later: The Bone Temple",
+    "location": "Series · English · Trending",
+    "title": "American Horror Story",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/28yearslaterthebonet_cb3c42.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Animals",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/animals_264a1b.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -97,12 +103,6 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Evil Dead Burn",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Fall 2: Deadpoint",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
@@ -126,10 +126,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Good Luck, Have Fun, Don't Die",
+    "location": "Movie · English · Trending",
+    "title": "Heart of the Beast",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heartofthebeast_5aa0bf.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -178,6 +178,12 @@
     "title": "Lioness",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lioness_b03824.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Marshals",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -265,21 +271,15 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Silo",
+    "title": "Slow Horses",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
   },
   {
     "location": "Series · English · Currently Running",
     "title": "Smallville",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/smallville_e5a69c.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Soulm8te",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/soulm8te_7d23a5.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -292,6 +292,12 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -354,6 +360,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The Invite",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
@@ -400,6 +412,12 @@
     "title": "The Rookie",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therookie_a3902b.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "The Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therunner_fc1ec9.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
