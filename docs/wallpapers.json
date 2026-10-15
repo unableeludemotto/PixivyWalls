@@ -60,6 +60,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Carrie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/carrie_8c363a.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Chernobyl",
     "author": "English",
@@ -72,6 +78,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Chicago P.D.",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
@@ -82,6 +94,12 @@
     "title": "Dark Matter",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Dexter: Resurrection",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -102,22 +120,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "FBI",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fbi_02ab5d.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Futurama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Heart of the Beast",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heartofthebeast_5aa0bf.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -271,6 +283,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "Silo",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Slow Horses",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
@@ -312,12 +330,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "The Blacklist",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -328,12 +340,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Flash",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -352,12 +358,6 @@
     "title": "The Green Mile",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Invite",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -454,12 +454,6 @@
     "title": "The Wrecking Crew",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Time",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/time_acc2c4.jpg"
   },
   {
     "location": "Movie · English · Trending",
