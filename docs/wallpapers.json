@@ -78,30 +78,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Chicago P.D.",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Crime 101",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Dark Matter",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Dexter: Resurrection",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Digger",
     "author": "English",
@@ -115,21 +91,27 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Evil Dead Burn",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Fall 2: Deadpoint",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Futurama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Good Luck, Have Fun, Don't Die",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -235,6 +217,12 @@
   },
   {
     "location": "Movie · English · Current Year",
+    "title": "Pretty Lethal",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/prettylethal_c2a888.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/projecthailmary_e602ca.jpg"
@@ -258,7 +246,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/residentevil_b99928.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Currently Running",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -340,6 +328,18 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Diplomat",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thediplomat_4e6828.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The End of Oak Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -460,12 +460,6 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Voicemails for Isabelle",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/voicemailsforisabell_1aa5bf.jpg"
   },
   {
     "location": "Movie · English · Current Year",
