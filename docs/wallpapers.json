@@ -78,6 +78,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Dark Matter",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Digger",
     "author": "English",
@@ -97,9 +103,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Futurama",
+    "title": "Family Guy",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -271,12 +277,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Silo",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Slow Horses",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
@@ -336,12 +336,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thediplomat_4e6828.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The End of Oak Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "The Godfather",
     "author": "English",
@@ -358,6 +352,12 @@
     "title": "The Green Mile",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Invite",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -408,6 +408,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therookie_a3902b.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "The Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therunner_fc1ec9.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Shawshank Redemption",
     "author": "English",
@@ -445,12 +451,6 @@
   },
   {
     "location": "Movie · English · Current Year",
-    "title": "The Whisper Man",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewhisperman_43a998.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
     "title": "The Wrecking Crew",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
@@ -460,6 +460,12 @@
     "title": "Toy Story 5",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Tulsa King",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tulsaking_319d48.jpg"
   },
   {
     "location": "Movie · English · Current Year",
