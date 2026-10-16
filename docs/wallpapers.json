@@ -7,6 +7,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "9-1-1",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/911_f713a7.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "American Horror Story",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
@@ -79,6 +85,30 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "Chicago Med",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagomed_b9891b.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "Chicago P.D.",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Crime 101",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Cyberpunk: Edgerunners",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Dark Matter",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
@@ -97,27 +127,21 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Evil Dead Burn",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Fall 2: Deadpoint",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Family Guy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
   },
   {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "Good Luck, Have Fun, Don't Die",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goodluckhavefundontd_5d97e4.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -256,12 +280,6 @@
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Runner",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -408,12 +426,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therookie_a3902b.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "The Runner",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therunner_fc1ec9.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "The Shawshank Redemption",
     "author": "English",
@@ -424,12 +436,6 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -444,10 +450,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theuprising_cf8ad3.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "The Walking Dead",
+    "location": "Movie · English · Current Year",
+    "title": "The Whisper Man",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewalkingdead_a3b22b.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewhisperman_43a998.jpg"
   },
   {
     "location": "Movie · English · Current Year",
