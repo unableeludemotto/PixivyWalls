@@ -7,12 +7,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "9-1-1",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/911_f713a7.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "American Horror Story",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
@@ -84,12 +78,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Chicago P.D.",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "Dark Matter",
     "author": "English",
@@ -108,7 +96,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/duttonranch_775091.jpg"
   },
   {
-    "location": "Movie · English · Trending",
+    "location": "Movie · English · Current Year",
     "title": "Evil Dead Burn",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
@@ -118,6 +106,12 @@
     "title": "Fall 2: Deadpoint",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Futurama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -166,12 +160,6 @@
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Lioness",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lioness_b03824.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -330,6 +318,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "The Blacklist",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
@@ -346,6 +340,12 @@
     "title": "The Diplomat",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thediplomat_4e6828.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "The Flash",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
