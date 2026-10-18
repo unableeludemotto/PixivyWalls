@@ -108,12 +108,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Futurama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
@@ -271,9 +265,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Slow Horses",
+    "title": "Silo",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -366,6 +360,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The Invite",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
@@ -436,6 +436,12 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Terminal List",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
   },
   {
     "location": "Movie · English · Trending",
