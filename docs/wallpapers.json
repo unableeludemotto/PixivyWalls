@@ -7,12 +7,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "9-1-1",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/911_f713a7.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "American Horror Story",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
@@ -114,16 +108,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Futurama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Grey's Anatomy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/greysanatomy_f65e5d.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -166,6 +160,12 @@
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Marshals",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -265,15 +265,15 @@
   },
   {
     "location": "Series · English · Currently Running",
-    "title": "Sesame Street",
+    "title": "Shameless",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/sesamestreet_770ef2.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
   },
   {
     "location": "Series · English · Trending",
-    "title": "Silo",
+    "title": "Slow Horses",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -442,12 +442,6 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Uprising",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theuprising_cf8ad3.jpg"
   },
   {
     "location": "Movie · English · Current Year",
