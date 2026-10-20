@@ -96,12 +96,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/digger_1f06b4.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Disclosure Day",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
@@ -118,12 +112,6 @@
     "title": "Fall 2: Deadpoint",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Futurama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -228,6 +216,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Practical Magic 2",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/practicalmagic2_400740.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Pretty Lethal",
     "author": "English",
@@ -276,6 +270,18 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/schindlerslist_5c91f7.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Shameless",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/shameless_cd7e41.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Silo",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Slow Horses",
     "author": "English",
@@ -322,12 +328,6 @@
     "title": "The Amazing Digital Circus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Blacklist",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theblacklist_38ab7d.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -442,6 +442,12 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Terminal List",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
   },
   {
     "location": "Movie · English · Current Year",
