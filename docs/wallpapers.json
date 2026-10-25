@@ -102,12 +102,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Digger",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/digger_1f06b4.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
@@ -120,10 +114,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Fall 2: Deadpoint",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Heart of the Beast",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heartofthebeast_5aa0bf.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -300,6 +306,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -310,6 +322,12 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Ted Lasso",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -340,12 +358,6 @@
     "title": "The Diplomat",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thediplomat_4e6828.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The End of Oak Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
