@@ -168,12 +168,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Marshals",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Masters of the Universe",
     "author": "English",
@@ -306,12 +300,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -322,12 +310,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Ted Lasso",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -448,6 +430,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
