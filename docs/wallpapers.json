@@ -91,6 +91,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "Crystal Lake",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crystallake_df029c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Cyberpunk: Edgerunners",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
@@ -118,6 +124,12 @@
     "title": "Evil Dead Burn",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Fall 2: Deadpoint",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -160,12 +172,6 @@
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Marshals",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -378,12 +384,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Lord of the Rings: The Rings of Power",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "The Love Hypothesis",
     "author": "English",
@@ -418,6 +418,12 @@
     "title": "The Pitt",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepitt_7210b1.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "The Rip",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therip_e75569.jpg"
   },
   {
     "location": "Series · English · Currently Running",
