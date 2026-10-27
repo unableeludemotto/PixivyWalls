@@ -84,12 +84,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Coyote vs. Acme",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
@@ -138,12 +132,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Heart of the Beast",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heartofthebeast_5aa0bf.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Heated Rivalry",
     "author": "English",
@@ -180,10 +168,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Leviticus",
+    "location": "Series · English · Trending",
+    "title": "Marshals",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/leviticus_e99a4d.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -192,22 +180,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Matchbox the Movie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/matchboxthemovie_96c2db.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Minions & Monsters",
+    "location": "Series · English · Currently Running",
+    "title": "MINDHUNTER",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/minionsmonsters_d9c14b.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mindhunter_0ad243.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -220,6 +202,12 @@
     "title": "MobLand",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Mutiny",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mutiny_847b83.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -252,6 +240,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/personofinterest_809963.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Practical Magic 2",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/practicalmagic2_400740.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
@@ -280,6 +274,12 @@
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -348,6 +348,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thediplomat_4e6828.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The End of Oak Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "The Flash",
     "author": "English",
@@ -370,6 +376,12 @@
     "title": "The Green Mile",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Invite",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theinvite_50d6f5.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -450,16 +462,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Trending",
     "title": "The Terminal List",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Uprising",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theuprising_cf8ad3.jpg"
   },
   {
     "location": "Movie · English · Current Year",
