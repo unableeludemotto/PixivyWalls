@@ -72,18 +72,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chernobyl_f9e199.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Chicago Fire",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Chicago P.D.",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
@@ -126,6 +114,18 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/evildeadburn_9cb927.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Friends",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "FROM",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
@@ -138,16 +138,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "House",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "In the Grey",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Insidious: Out of the Further",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/insidiousoutofthefur_1a8440.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -178,6 +178,12 @@
     "title": "Masters of the Universe",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Matchbox the Movie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/matchboxthemovie_96c2db.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -238,12 +244,6 @@
     "title": "Person of Interest",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/personofinterest_809963.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Practical Magic 2",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/practicalmagic2_400740.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -324,6 +324,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Ted Lasso",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Amazing Digital Circus",
     "author": "English",
@@ -336,28 +342,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thechosen_799c5b.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "The Crown",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thecrown_1db12e.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Diplomat",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thediplomat_4e6828.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The End of Oak Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "The Flash",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -450,19 +444,19 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
+    "title": "The Summer I Turned Pretty",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesummeriturnedpret_8015ac.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
     "title": "The Terminal List",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
