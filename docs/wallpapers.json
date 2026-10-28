@@ -120,12 +120,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "FROM",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
@@ -142,12 +136,6 @@
     "title": "In the Grey",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Insidious: Out of the Further",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/insidiousoutofthefur_1a8440.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -246,6 +234,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/personofinterest_809963.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Practical Magic 2",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/practicalmagic2_400740.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
@@ -324,12 +318,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Ted Lasso",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Amazing Digital Circus",
     "author": "English",
@@ -352,6 +340,12 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The End of Oak Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -382,6 +376,12 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Lord of the Rings: The Rings of Power",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -442,6 +442,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
