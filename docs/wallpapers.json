@@ -84,12 +84,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Coyote vs. Acme",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
@@ -114,10 +108,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Digger",
+    "location": "Series · English · Trending",
+    "title": "Dexter: Resurrection",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/digger_1f06b4.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -139,9 +133,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Ghosts",
+    "title": "FROM",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ghosts_8cecb5.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -150,22 +144,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Heart of the Beast",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heartofthebeast_5aa0bf.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Heated Rivalry",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
-  },
-  {
-    "location": "Movie · English · Current Year",
-    "title": "In the Grey",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -198,12 +180,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Matchbox the Movie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/matchboxthemovie_96c2db.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "Michael",
     "author": "English",
@@ -214,12 +190,6 @@
     "title": "MINDHUNTER",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mindhunter_0ad243.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Moana",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -262,6 +232,12 @@
     "title": "Person of Interest",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/personofinterest_809963.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Practical Magic 2",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/practicalmagic2_400740.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -343,12 +319,6 @@
   },
   {
     "location": "Series · English · Top Rated",
-    "title": "The Amazing Digital Circus",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
-  },
-  {
-    "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thechosen_799c5b.jpg"
@@ -370,6 +340,12 @@
     "title": "The Dog Stars",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The End of Oak Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -450,12 +426,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
@@ -478,6 +448,12 @@
     "title": "The Wrecking Crew",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
+  },
+  {
+    "location": "Movie · English · Current Year",
+    "title": "Tom Clancy's Jack Ryan: Ghost War",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tomclancysjackryangh_696c66.jpg"
   },
   {
     "location": "Movie · English · Trending",
