@@ -73,15 +73,21 @@
   },
   {
     "location": "Series · English · Currently Running",
-    "title": "Chicago Fire",
+    "title": "Chicago P.D.",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
   },
   {
     "location": "Movie · English · Trending",
     "title": "Clayface",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Coyote vs. Acme",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -114,6 +120,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Digger",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/digger_1f06b4.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Dutton Ranch",
     "author": "English",
@@ -130,12 +142,6 @@
     "title": "Friends",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "FROM",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -168,12 +174,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Marshals",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Masters of the Universe",
     "author": "English",
@@ -190,6 +190,12 @@
     "title": "MINDHUNTER",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mindhunter_0ad243.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Moana",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -232,12 +238,6 @@
     "title": "Person of Interest",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/personofinterest_809963.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Practical Magic 2",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/practicalmagic2_400740.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -424,6 +424,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
