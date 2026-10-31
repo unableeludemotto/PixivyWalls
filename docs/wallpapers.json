@@ -139,6 +139,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "FROM",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Ghosts",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ghosts_8cecb5.jpg"
@@ -217,12 +223,6 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Mutiny",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mutiny_847b83.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
     "title": "Obsession",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/obsession_a7320d.jpg"
@@ -232,6 +232,12 @@
     "title": "Off Campus",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Primetime",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/primetime_b66f08.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -294,12 +300,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -316,6 +316,12 @@
     "title": "The 100",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/the100_08702d.jpg"
+  },
+  {
+    "location": "Series · English · Top Rated",
+    "title": "The Amazing Digital Circus",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -436,12 +442,6 @@
     "title": "The Simpsons",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
-  },
-  {
-    "location": "Series · English · Top Rated",
-    "title": "The Sopranos",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
