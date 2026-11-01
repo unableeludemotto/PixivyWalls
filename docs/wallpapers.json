@@ -78,12 +78,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Coyote vs. Acme",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
@@ -172,6 +166,18 @@
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "IT: Welcome to Derry",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/itwelcometoderry_7fc1f6.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Lanterns",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lanterns_43ac88.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -348,6 +354,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The End of Oak Street",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "The Flash",
     "author": "English",
@@ -372,22 +384,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "The Last Kingdom",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelastkingdom_8ccdd6.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Lord of the Rings: The Rings of Power",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -444,10 +444,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
+    "location": "Series · English · Currently Running",
+    "title": "The Summer I Turned Pretty",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesummeriturnedpret_8015ac.jpg"
   },
   {
     "location": "Series · English · Trending",
