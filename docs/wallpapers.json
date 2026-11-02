@@ -78,6 +78,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Coyote vs. Acme",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
@@ -289,12 +295,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Slow Horses",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "South Park",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
@@ -304,12 +304,6 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -354,16 +348,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The End of Oak Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Flash",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Gilded Age",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegildedage_b7ecf4.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -388,6 +382,12 @@
     "title": "The Lord of the Rings: The Return of the King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Lord of the Rings: The Rings of Power",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -478,6 +478,12 @@
     "title": "Tulsa King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tulsaking_319d48.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Verity",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/verity_d7c561.jpg"
   },
   {
     "location": "Series · English · Currently Running",
