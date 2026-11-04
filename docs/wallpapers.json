@@ -180,12 +180,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/itwelcometoderry_7fc1f6.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Lanterns",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lanterns_43ac88.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
@@ -246,6 +240,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/orangeisthenewblack_24cc18.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Primetime",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/primetime_b66f08.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
@@ -283,9 +283,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "South Park",
+    "title": "Slow Horses",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -304,12 +304,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Tenzing",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tenzing_5aa6d0.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -474,6 +468,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Tulsa King",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tulsaking_319d48.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Verity",
     "author": "English",
@@ -484,6 +484,12 @@
     "title": "Vikings",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/vikings_e28d81.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "VisionQuest",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/visionquest_f9a985.jpg"
   },
   {
     "location": "Movie · English · Current Year",
