@@ -78,10 +78,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Coyote vs. Acme",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Crystal Lake",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crystallake_df029c.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -103,9 +115,9 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Disclosure Day",
+    "title": "Digger",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/digger_1f06b4.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -172,12 +184,6 @@
     "title": "Masters of the Universe",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mastersoftheuniverse_e8ff54.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Matchbox the Movie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/matchboxthemovie_96c2db.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -271,12 +277,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Slow Horses",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "South Park",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
@@ -298,12 +298,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Tenzing",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tenzing_5aa6d0.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -456,6 +450,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "The Uprising",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theuprising_cf8ad3.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "The Vampire Diaries",
     "author": "English",
@@ -466,6 +466,12 @@
     "title": "The Wrecking Crew",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Tulsa King",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tulsaking_319d48.jpg"
   },
   {
     "location": "Movie · English · Trending",
