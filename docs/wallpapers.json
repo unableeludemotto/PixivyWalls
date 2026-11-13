@@ -7,6 +7,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "9-1-1",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/911_f713a7.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "American Horror Story",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
@@ -72,6 +78,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chernobyl_f9e199.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Chicago Fire",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
+  },
+  {
     "location": "Movie · English · Trending",
     "title": "Clayface",
     "author": "English",
@@ -82,12 +94,6 @@
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Crystal Lake",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crystallake_df029c.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -120,10 +126,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Forgotten Island",
+    "location": "Series · English · Trending",
+    "title": "Futurama",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/forgottenisland_81cfb5.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -252,6 +258,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
@@ -265,12 +277,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Slow Horses",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "South Park",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
@@ -280,12 +286,6 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -325,9 +325,9 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "The Dog Stars",
+    "title": "The End of Oak Street",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
