@@ -7,12 +7,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "9-1-1",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/911_f713a7.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "American Horror Story",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
@@ -78,16 +72,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chernobyl_f9e199.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Chicago Fire",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Clayface",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Coyote vs. Acme",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -127,15 +121,27 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Futurama",
+    "title": "Family Guy",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Forgotten Island",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/forgottenisland_81cfb5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Grey's Anatomy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/greysanatomy_f65e5d.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -198,12 +204,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Moana",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
-  },
-  {
     "location": "Series · English · Trending",
     "title": "MobLand",
     "author": "English",
@@ -214,6 +214,12 @@
     "title": "Monk",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/monk_ca92da.jpg"
+  },
+  {
+    "location": "Series · English · Currently Running",
+    "title": "NCIS",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -258,12 +264,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Runner",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
@@ -274,6 +274,12 @@
     "title": "Seinfeld",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/seinfeld_370e86.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Slow Horses",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -325,9 +331,9 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "The End of Oak Street",
+    "title": "The Dog Stars",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -496,12 +502,6 @@
     "title": "X-Men '97",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/xmen97_f073f2.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "You",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/you_976016.jpg"
   },
   {
     "location": "Movie · Hindi · Top Rated",
