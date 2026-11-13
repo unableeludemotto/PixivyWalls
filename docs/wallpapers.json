@@ -66,12 +66,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Buddy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/buddy_48131f.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Chernobyl",
     "author": "English",
@@ -84,12 +78,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Coyote vs. Acme",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
@@ -97,9 +85,15 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Dark Matter",
+    "title": "Crystal Lake",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crystallake_df029c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Cyberpunk: Edgerunners",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -121,27 +115,21 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Fall 2: Deadpoint",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Forgotten Island",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/forgottenisland_81cfb5.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Friends",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
   },
   {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Grey's Anatomy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/greysanatomy_f65e5d.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -192,12 +180,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Marshals",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Masters of the Universe",
     "author": "English",
@@ -208,6 +190,12 @@
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Moana",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -238,12 +226,6 @@
     "title": "Person of Interest",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/personofinterest_809963.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Primetime",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/primetime_b66f08.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -283,6 +265,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "Slow Horses",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "South Park",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
@@ -292,6 +280,12 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "SpongeBob SquarePants",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -342,6 +336,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Gilded Age",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegildedage_b7ecf4.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Godfather",
     "author": "English",
@@ -372,7 +372,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_922d44.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Currently Running",
     "title": "The Lord of the Rings: The Rings of Power",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thelordoftheringsthe_5acc1c.jpg"
@@ -414,12 +414,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepitt_7210b1.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Rookie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therookie_a3902b.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "The Shawshank Redemption",
     "author": "English",
@@ -454,6 +448,12 @@
     "title": "The Wrecking Crew",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Toy Story 5",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
   },
   {
     "location": "Series · English · Trending",
