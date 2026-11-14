@@ -66,6 +66,18 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Buddy",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/buddy_48131f.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Carrie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/carrie_8c363a.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Chernobyl",
     "author": "English",
@@ -78,16 +90,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Coyote vs. Acme",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Crystal Lake",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crystallake_df029c.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -120,12 +132,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Family Guy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/familyguy_f5f13f.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Forgotten Island",
     "author": "English",
@@ -136,12 +142,6 @@
     "title": "GOAT",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/goat_db88ef.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Grey's Anatomy",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/greysanatomy_f65e5d.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -264,6 +264,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
@@ -328,12 +334,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Dog Stars",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
   },
   {
     "location": "Series · English · Currently Running",
