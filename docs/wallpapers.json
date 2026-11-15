@@ -73,6 +73,12 @@
   },
   {
     "location": "Movie · English · Trending",
+    "title": "Clayface",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
     "title": "Coyote vs. Acme",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
@@ -127,9 +133,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "FROM",
+    "title": "Georgie & Mandy's First Marriage",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/georgiemandysfirstma_6e577c.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -172,12 +178,6 @@
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Lanterns",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lanterns_43ac88.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -258,6 +258,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
@@ -268,6 +274,12 @@
     "title": "Seinfeld",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/seinfeld_370e86.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Silo",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -306,7 +318,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Top Rated",
     "title": "The Chosen",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thechosen_799c5b.jpg"
@@ -322,12 +334,6 @@
     "title": "The Dog Stars",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The End of Oak Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -424,6 +430,12 @@
     "title": "The Sheep Detectives",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
   },
   {
     "location": "Series · English · Top Rated",
