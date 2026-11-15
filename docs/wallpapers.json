@@ -6,6 +6,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/12angrymen_46147c.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "American Horror Story",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Animals",
     "author": "English",
@@ -28,12 +34,6 @@
     "title": "Avatar: The Last Airbender",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avatarthelastairbend_01f84e.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Avengers: Endgame",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/avengersendgame_a62c20.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -73,21 +73,15 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Clayface",
+    "title": "Coyote vs. Acme",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/coyotevsacme_46ce90.jpg"
   },
   {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Crystal Lake",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crystallake_df029c.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -130,6 +124,12 @@
     "title": "Forgotten Island",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/forgottenisland_81cfb5.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "FROM",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -258,12 +258,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Runner",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
-  },
-  {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
@@ -286,12 +280,6 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -318,7 +306,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
-    "location": "Series · English · Top Rated",
+    "location": "Series · English · Trending",
     "title": "The Chosen",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thechosen_799c5b.jpg"
@@ -438,22 +426,10 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "The Simpsons",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Terminal List",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
