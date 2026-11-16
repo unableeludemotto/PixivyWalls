@@ -66,6 +66,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Carrie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/carrie_8c363a.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "Chernobyl",
     "author": "English",
@@ -85,9 +91,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Dark Matter",
+    "title": "Cyberpunk: Edgerunners",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -124,12 +130,6 @@
     "title": "Friends",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Futurama",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -198,6 +198,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Moana",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "MobLand",
     "author": "English",
@@ -208,12 +214,6 @@
     "title": "Monk",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/monk_ca92da.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Mutiny",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mutiny_847b83.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -258,7 +258,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/residentevil_b99928.jpg"
   },
   {
-    "location": "Series · English · Trending",
+    "location": "Series · English · Top Rated",
     "title": "Rick and Morty",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
@@ -283,6 +283,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "Slow Horses",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "South Park",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
@@ -292,12 +298,6 @@
     "title": "Spider-Man: Brand New Day",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
-    "title": "Supernatural",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/supernatural_466108.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -324,16 +324,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thechosen_799c5b.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "The Crown",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thecrown_1db12e.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Dog Stars",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
   },
   {
     "location": "Movie · English · Trending",
