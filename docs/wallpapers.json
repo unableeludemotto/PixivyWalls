@@ -12,12 +12,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/animals_264a1b.jpg"
   },
   {
-    "location": "Movie · English · Current Year",
-    "title": "Apex",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/apex_44dde6.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Arcane",
     "author": "English",
@@ -66,12 +60,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Carrie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/carrie_8c363a.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Chernobyl",
     "author": "English",
@@ -84,6 +72,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/clayface_04987f.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Community",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/community_23e6ef.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Crime 101",
     "author": "English",
@@ -91,9 +85,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Dark Matter",
+    "title": "Cyberpunk: Edgerunners",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/darkmatter_a7206e.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -132,6 +126,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/friends_b5f12d.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "FROM",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/from_1e8a49.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "GOAT",
     "author": "English",
@@ -150,6 +150,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/heatedrivalry_1555fc.jpg"
   },
   {
+    "location": "Movie · English · Current Year",
+    "title": "Hokum",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/hokum_828d88.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "House",
     "author": "English",
@@ -166,12 +172,6 @@
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Lanterns",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lanterns_43ac88.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -204,13 +204,7 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
   },
   {
-    "location": "Series · English · Currently Running",
-    "title": "Monk",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/monk_ca92da.jpg"
-  },
-  {
-    "location": "Series · English · Currently Running",
+    "location": "Series · English · Trending",
     "title": "NCIS",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/ncis_80dbc1.jpg"
@@ -244,12 +238,6 @@
     "title": "Pulp Fiction",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/pulpfiction_1e45d5.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Reacher",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/reacher_b7635e.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -300,6 +288,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
   },
   {
+    "location": "Series · English · Currently Running",
+    "title": "Supernatural",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/supernatural_466108.jpg"
+  },
+  {
     "location": "Movie · English · Current Year",
     "title": "Swapped",
     "author": "English",
@@ -334,12 +328,6 @@
     "title": "The Dark Knight",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "The Dog Stars",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -444,6 +432,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesheepdetectives_fb7955.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Simpsons",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesimpsons_ed8b67.jpg"
+  },
+  {
     "location": "Series · English · Top Rated",
     "title": "The Sopranos",
     "author": "English",
@@ -462,10 +456,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Toy Story 5",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "Tulsa King",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tulsaking_319d48.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Verity",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/verity_d7c561.jpg"
   },
   {
     "location": "Series · English · Trending",
