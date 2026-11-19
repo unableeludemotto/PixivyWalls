@@ -85,12 +85,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Cyberpunk: Edgerunners",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Dexter: Resurrection",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
@@ -204,6 +198,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mobland_b0cb84.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Mutiny",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/mutiny_847b83.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "NCIS",
     "author": "English",
@@ -222,10 +222,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/offcampus_fd5dff.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Percy Jackson and the Olympians",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/percyjacksonandtheol_afe4f9.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Person of Interest",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/personofinterest_809963.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Primetime",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/primetime_b66f08.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -262,12 +274,6 @@
     "title": "Seinfeld",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/seinfeld_370e86.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Slow Horses",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
   },
   {
     "location": "Series · English · Trending",
