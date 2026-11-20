@@ -97,12 +97,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Cyberpunk: Edgerunners",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Dexter: Resurrection",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
@@ -186,10 +180,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "Lanterns",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lanterns_43ac88.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "Law & Order: Special Victims Unit",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/laworderspecialvicti_825c46.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Marshals",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/marshals_b900a9.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -202,12 +208,6 @@
     "title": "Michael",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Moana",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -277,9 +277,9 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "South Park",
+    "title": "Slow Horses",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/slowhorses_4ccd6b.jpg"
   },
   {
     "location": "Movie · English · Trending",
@@ -334,12 +334,6 @@
     "title": "The Flash",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Gilded Age",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegildedage_b7ecf4.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
