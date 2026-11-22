@@ -60,12 +60,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/breakingbad_062a19.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "Carrie",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/carrie_8c363a.jpg"
-  },
-  {
     "location": "Series · English · Top Rated",
     "title": "Chernobyl",
     "author": "English",
@@ -88,6 +82,12 @@
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Crystal Lake",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crystallake_df029c.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -234,12 +234,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/personofinterest_809963.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "Primetime",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/primetime_b66f08.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Project Hail Mary",
     "author": "English",
@@ -264,6 +258,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/rickandmorty_f7ebee.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Runner",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/runner_3c3ba0.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "Schindler's List",
     "author": "English",
@@ -274,12 +274,6 @@
     "title": "Seinfeld",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/seinfeld_370e86.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Silo",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/silo_1bba41.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -334,6 +328,12 @@
     "title": "The Flash",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Gilded Age",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegildedage_b7ecf4.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -402,6 +402,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thepitt_7210b1.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Rookie",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/therookie_a3902b.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "The Shawshank Redemption",
     "author": "English",
@@ -424,12 +430,6 @@
     "title": "The Sopranos",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "The Terminal List",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -460,12 +460,6 @@
     "title": "Two and a Half Men",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/twoandahalfmen_3c3ff7.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Verity",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/verity_d7c561.jpg"
   },
   {
     "location": "Series · English · Trending",
