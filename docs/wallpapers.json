@@ -91,12 +91,6 @@
   },
   {
     "location": "Series · English · Trending",
-    "title": "Cyberpunk: Edgerunners",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
     "title": "Dexter: Resurrection",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/dexterresurrection_1cca03.jpg"
@@ -124,6 +118,12 @@
     "title": "Fall 2: Deadpoint",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Futurama",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/futurama_a39ca5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -156,28 +156,22 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "House of the Dragon",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "In the Grey",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/inthegrey_120b27.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Insidious: Out of the Further",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/insidiousoutofthefur_1a8440.jpg"
+  },
+  {
     "location": "Movie · English · Top Rated",
     "title": "Interstellar",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/interstellar_584e66.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Lanterns",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/lanterns_43ac88.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -307,6 +301,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "Ted Lasso",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "The Chosen",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thechosen_799c5b.jpg"
@@ -318,16 +318,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedarkknight_98b688.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The End of Oak Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Flash",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Gilded Age",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegildedage_b7ecf4.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -346,6 +346,12 @@
     "title": "The Green Mile",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegreenmile_843d74.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "The Hunger Games: Sunrise on the Reaping",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thehungergamessunris_16a29d.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
