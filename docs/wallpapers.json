@@ -6,12 +6,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/12angrymen_46147c.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "American Horror Story",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/americanhorrorstory_bd2985.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Animals",
     "author": "English",
@@ -52,12 +46,6 @@
     "title": "Better Call Saul",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/bettercallsaul_e91ea5.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Black Doves",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/blackdoves_66b062.jpg"
   },
   {
     "location": "Series · English · Currently Running",
@@ -109,9 +97,9 @@
   },
   {
     "location": "Movie · English · Trending",
-    "title": "Disclosure Day",
+    "title": "Digger",
     "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/disclosureday_1a7455.jpg"
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/digger_1f06b4.jpg"
   },
   {
     "location": "Series · English · Top Rated",
@@ -136,12 +124,6 @@
     "title": "Fall 2: Deadpoint",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/fall2deadpoint_ed7253.jpg"
-  },
-  {
-    "location": "Movie · English · Trending",
-    "title": "Forgotten Island",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/forgottenisland_81cfb5.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -172,6 +154,12 @@
     "title": "House",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/house_9bac71.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "House of the Dragon",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/houseofthedragon_18f5dc.jpg"
   },
   {
     "location": "Movie · English · Current Year",
@@ -294,12 +282,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/seinfeld_370e86.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "South Park",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/southpark_7db461.jpg"
-  },
-  {
     "location": "Movie · English · Trending",
     "title": "Spider-Man: Brand New Day",
     "author": "English",
@@ -316,12 +298,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Series · English · Top Rated",
-    "title": "The Amazing Digital Circus",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theamazingdigitalcir_540929.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -438,6 +414,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thesopranos_0d167f.jpg"
   },
   {
+    "location": "Series · English · Trending",
+    "title": "The Terminal List",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theterminallist_646d9f.jpg"
+  },
+  {
     "location": "Series · English · Currently Running",
     "title": "The Vampire Diaries",
     "author": "English",
@@ -448,6 +430,12 @@
     "title": "The Wrecking Crew",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thewreckingcrew_065b63.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Toy Story 5",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/toystory5_3894ab.jpg"
   },
   {
     "location": "Series · English · Trending",
