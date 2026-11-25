@@ -6,12 +6,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/12angrymen_46147c.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "9-1-1",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/911_f713a7.jpg"
-  },
-  {
     "location": "Movie · English · Current Year",
     "title": "Animals",
     "author": "English",
@@ -73,6 +67,12 @@
   },
   {
     "location": "Series · English · Trending",
+    "title": "Chicago Fire",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagofire_5d821f.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
     "title": "Chicago P.D.",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/chicagopd_77d09c.jpg"
@@ -94,6 +94,12 @@
     "title": "Crime 101",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/crime101_06e659.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "Cyberpunk: Edgerunners",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/cyberpunkedgerunners_07c451.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -198,6 +204,12 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/michael_8fb3af.jpg"
   },
   {
+    "location": "Movie · English · Trending",
+    "title": "Moana",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/moana_2cc04d.jpg"
+  },
+  {
     "location": "Series · English · Trending",
     "title": "MobLand",
     "author": "English",
@@ -282,12 +294,6 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spidermanbrandnewday_5ec8bd.jpg"
   },
   {
-    "location": "Series · English · Trending",
-    "title": "SpongeBob SquarePants",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/spongebobsquarepants_4b3e12.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "Supernatural",
     "author": "English",
@@ -298,12 +304,6 @@
     "title": "Swapped",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/swapped_d3e6f8.jpg"
-  },
-  {
-    "location": "Series · English · Trending",
-    "title": "Ted Lasso",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/tedlasso_ee52df.jpg"
   },
   {
     "location": "Series · English · Trending",
@@ -324,16 +324,16 @@
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thedogstars_7ccceb.jpg"
   },
   {
-    "location": "Movie · English · Trending",
-    "title": "The End of Oak Street",
-    "author": "English",
-    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theendofoakstreet_f53c6d.jpg"
-  },
-  {
     "location": "Series · English · Currently Running",
     "title": "The Flash",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/theflash_8cce3c.jpg"
+  },
+  {
+    "location": "Series · English · Trending",
+    "title": "The Gilded Age",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/thegildedage_b7ecf4.jpg"
   },
   {
     "location": "Movie · English · Top Rated",
@@ -454,6 +454,12 @@
     "title": "Two and a Half Men",
     "author": "English",
     "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/twoandahalfmen_3c3ff7.jpg"
+  },
+  {
+    "location": "Movie · English · Trending",
+    "title": "Verity",
+    "author": "English",
+    "url_img": "https://unableeludemotto.github.io/PixivyWalls/images/verity_d7c561.jpg"
   },
   {
     "location": "Series · English · Trending",
